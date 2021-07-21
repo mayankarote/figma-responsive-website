@@ -52,21 +52,20 @@ export const ModelTwo = styled.div`
     margin: 3rem;
   }
 `;
-
-export const ChapNameBox = styled.div`
-  margin: 1rem;
+export const ChapP = styled.p`
+  font-weight: 600;
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 3rem;
+  @media screen and (max-width: 650px) {
+    margin-top: 3rem;
+    font-size: 20px;
+  }
 `;
 
 export const ChapIcon = styled.img`
-  cursor: pointer;
-  margin-top: 3rem;
-  @media screen and (max-width: 650px) {
-    width: 11px;
-    height: 11px;
-    margin-top: 3rem;
-  }
-`;
-export const ChapGrayAL = styled.div`
   cursor: pointer;
   margin-top: 3rem;
   @media screen and (max-width: 650px) {
@@ -81,51 +80,30 @@ export const ChapGrayArrow = styled.div`
   z-index: 3;
   width: 32px;
   height: 48px;
-  margin-left: 100px;
-  margin-top: 129px;
+  margin-left: 0px;
+  margin-top: 259px;
   display: flex;
   justify-content: center;
   align-items: center;
   background: #c4c4c4;
   border-radius: 15px 0px 0px 15px;
-
-  @media screen and (max-width: 650px) {
-    width: 11px;
-    height: 11px;
-    margin-top: 3rem;
-  }
 `;
 
 export const ChapGrayLine = styled.div`
-  width: 870px;
+  width: 700px;
   height: 0px;
-  // left: 65px;
-  // top: 663px;
   border: 1px solid rgba(255, 255, 255, 0.5);
   transform: rotate(90deg);
-
-  @media screen and (max-width: 650px) {
-    margin-top: 3rem;
-    font-size: 20px;
-  }
-`;
-
-export const ChapP = styled.p`
-  font-weight: 600;
-  font-size: 20px;
-  color: #ffffff;
-  text-align: center;
-  padding: 1rem;
-  margin-top: 3rem;
-  @media screen and (max-width: 650px) {
-    margin-top: 3rem;
-    font-size: 20px;
-  }
+  background: yellow;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;
 
 export const ChapP2 = styled.p`
-  font-size: 18px;
-  color: #5c5c5c;
+  font-size: 28px;
+  font-weight: 600;
+  color: #ffc000;
   text-align: center;
   @media screen and (max-width: 650px) {
     font-size: 15px;

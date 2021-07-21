@@ -1,34 +1,3 @@
-.chapdescription {
-  display: flex;
-  justify-content: center;
-  margin-left: auto;
-  margin-right: auto;
-  max-height: 1500px;
-  position: sticky;
-}
-/* login container 1 */
-.chapdescription__container {
-  height: 100%;
-  width: 100%;
-  left: 20px;
-  right: 20px;
-}
-
-/* login container 2 */
-.chapdescription__container1 {
-  height: 1100px;
-  display: flex;
-  align-items: center;
-  background-color: #0c2657;
-  top: 310px;
-  left: 20px;
-}
-.chapdescription__container2 {
-  background-color: #0d2249;
-  color: white;
-  height: 39px;
-}
-
 .chap__rectangle {
   z-index: 3;
   position: absolute;
@@ -42,6 +11,7 @@
   background: #c4c4c4;
   border-radius: 15px 0px 0px 15px;
 }
+
 .chap__grayFrame {
   background: #c4c4c4;
   border-radius: 15px 0px 0px 15px;
