@@ -4,13 +4,10 @@ export const ChapContainer = styled.div`
   max-height: 100vh;
 `;
 export const ChapContent = styled.div`
-  max-height: 100%;
   background: #0c2651;
-  padding: 0rem calc((100vw - 1500px) / 2);
-  // may be hyala del karav lagel .....
-  @media screen and (max-width: 650px) {
-    height: calc(100vh + 700px);
-  }
+  height: calc(100px + 250px);
+  max-height: 100%;
+  padding: 0rem calc((100vw - 1700px) / 2);
 `;
 
 export const ChapItems = styled.div`
@@ -20,7 +17,9 @@ export const ChapItems = styled.div`
   align-items: center;
   align-content: center;
   margin: 0 auto;
+  background: yellow;
   background: #0c2651;
+  width: 1000px;
   @media screen and (max-width: 650px) {
     width: 100%;
   }
