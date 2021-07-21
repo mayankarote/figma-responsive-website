@@ -11,7 +11,6 @@ import {
   ChapContent,
   ChapIcon,
   ChapItems,
-  ChapNameBox,
   ChapP,
 } from "./ChapIntroElements";
 
