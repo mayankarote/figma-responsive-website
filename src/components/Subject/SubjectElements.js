@@ -5,7 +5,6 @@ export const SubjectContainer = styled.div`
 `;
 export const SubjectContent = styled.div`
   max-height: 100%;
-  height: calc(100vh + 250px);
   background: #0c2651;
   padding: 0rem calc((100vw - 1500px) / 2);
   @media screen and (max-width: 650px) {
