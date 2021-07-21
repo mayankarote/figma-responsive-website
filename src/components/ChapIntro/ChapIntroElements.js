@@ -1,9 +1,9 @@
 import styled from "styled-components";
 
-export const SubjectContainer = styled.div`
+export const ChapContainer = styled.div`
   max-height: 100vh;
 `;
-export const SubjectContent = styled.div`
+export const ChapContent = styled.div`
   max-height: 100%;
   background: #0c2651;
   padding: 0rem calc((100vw - 1500px) / 2);
@@ -13,7 +13,7 @@ export const SubjectContent = styled.div`
   }
 `;
 
-export const SubjectItems = styled.div`
+export const ChapItems = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -68,7 +68,7 @@ export const YellowCirlce = styled.div`
     margin-left: 3rem;
   }
 `;
-export const SubjectIcon = styled.img`
+export const ChapIcon = styled.img`
   cursor: pointer;
   margin-left: 9rem;
   margin-top: -6rem;
@@ -80,7 +80,7 @@ export const SubjectIcon = styled.img`
   }
 `;
 
-export const SubjP = styled.p`
+export const ChapP = styled.p`
   font-weight: 600;
   font-size: 25px;
   color: #5c5c5c;
@@ -91,7 +91,7 @@ export const SubjP = styled.p`
   }
 `;
 
-export const SubjP2 = styled.p`
+export const ChapP2 = styled.p`
   font-size: 18px;
   color: #5c5c5c;
   text-align: center;
@@ -100,7 +100,7 @@ export const SubjP2 = styled.p`
   }
 `;
 
-export const SubjModelP = styled.p`
+export const ChapModelP = styled.p`
   font-weight: 600;
   font-size: 25px;
   color: white;
@@ -110,7 +110,7 @@ export const SubjModelP = styled.p`
   }
 `;
 
-export const SubjModelP2 = styled.p`
+export const ChapModelP2 = styled.p`
   font-size: 18px;
   color: white;
   padding: 1rem;
@@ -118,7 +118,7 @@ export const SubjModelP2 = styled.p`
     font-size: 15px;
   }
 `;
-export const SubjModelP3 = styled.p`
+export const ChapModelP3 = styled.p`
   font-size: 25px;
   color: white;
   padding: 1rem;
@@ -127,7 +127,7 @@ export const SubjModelP3 = styled.p`
   }
 `;
 
-export const SubjectGroup = styled.div`
+export const ChapGroup = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -189,7 +189,7 @@ export const ChapBtn = styled.button`
     margin-top: -2rem;
   }
 `;
-export const SubjectStar = styled.img`
+export const ChapStar = styled.img`
   width: 18px;
   height: 18px;
   margin-right: 0.1rem;
