@@ -56,7 +56,17 @@ export const ModelTwo = styled.div`
 export const ChapNameBox = styled.div`
   margin: 1rem;
 `;
+
 export const ChapIcon = styled.img`
+  cursor: pointer;
+  margin-top: 3rem;
+  @media screen and (max-width: 650px) {
+    width: 11px;
+    height: 11px;
+    margin-top: 3rem;
+  }
+`;
+export const ChapGrayAL = styled.div`
   cursor: pointer;
   margin-top: 3rem;
   @media screen and (max-width: 650px) {
@@ -86,7 +96,7 @@ export const ChapGrayArrow = styled.div`
   }
 `;
 
-export const ChapGrayLine = styled.p`
+export const ChapGrayLine = styled.div`
   width: 870px;
   height: 0px;
   // left: 65px;
