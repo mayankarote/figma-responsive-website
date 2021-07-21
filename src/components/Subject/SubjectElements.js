@@ -8,7 +8,7 @@ export const SubjectContent = styled.div`
   background: #0c2651;
   padding: 0rem calc((100vw - 1500px) / 2);
   @media screen and (max-width: 650px) {
-    height: calc(100vh + 600px);
+    height: calc(100vh + 700px);
   }
 `;
 
