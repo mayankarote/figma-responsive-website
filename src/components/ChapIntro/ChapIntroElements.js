@@ -23,21 +23,6 @@ export const ChapItems = styled.div`
   }
 `;
 
-export const ModelOne = styled.div`
-  width: 500px;
-  height: 300px;
-  margin: 4rem;
-  background-color: #ffffff;
-  opacity: 0.95;
-  box-shadow: 0px 12px 35px rgba(160, 121, 0, 0.2);
-  border-radius: 10px;
-  padding: 1rem;
-  @media screen and (max-width: 650px) {
-    width: 250px;
-    height: 300px;
-    margin: 3rem;
-  }
-`;
 export const ModelTwo = styled.div`
   width: 500px;
   height: 300px;
@@ -72,6 +57,18 @@ export const ChapIcon = styled.img`
     width: 11px;
     height: 11px;
     margin-top: 3rem;
+  }
+`;
+
+export const ModelOne = styled.div`
+  width: 500px;
+  height: 300px;
+  margin: 4rem;
+  padding: 1rem;
+  @media screen and (max-width: 650px) {
+    width: 250px;
+    height: 300px;
+    margin: 3rem;
   }
 `;
 
