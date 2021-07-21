@@ -67,10 +67,12 @@ export default function HomePart1() {
             </ProductInfo>
           </ProductCard>
           {/* ----------------------------------------------------- */}
-          <HomeLineDiv>
-            <HomeLine src={colorLine} alt="" />
-          </HomeLineDiv>
+
           <Info>
+            <HomeLineDiv>
+              <HomeLine src={colorLine} alt="" />
+            </HomeLineDiv>
+
             <WhatStdsSayHeading>What Students Say</WhatStdsSayHeading>
             <WhatStdsSayTitle>
               Semaj Africa is an online education platform that delivers video

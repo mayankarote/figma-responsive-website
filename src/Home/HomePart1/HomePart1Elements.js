@@ -64,10 +64,14 @@ export const ProductTitle = styled.p`
 // colorLine
 
 export const HomeLineDiv = styled.div`
-  margin: 0rem 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  margin-bottom: 2rem;
 `;
 export const HomeLine = styled.img`
-  margin: 0.5rem;
+  margin: 0rem;
 `;
 export const Info = styled.div`
   margin: 0rem 1rem;

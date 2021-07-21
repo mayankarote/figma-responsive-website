@@ -8,12 +8,10 @@ import {
   GradeContent,
   GradeItems,
   ChapP,
-  GradeSmallCirlce,
   ChapP3,
   NavIcon,
   GradeSmallCirlce5,
   GradeSmallCirlce6,
-  GradeCirlceSelected,
 } from "./GradeElements";
 import Footer from "../Footer";
 
