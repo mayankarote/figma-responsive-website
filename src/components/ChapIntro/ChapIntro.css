@@ -28,38 +28,6 @@
   color: white;
   height: 39px;
 }
-.chap__nameBox {
-  position: absolute;
-  width: 438px;
-  height: 78px;
-  left: 96px;
-  top: 115px;
-
-  font-family: Proxima Nova;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 150%;
-  /* or 27px */
-
-  display: flex;
-  align-items: center;
-
-  color: #ffffff;
-}
-.chap__name1 {
-  margin-right: 40px;
-}
-.chap__name2 {
-  margin-left: 20px;
-}
-.chap__play {
-  position: absolute;
-  width: 11px;
-  height: 11px;
-  left: 75px;
-  top: 38px;
-}
 
 .chap__rectangle {
   z-index: 3;

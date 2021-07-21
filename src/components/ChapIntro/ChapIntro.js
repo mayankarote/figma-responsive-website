@@ -6,7 +6,14 @@ import blackplayBtn from "../../assests/blackplayBtn.png";
 import { useHistory } from "react-router-dom";
 import HideShowcontent from "./HideShowcontent";
 import Footer from "../Footer";
-import { ChapContainer, ChapContent, ChapItems } from "./ChapIntroElements";
+import {
+  ChapContainer,
+  ChapContent,
+  ChapIcon,
+  ChapItems,
+  ChapNameBox,
+  ChapP,
+} from "./ChapIntroElements";
 
 export default function Chapdescription() {
   const [state, setState] = useState(true);
@@ -22,11 +29,10 @@ export default function Chapdescription() {
     <ChapContainer>
       <ChapContent>
         <ChapItems>
-          {/* <div className="chap__nameBox">
-            <p className="chap__name1">Light </p>
-            <img src={play} alt="" className="chap__play" />
-            <p className="chap__name2">Introduction to light </p>
-          </div>
+          <ChapP>Light </ChapP>
+          <ChapIcon src={play} alt="" />
+          <ChapP>Introduction to light </ChapP>
+
           <div className="hide_show">
             <div
               className="chap__rectangle"
@@ -36,7 +42,7 @@ export default function Chapdescription() {
             </div>
           </div>
           <div className="chap__verticleLine" />
-          {state && <HideShowcontent />} */}
+          {/* {state && <HideShowcontent />} */}
           {/* <div className="chap__bigRectangle">
             <img src={blackplayBtn} alt="" className="blackplayBtn" />
             <div className="smallCricle"></div>
@@ -62,8 +68,8 @@ export default function Chapdescription() {
             Play Quiz
           </button> */}
         </ChapItems>
-        {/* <Footer /> */}
       </ChapContent>
+      <Footer />
     </ChapContainer>
   );
 }

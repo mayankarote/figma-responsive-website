@@ -13,12 +13,11 @@ export const ChapContent = styled.div`
 export const ChapItems = styled.div`
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   align-content: center;
   margin: 0 auto;
   background: #0c2651;
-  width: 1000px;
   @media screen and (max-width: 650px) {
     width: 100%;
   }
@@ -54,37 +53,28 @@ export const ModelTwo = styled.div`
   }
 `;
 
-export const YellowCirlce = styled.div`
-  width: 149px;
-  height: 149px;
-  background: linear-gradient(180deg, #ff8a00 13.64%, #ffc000 100%);
-  border-radius: 100%;
-  margin-left: 7rem;
-  @media screen and (max-width: 650px) {
-    width: 100px;
-    height: 100px;
-    margin-left: 3rem;
-  }
+export const ChapNameBox = styled.div`
+  margin: 1rem;
 `;
 export const ChapIcon = styled.img`
   cursor: pointer;
-  margin-left: 9rem;
-  margin-top: -6rem;
+  margin-top: 3rem;
   @media screen and (max-width: 650px) {
-    width: 80px;
-    height: 80px;
-    margin-left: 4.5rem;
-    margin-top: -4.5rem;
+    width: 11px;
+    height: 11px;
+    margin-top: 3rem;
   }
 `;
 
 export const ChapP = styled.p`
   font-weight: 600;
-  font-size: 25px;
-  color: #5c5c5c;
+  font-size: 20px;
+  color: #ffffff;
   text-align: center;
   padding: 1rem;
+  margin-top: 3rem;
   @media screen and (max-width: 650px) {
+    margin-top: 3rem;
     font-size: 20px;
   }
 `;
