@@ -5,7 +5,7 @@ export const ChapContainer = styled.div`
 `;
 export const ChapContent = styled.div`
   background: #0c2651;
-  height: calc(100px + 250px);
+  height: 100vh;
   max-height: 100%;
   padding: 0rem calc((100vw - 1700px) / 2);
 `;
@@ -17,7 +17,6 @@ export const ChapItems = styled.div`
   align-items: center;
   align-content: center;
   margin: 0 auto;
-  background: yellow;
   background: #0c2651;
   width: 1000px;
   @media screen and (max-width: 650px) {

@@ -21,7 +21,7 @@ export default function Chapdescription() {
   return (
     <ChapContainer>
       <ChapContent>
-        <>
+        <ChapItems>
           {/* <div className="chap__nameBox">
             <p className="chap__name1">Light </p>
             <img src={play} alt="" className="chap__play" />
@@ -61,7 +61,7 @@ export default function Chapdescription() {
           >
             Play Quiz
           </button> */}
-        </>
+        </ChapItems>
         {/* <Footer /> */}
       </ChapContent>
     </ChapContainer>

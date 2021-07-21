@@ -6,6 +6,7 @@ export const SubjectContainer = styled.div`
 export const SubjectContent = styled.div`
   max-height: 100%;
   background: #0c2651;
+  height: 100vh;
   padding: 0rem calc((100vw - 1500px) / 2);
   // may be hyala del karav lagel .....
   @media screen and (max-width: 650px) {
