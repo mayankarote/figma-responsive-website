@@ -13,7 +13,6 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { ChakraProvider } from "@chakra-ui/react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { GlobalStyle } from "./globalStyles";
-import Navbar from "./components/Navbar";
 
 function App() {
   return (
