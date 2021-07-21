@@ -174,7 +174,7 @@
   position: absolute;
   width: 438px;
   height: 248px;
-  left: -35px;
+  left: 155px;
   top: 337px;
 
   font-family: Proxima Nova;
@@ -191,7 +191,7 @@
   position: absolute;
   width: 438px;
   height: 248px;
-  left: 13px;
+  left: 155px;
   top: 385px;
 
   font-family: Proxima Nova;
@@ -208,7 +208,7 @@
   position: absolute;
   width: 438px;
   height: 248px;
-  left: 45px;
+  left: 155px;
   top: 440px;
 
   font-family: Proxima Nova;
@@ -224,7 +224,7 @@
   position: absolute;
   width: 438px;
   height: 248px;
-  left: 70px;
+  left: 155px;
   top: 490px;
 
   font-family: Proxima Nova;
@@ -300,6 +300,8 @@
 }
 .chap__lightdescription_text {
   color: #ffc000;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
 }
 .chap__lightdescription2 {
   position: absolute;

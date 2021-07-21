@@ -5,6 +5,7 @@ import CollapeIcon from "../../assests/icons/CollapseIcon";
 import blackplayBtn from "../../assests/blackplayBtn.png";
 import { useHistory } from "react-router-dom";
 import HideShowcontent from "./HideShowcontent";
+import Footer from "../Footer";
 
 export default function Chapdescription() {
   const [state, setState] = useState(true);
@@ -60,11 +61,8 @@ export default function Chapdescription() {
             Play Quiz
           </button>
         </div>
-        <div className="chapdescription__container2">
-          <p>All Right Reserved | STEPAPP 2021</p>
-        </div>
+        <Footer />
       </div>
-      {/* {/ login container end  /} */}
     </div>
   );
 }

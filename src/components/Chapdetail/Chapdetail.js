@@ -9,6 +9,7 @@ import zigzagCircle from "../../assests/zigzagCircle.png";
 import smallCircle1 from "../../assests/smallCircle1.png";
 import colorfulRing from "../../assests/colorfulRing.png";
 import { useHistory } from "react-router-dom";
+import Footer from "../Footer";
 
 export default function Chapdetail() {
   const [state, setState] = useState(false);
@@ -90,11 +91,8 @@ export default function Chapdetail() {
             </button>
           </div>
         </div>
-        <div className="chapdetaildetail__container2">
-          <p>All Right Reserved | STEPAPP 2021</p>
-        </div>
+        <Footer />
       </div>
-      {/* {/ login container end  /} */}
     </div>
   );
 }

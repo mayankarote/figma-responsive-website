@@ -19,6 +19,7 @@ import fourYellowSteps from "../../assests/fourYellowSteps.png";
 import manLight from "../../assests/manLight.png";
 import yellowLine from "../../assests/yellowLine.png";
 import { useHistory } from "react-router-dom";
+import Footer from "../Footer";
 
 export default function Login() {
   let history = useHistory();
@@ -138,9 +139,7 @@ export default function Login() {
             </button>
           </div>
         </div>
-        <div className="game__container2">
-          <p>All Right Reserved | STEPAPP 2021</p>
-        </div>
+        <Footer />
       </div>
     </div>
   );
