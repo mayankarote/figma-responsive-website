@@ -66,6 +66,40 @@ export const ChapIcon = styled.img`
   }
 `;
 
+export const ChapGrayArrow = styled.div`
+  cursor: pointer;
+  z-index: 3;
+  width: 32px;
+  height: 48px;
+  margin-left: 100px;
+  margin-top: 129px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #c4c4c4;
+  border-radius: 15px 0px 0px 15px;
+
+  @media screen and (max-width: 650px) {
+    width: 11px;
+    height: 11px;
+    margin-top: 3rem;
+  }
+`;
+
+export const ChapGrayLine = styled.p`
+  width: 870px;
+  height: 0px;
+  // left: 65px;
+  // top: 663px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  transform: rotate(90deg);
+
+  @media screen and (max-width: 650px) {
+    margin-top: 3rem;
+    font-size: 20px;
+  }
+`;
+
 export const ChapP = styled.p`
   font-weight: 600;
   font-size: 20px;

@@ -12,6 +12,8 @@ import {
   ChapIcon,
   ChapItems,
   ChapP,
+  ChapGrayArrow,
+  ChapGrayLine,
 } from "./ChapIntroElements";
 
 export default function Chapdescription() {
@@ -32,16 +34,12 @@ export default function Chapdescription() {
           <ChapIcon src={play} alt="" />
           <ChapP>Introduction to light </ChapP>
 
-          <div className="hide_show">
-            <div
-              className="chap__rectangle"
-              onClick={() => setState((v) => !v)}
-            >
-              <CollapeIcon />
-            </div>
-          </div>
-          <div className="chap__verticleLine" />
-          {/* {state && <HideShowcontent />} */}
+          <ChapGrayArrow onClick={() => setState((v) => !v)}>
+            <CollapeIcon />
+          </ChapGrayArrow>
+
+          <ChapGrayLine />
+          {state && <HideShowcontent />}
           {/* <div className="chap__bigRectangle">
             <img src={blackplayBtn} alt="" className="blackplayBtn" />
             <div className="smallCricle"></div>
