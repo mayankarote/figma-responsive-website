@@ -5,7 +5,7 @@ export const SubjectContainer = styled.div`
 `;
 export const SubjectContent = styled.div`
   max-height: 100%;
-  height: calc(100vh + 100px);
+  height: calc(100vh + 300px);
   background: #0c2651;
   padding: 0rem calc((100vw - 1600px) / 2);
 `;
@@ -32,6 +32,11 @@ export const ModelOne = styled.div`
   box-shadow: 0px 12px 35px rgba(160, 121, 0, 0.2);
   border-radius: 10px;
   padding: 1rem;
+  @media screen and (max-width: 650px) {
+    width: 250px;
+    height: 300px;
+    margin: 3rem;
+  }
 `;
 export const ModelTwo = styled.div`
   width: 500px;
@@ -41,6 +46,11 @@ export const ModelTwo = styled.div`
   box-shadow: 0px 12px 35px rgba(160, 121, 0, 0.2);
   border-radius: 10px;
   padding: 1rem;
+  @media screen and (max-width: 650px) {
+    width: 250px;
+    height: 300px;
+    margin: 3rem;
+  }
 `;
 
 export const YellowCirlce = styled.div`
@@ -49,11 +59,22 @@ export const YellowCirlce = styled.div`
   background: linear-gradient(180deg, #ff8a00 13.64%, #ffc000 100%);
   border-radius: 100%;
   margin-left: 7rem;
+  @media screen and (max-width: 650px) {
+    width: 100px;
+    height: 100px;
+    margin-left: 3rem;
+  }
 `;
 export const SubjectIcon = styled.img`
   cursor: pointer;
   margin-left: 9rem;
   margin-top: -6rem;
+  @media screen and (max-width: 650px) {
+    width: 80px;
+    height: 80px;
+    margin-left: 4.5rem;
+    margin-top: -4.5rem;
+  }
 `;
 
 export const SubjP = styled.p`
@@ -62,18 +83,18 @@ export const SubjP = styled.p`
   color: #5c5c5c;
   text-align: center;
   padding: 1rem;
+  @media screen and (max-width: 650px) {
+    font-size: 20px;
+  }
 `;
 
 export const SubjP2 = styled.p`
   font-size: 18px;
   color: #5c5c5c;
   text-align: center;
-`;
-
-export const SubjP3 = styled.p`
-  font-size: 25px;
-  color: #5c5c5c;
-  text-align: center;
+  @media screen and (max-width: 650px) {
+    font-size: 15px;
+  }
 `;
 
 export const SubjModelP = styled.p`
@@ -81,17 +102,26 @@ export const SubjModelP = styled.p`
   font-size: 25px;
   color: white;
   padding: 1rem;
+  @media screen and (max-width: 650px) {
+    font-size: 20px;
+  }
 `;
 
 export const SubjModelP2 = styled.p`
   font-size: 18px;
   color: white;
   padding: 1rem;
+  @media screen and (max-width: 650px) {
+    font-size: 15px;
+  }
 `;
 export const SubjModelP3 = styled.p`
   font-size: 25px;
   color: white;
   padding: 1rem;
+  @media screen and (max-width: 650px) {
+    font-size: 20px;
+  }
 `;
 
 export const SubjectGroup = styled.div`
@@ -99,7 +129,7 @@ export const SubjectGroup = styled.div`
   flex-wrap: wrap;
   justify-content: center;
   align-content: center;
-  margin: 10rem;
+  margin: 5rem;
 `;
 
 export const ModelGroup = styled.div`
@@ -111,6 +141,11 @@ export const ModelGroup = styled.div`
   border-radius: 10px;
   margin: 2rem;
   padding: 1rem;
+  @media screen and (max-width: 650px) {
+    width: 300px;
+    height: 280px;
+    padding: 0rem;
+  }
 `;
 
 export const ModelGroupTwo = styled.div`
@@ -122,6 +157,11 @@ export const ModelGroupTwo = styled.div`
   border-radius: 10px;
   margin: 2rem;
   padding: 1rem;
+  @media screen and (max-width: 650px) {
+    width: 300px;
+    height: 280px;
+    padding: 0rem;
+  }
 `;
 
 export const ChapBtn = styled.button`
@@ -129,7 +169,6 @@ export const ChapBtn = styled.button`
   justify-content: center;
   align-items: center;
   align-content: center;
-
   width: 125px;
   height: 40px;
   background: #fff1c7;

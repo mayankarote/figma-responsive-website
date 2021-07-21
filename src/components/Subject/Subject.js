@@ -20,7 +20,6 @@ import {
   SubjModelP3,
   SubjP,
   SubjP2,
-  SubjP3,
   YellowCirlce,
 } from "./SubjectElements";
 import Footer from "../Footer";
