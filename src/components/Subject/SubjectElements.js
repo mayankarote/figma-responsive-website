@@ -5,9 +5,12 @@ export const SubjectContainer = styled.div`
 `;
 export const SubjectContent = styled.div`
   max-height: 100%;
-  height: calc(100vh + 300px);
+  height: calc(100vh + 250px);
   background: #0c2651;
-  padding: 0rem calc((100vw - 1600px) / 2);
+  padding: 0rem calc((100vw - 1500px) / 2);
+  @media screen and (max-width: 650px) {
+    height: calc(100vh + 600px);
+  }
 `;
 
 export const SubjectItems = styled.div`
@@ -179,9 +182,20 @@ export const ChapBtn = styled.button`
   margin-top: -1rem;
   font-size: 15px;
   color: black;
+  @media screen and (max-width: 650px) {
+    width: 120px;
+    height: 40px;
+    margin-left: 8rem;
+    margin-top: -2rem;
+  }
 `;
 export const SubjectStar = styled.img`
   width: 18px;
   height: 18px;
-  margin-right: 0.5rem;
+  margin-right: 0.1rem;
+  @media screen and (max-width: 650px) {
+    width: 15px;
+    height: 15px;
+    margin-right: 0.1rem;
+  }
 `;

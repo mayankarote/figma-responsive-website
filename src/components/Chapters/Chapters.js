@@ -4,6 +4,7 @@ import unBlock from "../../assests/unBlock.png";
 import star from "../../assests/star.png";
 import { storeProducts } from "./data";
 import { useHistory } from "react-router-dom";
+import Footer from "../Footer";
 import {
   Chap4,
   ChapBtn,
@@ -19,7 +20,6 @@ import {
   ChapAlign,
   ChapContent,
 } from "./ChaptersElements";
-import Footer from "../Footer";
 
 export default function Chapters() {
   const history = useHistory();
@@ -59,8 +59,8 @@ export default function Chapters() {
             </>
           ))}
         </ChapItems>
+        <Footer />
       </ChapContent>
-      <Footer />
     </ChapContainer>
   );
 }

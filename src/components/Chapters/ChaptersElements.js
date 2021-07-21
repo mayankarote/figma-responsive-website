@@ -5,7 +5,7 @@ export const ChapContainer = styled.div`
 `;
 export const ChapContent = styled.div`
   max-height: 100%;
-  height: calc(100vh - 80px);
+  height: calc(100vh - 10px);
   background: #0c2651;
   padding: 0rem calc((100vw - 1800px) / 2);
 `;
@@ -33,6 +33,12 @@ export const WhiteFourCard = styled.div`
   box-shadow: 0px 12px 35px rgba(160, 121, 0, 0.2);
   border-radius: 10px;
   opacity: 0.95;
+  @media screen and (max-width: 650px) {
+    width: 430px;
+    height: 300px;
+    margin: 3rem;
+    padding: 0.5rem;
+  }
 `;
 
 export const ChapP = styled.p`
@@ -42,6 +48,9 @@ export const ChapP = styled.p`
   line-height: 34px;
   color: #000000;
   margin-left: 1rem;
+  @media screen and (max-width: 650px) {
+    font-size: 20px;
+  }
 `;
 
 export const ChapP2 = styled.p`
@@ -50,6 +59,10 @@ export const ChapP2 = styled.p`
   margin-left: 1rem;
   margin-top: 1rem;
   color: #0c2657;
+  @media screen and (max-width: 650px) {
+    font-size: 18px;
+    margin-top: 0.5rem;
+  }
 `;
 export const ChapP3 = styled.p`
   font-size: 20px;
@@ -58,6 +71,10 @@ export const ChapP3 = styled.p`
   margin-left: 1rem;
   margin-top: 1.2rem;
   color: #0c2657;
+  @media screen and (max-width: 650px) {
+    font-size: 18px;
+    margin-top: 1rem;
+  }
 `;
 
 export const ChapBtn = styled.button`
@@ -72,6 +89,11 @@ export const ChapBtn = styled.button`
   background: #ff8f50;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 31px;
+  @media screen and (max-width: 650px) {
+    width: 115px;
+    height: 40px;
+    margin-top: rem;
+  }
 `;
 
 export const ChapIcon = styled.img`
@@ -80,6 +102,10 @@ export const ChapIcon = styled.img`
   cursor: pointer;
   text-align: left;
   margin-right: 1rem;
+  @media screen and (max-width: 650px) {
+    width: 15px;
+    height: 15px;
+  }
 `;
 
 export const Chap4 = styled.p`
@@ -87,6 +113,9 @@ export const Chap4 = styled.p`
   font-size: 19px;
   color: white;
   text-align: center;
+  @media screen and (max-width: 650px) {
+    font-size: 15px;
+  }
 `;
 
 export const ChapAlign = styled.div`
@@ -110,10 +139,21 @@ export const ChapBtn1 = styled.div`
   border-radius: 31px;
   color: #111;
   font-size: 17px;
+  @media screen and (max-width: 650px) {
+    width: 120px;
+    height: 35px;
+    padding: 0.5rem;
+    font-size: 15px;
+  }
 `;
 
 export const ChapStar = styled.img`
   width: 18px;
   height: 18px;
   margin-right: 0.5rem;
+  @media screen and (max-width: 650px) {
+    width: 15px;
+    height: 15px;
+    margin-right: 0.3rem;
+  }
 `;

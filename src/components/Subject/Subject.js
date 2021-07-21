@@ -1,8 +1,10 @@
 import React from "react";
-import "./Subject.css";
 import { useHistory } from "react-router-dom";
 import star from "../../assests/star.png";
 import image from "../../assests/image.png";
+import Footer from "../Footer";
+import { Carousel } from "react-bootstrap";
+
 import {
   ChapBtn,
   ModelGroup,
@@ -22,8 +24,6 @@ import {
   SubjP2,
   YellowCirlce,
 } from "./SubjectElements";
-import Footer from "../Footer";
-import { Carousel } from "react-bootstrap";
 
 export default function Subject() {
   let history = useHistory();
