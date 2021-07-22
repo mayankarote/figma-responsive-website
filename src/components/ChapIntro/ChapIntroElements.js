@@ -136,7 +136,7 @@ export const ChapCircle = styled.div`
   align-items: center;
 `;
 
-export const ChapPList = styled.div`
+export const ChapPTextList = styled.div`
   font-size: 18px;
   color: #ffc000;
   padding: 2rem;
@@ -164,7 +164,7 @@ export const ChapWhiteP = styled.p`
   }
 `;
 export const ChapWhiteBoldP = styled.p`
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 600;
   color: #ffffff;
   text-align: left;
@@ -173,84 +173,27 @@ export const ChapWhiteBoldP = styled.p`
     font-size: 20px;
   }
 `;
-export const ChapModelP3 = styled.p`
-  font-size: 25px;
-  color: white;
-  padding: 1rem;
-  @media screen and (max-width: 650px) {
-    font-size: 20px;
-  }
-`;
 
-export const ChapGroup = styled.div`
+export const ChapBtnDiv = styled.div`
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-content: center;
-  margin: 5rem;
-`;
-
-export const ModelGroup = styled.div`
-  width: 450px;
-  height: 330px;
-  background: #ff8a48;
-  opacity: 0.95;
-  box-shadow: 0px 12px 35px rgba(160, 121, 0, 0.2);
-  border-radius: 10px;
-  margin: 2rem;
-  padding: 1rem;
-  @media screen and (max-width: 650px) {
-    width: 300px;
-    height: 280px;
-    padding: 0rem;
-  }
-`;
-
-export const ModelGroupTwo = styled.div`
-  width: 450px;
-  height: 330px;
-  background: #1bb8ae;
-  opacity: 0.95;
-  box-shadow: 0px 12px 35px rgba(160, 121, 0, 0.2);
-  border-radius: 10px;
-  margin: 2rem;
-  padding: 1rem;
-  @media screen and (max-width: 650px) {
-    width: 300px;
-    height: 280px;
-    padding: 0rem;
-  }
-`;
-
-export const ChapBtn = styled.button`
-  display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   align-content: center;
-  width: 125px;
-  height: 40px;
-  background: #fff1c7;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 31px;
-  color: #111;
-  margin-left: 14rem;
-  margin-top: -1rem;
-  font-size: 15px;
-  color: black;
-  @media screen and (max-width: 650px) {
-    width: 120px;
-    height: 40px;
-    margin-left: 8rem;
-    margin-top: -2rem;
-  }
 `;
-export const ChapStar = styled.img`
-  width: 18px;
-  height: 18px;
-  margin-right: 0.1rem;
+export const ChapBtn = styled.button`
+  width: 130px;
+  height: 55px;
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 100px;
+
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+  color: #0c2657;
+
   @media screen and (max-width: 650px) {
-    width: 15px;
-    height: 15px;
-    margin-right: 0.1rem;
+    width: 100px;
+    height: 50px;
   }
 `;

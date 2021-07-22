@@ -26,10 +26,12 @@ import {
   ChapRectangle,
   ChapPartTwo,
   ChapCircle,
-  ChapPList,
+  ChapPTextList,
   ChapYellowP,
   ChapWhiteP,
   ChapWhiteBoldP,
+  ChapBtnDiv,
+  ChapBtn,
 } from "./ChapIntroElements";
 
 export default function Chapdescription() {
@@ -101,7 +103,8 @@ export default function Chapdescription() {
                 <ChapIcon src={blackplayBtn} alt="" />
               </ChapCircle>
             </ChapRectangle>
-            <ChapPList>
+
+            <ChapPTextList>
               <ChapYellowP>Light</ChapYellowP>
               <ChapWhiteP>
                 Light is a form of
@@ -116,14 +119,11 @@ export default function Chapdescription() {
               <ChapWhiteBoldP>
                 Light itself is not visible, but it makes objects visible to us
               </ChapWhiteBoldP>
-            </ChapPList>
-            <button
-              className="chap__playQuiz chap__playQuiztext"
-              onClick={onClick}
-            >
-              Play Quiz
-            </button>
+            </ChapPTextList>
           </ChapPartTwo>
+          <ChapBtnDiv>
+            <ChapBtn onClick={onClick}>Play Quiz</ChapBtn>
+          </ChapBtnDiv>
         </ChapItems>
       </ChapContent>
       <Footer />
