@@ -28,6 +28,7 @@ import {
   ChapCircle,
   ChapPTextList,
   ChapYellowP,
+  ChapHightlightP,
   ChapWhiteP,
   ChapWhiteBoldP,
   ChapBtnDiv,
@@ -49,6 +50,7 @@ export default function Chapdescription() {
       <ChapContent>
         <ChapItems>
           <ChapPartOne>
+            {/* Chap One Start */}
             <ChapP>Light</ChapP>
             <ChapIcon src={play} alt="" />
             <ChapP>Introduction to light </ChapP>
@@ -57,11 +59,11 @@ export default function Chapdescription() {
               <CollapeIcon />
             </ChapGrayArrow>
             <ChapGrayLine />
-            <ModelOne>
-              {state && (
-                <>
-                  {/* <ChapP2>Introduction to Light</ChapP2> */}
-                  {/* <img
+            {/* <ModelOne> */}
+            {state && (
+              <>
+                {/* <ChapP2>Introduction to Light</ChapP2> */}
+                {/* <img
                   src={horizontalLine}
                   alt=""
                   className="chap__horizontalLine"
@@ -91,13 +93,14 @@ export default function Chapdescription() {
                 <p className="chap__topic2">Important Facts</p>
                 <p className="chap__topic3">Types of Sources of light</p>
                 <p className="chap__topic4">Luminious and non luminous</p> */}
-                </>
-              )}
-            </ModelOne>
+              </>
+            )}
+            {/* </ModelOne> */}
             {/* <HideShowcontent /> */}
           </ChapPartOne>
-
-          <ChapPartTwo>
+          {/* Chap One End */}
+          {/* Chap Two Start */}
+          {/* <ChapPartTwo>
             <ChapRectangle>
               <ChapCircle>
                 <ChapIcon src={blackplayBtn} alt="" />
@@ -106,12 +109,14 @@ export default function Chapdescription() {
 
             <ChapPTextList>
               <ChapYellowP>Light</ChapYellowP>
+
               <ChapWhiteP>
                 Light is a form of
-                <label className="chap__lightdescription_text"> energy </label>
+                <ChapHightlightP> energy </ChapHightlightP>
                 which makes things
-                <label className="chap__lightdescription_text"> visible.</label>
+                <ChapHightlightP> visible.</ChapHightlightP>
               </ChapWhiteP>
+
               <ChapWhiteBoldP>
                 An object becomes visible to us when light after striking the
                 object reaches our eye
@@ -121,9 +126,10 @@ export default function Chapdescription() {
               </ChapWhiteBoldP>
             </ChapPTextList>
           </ChapPartTwo>
-          <ChapBtnDiv>
+          {/* Chap One End */}
+          {/* <ChapBtnDiv>
             <ChapBtn onClick={onClick}>Play Quiz</ChapBtn>
-          </ChapBtnDiv>
+          </ChapBtnDiv> */}
         </ChapItems>
       </ChapContent>
       <Footer />

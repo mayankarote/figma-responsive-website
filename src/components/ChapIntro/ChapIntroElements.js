@@ -14,7 +14,14 @@ export const ChapItems = styled.div`
   margin: 0 auto;
   @media screen and (max-width: 650px) {
     width: 100%;
-    padding: 1rem;
+    height: 100%;
+    background: #0c2651;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: Center;
+    align-items: flex-start;
+    align-content: flex-start;
   }
 `;
 export const ChapPartOne = styled.div`
@@ -36,8 +43,7 @@ export const ChapP = styled.p`
   color: #ffffff;
   text-align: left;
   @media screen and (max-width: 650px) {
-    margin-top: 3rem;
-    font-size: 20px;
+    font-size: 15px;
   }
 `;
 
@@ -45,8 +51,8 @@ export const ChapIcon = styled.img`
   cursor: pointer;
   padding: 0.5rem;
   @media screen and (max-width: 650px) {
-    margin-top: 3rem;
-    font-size: 20px;
+    width: 30px;
+    height: 30px;
   }
 `;
 
@@ -63,8 +69,10 @@ export const ChapGrayArrow = styled.div`
   align-items: center;
   border-radius: 15px 0px 0px 15px;
   @media screen and (max-width: 650px) {
-    width: 30px;
-    height: 45px;
+    width: 25px;
+    height: 40px;
+    margin-left: 3rem;
+    margin-top: 3rem;
   }
 `;
 
@@ -76,9 +84,9 @@ export const ChapGrayLine = styled.div`
   border: 1px solid rgba(255, 255, 255, 0.5);
   transform: rotate(270deg);
   @media screen and (max-width: 650px) {
-    margin-top: 32rem;
-    margin-left: 2.5rem;
-    width: 620px;
+    margin-top: 26rem;
+    margin-left: 2.1rem;
+    width: 500px;
   }
 `;
 export const ModelOne = styled.div`
@@ -120,7 +128,8 @@ export const ChapRectangle = styled.div`
   justify-content: center;
   align-items: center;
   @media screen and (max-width: 650px) {
-    font-size: 20px;
+    width: 500px;
+    height: 320px;
   }
 `;
 
@@ -145,10 +154,20 @@ export const ChapPTextList = styled.div`
     font-size: 15px;
   }
 `;
+
 export const ChapYellowP = styled.p`
   font-size: 28px;
   font-weight: 600;
   color: #ffc000;
+  @media screen and (max-width: 650px) {
+    font-size: 15px;
+  }
+`;
+
+export const ChapHightlightP = styled.label`
+  font-size: 18px;
+  color: #ffc000;
+  margin: 0.3rem;
   @media screen and (max-width: 650px) {
     font-size: 15px;
   }
