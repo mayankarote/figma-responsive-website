@@ -7,7 +7,7 @@ export const ChapContent = styled.div`
   background: #0c2651;
   height: 100vh;
   max-height: 100%;
-  padding: 0rem calc((100vw - 1600px) / 2);
+  padding: 0rem calc((100vw - 1700px) / 2);
 `;
 
 export const ChapItems = styled.div`
@@ -20,15 +20,15 @@ export const ChapItems = styled.div`
   background: #0c2651;
   @media screen and (max-width: 650px) {
     width: 100%;
+    padding: 1rem;
   }
 `;
 
-export const ChapP = styled.div`
+export const ChapP = styled.p`
   font-weight: 600;
   font-size: 20px;
   color: #ffffff;
-  margin-top: 5rem;
-
+  text-align: left;
   @media screen and (max-width: 650px) {
     margin-top: 3rem;
     font-size: 20px;
@@ -38,14 +38,12 @@ export const ChapP = styled.div`
 export const ChapIcon = styled.img`
   cursor: pointer;
   padding: 0.5rem;
-  margin-top: 5rem;
-
   @media screen and (max-width: 650px) {
-    width: 11px;
-    height: 11px;
     margin-top: 3rem;
+    font-size: 20px;
   }
 `;
+
 export const ModelOne = styled.div`
   display: flex;
   flex-wrap: wrap;
@@ -54,7 +52,6 @@ export const ModelOne = styled.div`
   align-items: center;
   align-content: center;
   background: pink;
-  margin: 2rem;
 `;
 
 export const ChapGrayArrow = styled.div`
@@ -63,22 +60,30 @@ export const ChapGrayArrow = styled.div`
   width: 32px;
   height: 48px;
   margin-left: 3rem;
-  margin-top: 1rem;
-
+  margin-top: 7rem;
   background: #c4c4c4;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 15px 0px 0px 15px;
+  @media screen and (max-width: 650px) {
+    width: 30px;
+    height: 45px;
+  }
 `;
 
 export const ChapGrayLine = styled.div`
   position: absolute;
-  width: 700px;
-  margin-left: 0.6rem;
-  margin-top: 34rem;
+  width: 720px;
+  margin-left: 0.1rem;
+  margin-top: 41rem;
   border: 1px solid rgba(255, 255, 255, 0.5);
   transform: rotate(270deg);
+  @media screen and (max-width: 650px) {
+    margin-top: 32rem;
+    margin-left: 2.5rem;
+    width: 620px;
+  }
 `;
 
 export const ChapP2 = styled.p`
@@ -90,23 +95,44 @@ export const ChapP2 = styled.p`
   }
 `;
 
-export const ChapModelP = styled.p`
-  font-weight: 600;
-  font-size: 25px;
-  color: white;
-  padding: 1rem;
+export const ChapItemsTwo = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: 0 auto;
+  background: #0c2651;
+  @media screen and (max-width: 650px) {
+    width: 100%;
+    padding: 1rem;
+  }
+`;
+
+export const ChapRectangle = styled.div`
+  width: 935px;
+  height: 330px;
+  background: #ffffff;
+  border-radius: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   @media screen and (max-width: 650px) {
     font-size: 20px;
   }
 `;
 
-export const ChapModelP2 = styled.p`
-  font-size: 18px;
-  color: white;
-  padding: 1rem;
-  @media screen and (max-width: 650px) {
-    font-size: 15px;
-  }
+export const ChapCircle = styled.div`
+  width: 92px;
+  height: 92px;
+  border: 1px solid #72747b;
+  box-sizing: border-box;
+  border-radius: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 `;
 export const ChapModelP3 = styled.p`
   font-size: 25px;

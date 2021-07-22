@@ -22,6 +22,9 @@ import {
   ChapNameBox,
   ModelOne,
   ChapP2,
+  ChapRectangle,
+  ChapItemsTwo,
+  ChapCircle,
 } from "./ChapIntroElements";
 
 export default function Chapdescription() {
@@ -46,12 +49,11 @@ export default function Chapdescription() {
             <CollapeIcon />
           </ChapGrayArrow>
           <ChapGrayLine />
-          <ModelOne></ModelOne>
-
-          {state && (
-            <>
-              {/* <ChapP2>Introduction to Light</ChapP2> */}
-              {/* <img
+          <ModelOne>
+            {state && (
+              <>
+                {/* <ChapP2>Introduction to Light</ChapP2> */}
+                {/* <img
                   src={horizontalLine}
                   alt=""
                   className="chap__horizontalLine"
@@ -81,15 +83,18 @@ export default function Chapdescription() {
                 <p className="chap__topic2">Important Facts</p>
                 <p className="chap__topic3">Types of Sources of light</p>
                 <p className="chap__topic4">Luminious and non luminous</p> */}
-            </>
-          )}
-
+              </>
+            )}
+          </ModelOne>
           {/* <HideShowcontent /> */}
+        </ChapItems>
 
-          {/* <div className="chap__bigRectangle">
-            <img src={blackplayBtn} alt="" className="blackplayBtn" />
-            <div className="smallCricle"></div>
-          </div>
+        <ChapItemsTwo>
+          <ChapRectangle>
+            <ChapCircle>
+              <ChapIcon src={blackplayBtn} alt="" />
+            </ChapCircle>
+          </ChapRectangle>
           <p className="chap__light">Light</p>
           <p className="chap__lightdescription">
             Light is a form of
@@ -109,8 +114,8 @@ export default function Chapdescription() {
             onClick={onClick}
           >
             Play Quiz
-          </button> */}
-        </ChapItems>
+          </button>
+        </ChapItemsTwo>
       </ChapContent>
       <Footer />
     </ChapContainer>
