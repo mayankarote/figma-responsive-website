@@ -5,39 +5,41 @@ export const ChapContainer = styled.div`
 `;
 export const ChapContent = styled.div`
   background: #0c2651;
-  height: 100vh;
   max-height: 100%;
-  padding: 0rem calc((100vw - 1700px) / 2);
+  height: calc(100vh - 1px);
   @media screen and (max-width: 650px) {
-    width: 100%;
     height: 100%;
   }
 `;
 
 export const ChapItems = styled.div`
   margin: 0 auto;
+  background: pink;
+  max-height: 100%;
   @media screen and (max-width: 650px) {
     width: 100%;
-    height: 100%;
-    background: #0c2651;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: Center;
-    align-items: flex-start;
-    align-content: flex-start;
   }
 `;
+
 export const ChapPartOne = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
   align-items: center;
   align-content: center;
-  margin: 0 auto;
+  background: yellow;
+  margin: 3rem;
   @media screen and (max-width: 650px) {
-    width: 100%;
-    padding: 1rem;
+    margin: 1.5rem;
+  }
+`;
+
+export const ChapPartTwo = styled.div`
+  margin: 3rem;
+  background: red;
+  @media screen and (max-width: 650px) {
+    margin-left: 2rem;
+    margin-top: 8rem;
   }
 `;
 
@@ -45,7 +47,6 @@ export const ChapP = styled.p`
   font-weight: 600;
   font-size: 20px;
   color: #ffffff;
-  text-align: left;
   @media screen and (max-width: 650px) {
     font-size: 15px;
   }
@@ -66,7 +67,6 @@ export const ChapGrayArrow = styled.div`
   width: 32px;
   height: 48px;
   margin-left: 3rem;
-  margin-top: 7rem;
   background: #c4c4c4;
   display: flex;
   justify-content: center;
@@ -75,21 +75,21 @@ export const ChapGrayArrow = styled.div`
   @media screen and (max-width: 650px) {
     width: 25px;
     height: 40px;
-    margin-left: 3rem;
+    margin-left: 1.3rem;
     margin-top: 3rem;
   }
 `;
 
 export const ChapGrayLine = styled.div`
   position: absolute;
-  width: 720px;
-  margin-left: 0.1rem;
-  margin-top: 41rem;
+  width: 600px;
+  margin-left: 3.1rem;
+  margin-top: 28rem;
   border: 1px solid rgba(255, 255, 255, 0.5);
   transform: rotate(270deg);
   @media screen and (max-width: 650px) {
     margin-top: 21rem;
-    margin-left: 4.6rem;
+    margin-left: 2.9rem;
     width: 400px;
   }
 `;
@@ -113,20 +113,6 @@ export const ChapP2 = styled.p`
   }
 `;
 
-export const ChapPartTwo = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: center;
-  align-content: center;
-  margin-left: 5rem;
-  @media screen and (max-width: 650px) {
-    margin-left: 0rem;
-    margin-top: 18rem;
-  }
-`;
-
 export const ChapRectangle = styled.div`
   width: 900px;
   height: 320px;
@@ -136,22 +122,24 @@ export const ChapRectangle = styled.div`
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  align-content: center;
   @media screen and (max-width: 650px) {
-    width: 280px;
+    width: 250px;
     height: 180px;
   }
 `;
 
 export const ChapCircle = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
   width: 92px;
   height: 92px;
   border: 1px solid #72747b;
   box-sizing: border-box;
   border-radius: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
   @media screen and (max-width: 650px) {
     width: 42px;
     height: 42px;
@@ -161,7 +149,7 @@ export const ChapCircle = styled.div`
 export const ChapPTextList = styled.div`
   font-size: 18px;
   color: #ffc000;
-  padding: 2rem;
+  padding: 1rem;
   line-height: 2rem;
   @media screen and (max-width: 650px) {
     font-size: 15px;
@@ -174,7 +162,8 @@ export const ChapYellowP = styled.p`
   font-weight: 600;
   color: #ffc000;
   @media screen and (max-width: 650px) {
-    font-size: 22px;
+    font-size: 25px;
+    margin-bottom: 1rem;
   }
 `;
 
@@ -190,7 +179,6 @@ export const ChapHightlightP = styled.label`
 export const ChapWhiteP = styled.p`
   font-size: 20px;
   color: #ffffff;
-  text-align: left;
   @media screen and (max-width: 650px) {
     font-size: 15px;
     line-height: 1rem;
@@ -212,9 +200,9 @@ export const ChapBtnDiv = styled.div`
   justify-content: flex-end;
   align-items: center;
   align-content: center;
+  margin-left: 8rem;
   @media screen and (max-width: 650px) {
-    margin: 0.5rem;
-    margin-left: 8rem;
+    margin: 3rem;
   }
 `;
 export const ChapBtn = styled.button`

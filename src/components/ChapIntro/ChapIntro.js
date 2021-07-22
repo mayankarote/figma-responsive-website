@@ -49,21 +49,23 @@ export default function Chapdescription() {
     <ChapContainer>
       <ChapContent>
         <ChapItems>
-          <ChapPartOne>
-            {/* Chap One Start */}
-            <ChapP>Light</ChapP>
-            <ChapIcon src={play} alt="" />
-            <ChapP>Introduction to light </ChapP>
+          <div className="row" style={{ backgroundColor: "black" }}>
+            <div className="column" style={{ backgroundColor: "grey" }}>
+              <ChapPartOne>
+                {/* Chap One Start */}
+                <ChapP>Light</ChapP>
+                <ChapIcon src={play} alt="" />
+                <ChapP>Introduction to light </ChapP>
 
-            <ChapGrayArrow onClick={() => setState((v) => !v)}>
-              <CollapeIcon />
-            </ChapGrayArrow>
-            <ChapGrayLine />
-            {/* <ModelOne> */}
-            {state && (
-              <>
-                {/* <ChapP2>Introduction to Light</ChapP2> */}
-                {/* <img
+                <ChapGrayArrow onClick={() => setState((v) => !v)}>
+                  <CollapeIcon />
+                </ChapGrayArrow>
+                <ChapGrayLine />
+                {/* <ModelOne> */}
+                {state && (
+                  <>
+                    {/* <ChapP2>Introduction to Light</ChapP2> */}
+                    {/* <img
                   src={horizontalLine}
                   alt=""
                   className="chap__horizontalLine"
@@ -93,43 +95,49 @@ export default function Chapdescription() {
                 <p className="chap__topic2">Important Facts</p>
                 <p className="chap__topic3">Types of Sources of light</p>
                 <p className="chap__topic4">Luminious and non luminous</p> */}
-              </>
-            )}
-            {/* </ModelOne> */}
-            {/* <HideShowcontent /> */}
-          </ChapPartOne>
-          {/* Chap One End */}
-          <ChapPartTwo>
-            {/* Chap Two Start */}
-            <ChapRectangle>
-              <ChapCircle>
-                <ChapIcon src={blackplayBtn} alt="" />
-              </ChapCircle>
-            </ChapRectangle>
+                  </>
+                )}
+                {/* </ModelOne> */}
+                {/* <HideShowcontent /> */}
+              </ChapPartOne>
+            </div>
+            {/* Chap One End */}
+            <div
+              className="column"
+              style={{ backgroundColor: "rebeccapurple" }}
+            >
+              <ChapPartTwo>
+                {/* Chap Two Start */}
+                <ChapRectangle>
+                  <ChapCircle>
+                    <ChapIcon src={blackplayBtn} alt="" />
+                  </ChapCircle>
+                </ChapRectangle>
+                <ChapPTextList>
+                  <ChapYellowP>Light</ChapYellowP>
 
-            <ChapPTextList>
-              <ChapYellowP>Light</ChapYellowP>
-
-              <ChapWhiteP>
-                Light is a form of
-                <ChapHightlightP> energy </ChapHightlightP>
-                which makes things
-                <ChapHightlightP> visible.</ChapHightlightP>
-              </ChapWhiteP>
-
-              <ChapWhiteBoldP>
-                An object becomes visible to us when light after striking the
-                object reaches our eye
-              </ChapWhiteBoldP>
-              <ChapWhiteBoldP>
-                Light itself is not visible, but it makes objects visible to us
-              </ChapWhiteBoldP>
-            </ChapPTextList>
-          </ChapPartTwo>
-          {/* Chap One End */}
-          <ChapBtnDiv>
-            <ChapBtn onClick={onClick}>Play Quiz</ChapBtn>
-          </ChapBtnDiv>
+                  <ChapWhiteP>
+                    Light is a form of
+                    <ChapHightlightP> energy </ChapHightlightP>
+                    which makes things
+                    <ChapHightlightP> visible.</ChapHightlightP>
+                  </ChapWhiteP>
+                  <ChapWhiteBoldP>
+                    An object becomes visible to us when light after striking
+                    the object reaches our eye
+                  </ChapWhiteBoldP>
+                  <ChapWhiteBoldP>
+                    Light itself is not visible, but it makes objects visible to
+                    us
+                  </ChapWhiteBoldP>
+                </ChapPTextList>
+              </ChapPartTwo>
+              {/* Chap One End */}
+              {/* <ChapBtnDiv>
+                <ChapBtn onClick={onClick}>Play Quiz</ChapBtn>
+              </ChapBtnDiv> */}
+            </div>
+          </div>
         </ChapItems>
       </ChapContent>
       <Footer />
