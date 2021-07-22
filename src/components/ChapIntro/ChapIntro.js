@@ -99,8 +99,8 @@ export default function Chapdescription() {
             {/* <HideShowcontent /> */}
           </ChapPartOne>
           {/* Chap One End */}
-          {/* Chap Two Start */}
-          {/* <ChapPartTwo>
+          <ChapPartTwo>
+            {/* Chap Two Start */}
             <ChapRectangle>
               <ChapCircle>
                 <ChapIcon src={blackplayBtn} alt="" />
@@ -127,9 +127,9 @@ export default function Chapdescription() {
             </ChapPTextList>
           </ChapPartTwo>
           {/* Chap One End */}
-          {/* <ChapBtnDiv>
+          <ChapBtnDiv>
             <ChapBtn onClick={onClick}>Play Quiz</ChapBtn>
-          </ChapBtnDiv> */}
+          </ChapBtnDiv>
         </ChapItems>
       </ChapContent>
       <Footer />
