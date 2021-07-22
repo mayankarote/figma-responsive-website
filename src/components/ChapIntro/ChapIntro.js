@@ -5,6 +5,10 @@ import CollapeIcon from "../../assests/icons/CollapseIcon";
 import blackplayBtn from "../../assests/blackplayBtn.png";
 import { useHistory } from "react-router-dom";
 import HideShowcontent from "./HideShowcontent";
+import horizontalLine from "../../assests/horizontalLine.png";
+import zigzagLine from "../../assests/zigzagLine.png";
+import zigzagCircle from "../../assests/zigzagCircle.png";
+
 import Footer from "../Footer";
 import {
   ChapContainer,
@@ -17,6 +21,7 @@ import {
   ChapGrayLine,
   ChapNameBox,
   ModelOne,
+  ChapP2,
 } from "./ChapIntroElements";
 
 export default function Chapdescription() {
@@ -33,17 +38,54 @@ export default function Chapdescription() {
     <ChapContainer>
       <ChapContent>
         <ChapItems>
-          <ChapP>Light </ChapP>
+          <ChapP>Light</ChapP>
           <ChapIcon src={play} alt="" />
           <ChapP>Introduction to light </ChapP>
-          <ModelOne>
-            {/* <ChapGrayArrow onClick={() => setState((v) => !v)}>
+
+          <ChapGrayArrow onClick={() => setState((v) => !v)}>
             <CollapeIcon />
           </ChapGrayArrow>
-          <ChapGrayLine /> */}
+          <ChapGrayLine />
+          <ModelOne></ModelOne>
 
-            {state && <HideShowcontent />}
-          </ModelOne>
+          {state && (
+            <>
+              {/* <ChapP2>Introduction to Light</ChapP2> */}
+              {/* <img
+                  src={horizontalLine}
+                  alt=""
+                  className="chap__horizontalLine"
+                />
+                <img src={zigzagLine} alt="" className="chap__zigzagLine" />
+                <img
+                  src={zigzagCircle}
+                  alt=""
+                  className="chap__zigzagCircle1"
+                />
+                <img
+                  src={zigzagCircle}
+                  alt=""
+                  className="chap__zigzagCircle2"
+                />
+                <img
+                  src={zigzagCircle}
+                  alt=""
+                  className="chap__zigzagCircle3"
+                />
+                <img
+                  src={zigzagCircle}
+                  alt=""
+                  className="chap__zigzagCircle4"
+                />
+                <p className="chap__topic1">Light</p>
+                <p className="chap__topic2">Important Facts</p>
+                <p className="chap__topic3">Types of Sources of light</p>
+                <p className="chap__topic4">Luminious and non luminous</p> */}
+            </>
+          )}
+
+          {/* <HideShowcontent /> */}
+
           {/* <div className="chap__bigRectangle">
             <img src={blackplayBtn} alt="" className="blackplayBtn" />
             <div className="smallCricle"></div>

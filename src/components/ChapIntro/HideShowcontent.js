@@ -7,7 +7,6 @@ import { ChapP2 } from "./ChapIntroElements";
 function HideShowcontent() {
   return (
     <>
-      <ChapP2>Introduction to Light</ChapP2>
       <img src={horizontalLine} alt="" className="chap__horizontalLine" />
       <img src={zigzagLine} alt="" className="chap__zigzagLine" />
       <img src={zigzagCircle} alt="" className="chap__zigzagCircle1" />

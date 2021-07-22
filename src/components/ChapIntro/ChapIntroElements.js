@@ -7,7 +7,7 @@ export const ChapContent = styled.div`
   background: #0c2651;
   height: 100vh;
   max-height: 100%;
-  padding: 0rem calc((100vw - 1700px) / 2);
+  padding: 0rem calc((100vw - 1600px) / 2);
 `;
 
 export const ChapItems = styled.div`
@@ -23,27 +23,12 @@ export const ChapItems = styled.div`
   }
 `;
 
-export const ModelTwo = styled.div`
-  width: 500px;
-  height: 300px;
-  margin: 4rem;
-  background-color: #ffffff;
-  box-shadow: 0px 12px 35px rgba(160, 121, 0, 0.2);
-  border-radius: 10px;
-  padding: 1rem;
-  @media screen and (max-width: 650px) {
-    width: 250px;
-    height: 300px;
-    margin: 3rem;
-  }
-`;
-export const ChapP = styled.p`
+export const ChapP = styled.div`
   font-weight: 600;
   font-size: 20px;
   color: #ffffff;
-  text-align: center;
-  padding: 1rem;
-  margin-top: 3rem;
+  margin-top: 5rem;
+
   @media screen and (max-width: 650px) {
     margin-top: 3rem;
     font-size: 20px;
@@ -52,24 +37,24 @@ export const ChapP = styled.p`
 
 export const ChapIcon = styled.img`
   cursor: pointer;
-  margin-top: 3rem;
+  padding: 0.5rem;
+  margin-top: 5rem;
+
   @media screen and (max-width: 650px) {
     width: 11px;
     height: 11px;
     margin-top: 3rem;
   }
 `;
-
 export const ModelOne = styled.div`
-  width: 500px;
-  height: 300px;
-  margin: 4rem;
-  padding: 1rem;
-  @media screen and (max-width: 650px) {
-    width: 250px;
-    height: 300px;
-    margin: 3rem;
-  }
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  background: pink;
+  margin: 2rem;
 `;
 
 export const ChapGrayArrow = styled.div`
@@ -77,31 +62,29 @@ export const ChapGrayArrow = styled.div`
   z-index: 3;
   width: 32px;
   height: 48px;
-  margin-left: 0px;
-  margin-top: 259px;
+  margin-left: 3rem;
+  margin-top: 1rem;
+
+  background: #c4c4c4;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #c4c4c4;
   border-radius: 15px 0px 0px 15px;
 `;
 
 export const ChapGrayLine = styled.div`
+  position: absolute;
   width: 700px;
-  height: 0px;
+  margin-left: 0.6rem;
+  margin-top: 34rem;
   border: 1px solid rgba(255, 255, 255, 0.5);
-  transform: rotate(90deg);
-  background: yellow;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  transform: rotate(270deg);
 `;
 
 export const ChapP2 = styled.p`
   font-size: 28px;
   font-weight: 600;
   color: #ffc000;
-  text-align: center;
   @media screen and (max-width: 650px) {
     font-size: 15px;
   }

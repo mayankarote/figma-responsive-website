@@ -2,15 +2,15 @@ import styled from "styled-components";
 
 export const SubjectContainer = styled.div`
   max-height: 100vh;
+  max-height: 100%;
 `;
 export const SubjectContent = styled.div`
   max-height: 100%;
   background: #0c2651;
-  height: 100vh;
   padding: 0rem calc((100vw - 1500px) / 2);
   // may be hyala del karav lagel .....
   @media screen and (max-width: 650px) {
-    height: calc(100vh + 700px);
+    max-height: 100%;
   }
 `;
 
