@@ -52,7 +52,6 @@ export default function Chapdetail() {
             </div>
             <div className="column" style={{ backgroundColor: "sienna" }}>
               <ChapRectangle>
-                {" "}
                 <img
                   src={smallCircle1}
                   alt=""
