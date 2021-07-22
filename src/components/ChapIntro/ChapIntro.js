@@ -15,6 +15,7 @@ import {
   ChapContent,
   ChapIcon,
   ChapItems,
+  ChapPartOne,
   ChapP,
   ChapGrayAL,
   ChapGrayArrow,
@@ -23,8 +24,12 @@ import {
   ModelOne,
   ChapP2,
   ChapRectangle,
-  ChapItemsTwo,
+  ChapPartTwo,
   ChapCircle,
+  ChapPList,
+  ChapYellowP,
+  ChapWhiteP,
+  ChapWhiteBoldP,
 } from "./ChapIntroElements";
 
 export default function Chapdescription() {
@@ -41,19 +46,20 @@ export default function Chapdescription() {
     <ChapContainer>
       <ChapContent>
         <ChapItems>
-          <ChapP>Light</ChapP>
-          <ChapIcon src={play} alt="" />
-          <ChapP>Introduction to light </ChapP>
+          <ChapPartOne>
+            <ChapP>Light</ChapP>
+            <ChapIcon src={play} alt="" />
+            <ChapP>Introduction to light </ChapP>
 
-          <ChapGrayArrow onClick={() => setState((v) => !v)}>
-            <CollapeIcon />
-          </ChapGrayArrow>
-          <ChapGrayLine />
-          <ModelOne>
-            {state && (
-              <>
-                {/* <ChapP2>Introduction to Light</ChapP2> */}
-                {/* <img
+            <ChapGrayArrow onClick={() => setState((v) => !v)}>
+              <CollapeIcon />
+            </ChapGrayArrow>
+            <ChapGrayLine />
+            <ModelOne>
+              {state && (
+                <>
+                  {/* <ChapP2>Introduction to Light</ChapP2> */}
+                  {/* <img
                   src={horizontalLine}
                   alt=""
                   className="chap__horizontalLine"
@@ -83,39 +89,42 @@ export default function Chapdescription() {
                 <p className="chap__topic2">Important Facts</p>
                 <p className="chap__topic3">Types of Sources of light</p>
                 <p className="chap__topic4">Luminious and non luminous</p> */}
-              </>
-            )}
-          </ModelOne>
-          {/* <HideShowcontent /> */}
-        </ChapItems>
+                </>
+              )}
+            </ModelOne>
+            {/* <HideShowcontent /> */}
+          </ChapPartOne>
 
-        <ChapItemsTwo>
-          <ChapRectangle>
-            <ChapCircle>
-              <ChapIcon src={blackplayBtn} alt="" />
-            </ChapCircle>
-          </ChapRectangle>
-          <p className="chap__light">Light</p>
-          <p className="chap__lightdescription">
-            Light is a form of
-            <label className="chap__lightdescription_text"> energy </label>
-            which makes things
-            <label className="chap__lightdescription_text"> visible.</label>
-          </p>
-          <p className="chap__lightdescription2">
-            An object becomes visible to us when light after striking the object
-            reaches our eye
-          </p>
-          <p className="chap__lightdescription3">
-            Light itself is not visible, but it makes objects visible to us
-          </p>
-          <button
-            className="chap__playQuiz chap__playQuiztext"
-            onClick={onClick}
-          >
-            Play Quiz
-          </button>
-        </ChapItemsTwo>
+          <ChapPartTwo>
+            <ChapRectangle>
+              <ChapCircle>
+                <ChapIcon src={blackplayBtn} alt="" />
+              </ChapCircle>
+            </ChapRectangle>
+            <ChapPList>
+              <ChapYellowP>Light</ChapYellowP>
+              <ChapWhiteP>
+                Light is a form of
+                <label className="chap__lightdescription_text"> energy </label>
+                which makes things
+                <label className="chap__lightdescription_text"> visible.</label>
+              </ChapWhiteP>
+              <ChapWhiteBoldP>
+                An object becomes visible to us when light after striking the
+                object reaches our eye
+              </ChapWhiteBoldP>
+              <ChapWhiteBoldP>
+                Light itself is not visible, but it makes objects visible to us
+              </ChapWhiteBoldP>
+            </ChapPList>
+            <button
+              className="chap__playQuiz chap__playQuiztext"
+              onClick={onClick}
+            >
+              Play Quiz
+            </button>
+          </ChapPartTwo>
+        </ChapItems>
       </ChapContent>
       <Footer />
     </ChapContainer>
