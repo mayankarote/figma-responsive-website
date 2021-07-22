@@ -9,7 +9,19 @@ import zigzagCircle from "../../assests/zigzagCircle.png";
 import smallCircle1 from "../../assests/smallCircle1.png";
 import colorfulRing from "../../assests/colorfulRing.png";
 import { useHistory } from "react-router-dom";
+import CollapeIcon from "../../assests/icons/CollapseIcon";
 import Footer from "../Footer";
+import {
+  ChapContainer,
+  ChapContent,
+  ChapGrayArrow,
+  ChapGrayLine,
+  ChapIcon,
+  ChapItems,
+  ChapP,
+  ChapPartOne,
+  ChapRectangle,
+} from "./ChapIntroElements";
 
 export default function Chapdetail() {
   const [state, setState] = useState(false);
@@ -21,41 +33,34 @@ export default function Chapdetail() {
     });
   };
   return (
-    <div className="chapdetaildetail">
-      <div className="chapdetaildetail__container">
-        <div className="chapdetaildetail__container1">
-          <div className="chapdetail__nameBox">
-            <p className="chapdetail__name1">Light </p>
-            <img
-              src={play}
-              alt=""
-              className="chapdetail__play"
-              onClick={() => setState(!state)}
-            />
-            {state && (
-              <p className="chapdetail__name2">Introduction to light </p>
-            )}
-          </div>
-          <div>
-            <img
-              src={verticleLine}
-              alt=""
-              className="chapdetail__verticleLine"
-            />
-            <img src={rectangle} alt="" className="chapdetail__rectangle" />
-            <img src={triangle} alt="" className="chapdetail__triangle" />
-            <img
-              src={smalltriangle}
-              alt=""
-              className="chapdetail__smalltriangle"
-            />
-            <div className="chapdetail__descriptionBigRectangle"></div>
-            <div className="chapdetail__smallCircleBox">
-              <img
-                src={smallCircle1}
-                alt=""
-                className="chapdetail__smallCircle1"
-              />
+    <ChapContainer>
+      <ChapContent>
+        <ChapItems>
+          <div className="row" style={{ backgroundColor: "black" }}>
+            <div className="column" style={{ backgroundColor: "grey" }}>
+              <ChapPartOne>
+                {/* Chap One Start */}
+                <ChapP>Light</ChapP>
+                <ChapIcon src={play} alt="" />
+                <ChapP>Introduction to light </ChapP>
+
+                <ChapGrayArrow onClick={() => setState((v) => !v)}>
+                  <CollapeIcon />
+                </ChapGrayArrow>
+                <ChapGrayLine />
+              </ChapPartOne>
+            </div>
+            <div className="column" style={{ backgroundColor: "sienna" }}>
+              <ChapRectangle>
+                {" "}
+                <img
+                  src={smallCircle1}
+                  alt=""
+                  className="chapdetail__smallCircle1"
+                />
+              </ChapRectangle>
+            </div>
+            {/* <div className="chapdetail__smallCircleBox">
               <p className="chapdetail__smallCircle1text">1</p>
               <img
                 src={zigzagCircle}
@@ -81,18 +86,18 @@ export default function Chapdetail() {
               <button className="chap__falseBtn chap__falseBtntext">
                 True
               </button>
-            </div>
+            </div> */}
 
-            <button
+            {/* <button
               className="chapdetail__playQuiz chapdetail__playQuiztext"
               onClick={onClick}
             >
               Back To Lesson
-            </button>
+            </button> */}
           </div>
-        </div>
-        <Footer />
-      </div>
-    </div>
+        </ChapItems>
+      </ChapContent>
+      <Footer />
+    </ChapContainer>
   );
 }
