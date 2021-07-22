@@ -59,8 +59,8 @@ export default function Chapters() {
             </>
           ))}
         </ChapItems>
-        <Footer />
       </ChapContent>
+      <Footer />
     </ChapContainer>
   );
 }

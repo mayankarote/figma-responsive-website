@@ -49,8 +49,8 @@ export default function Chapdescription() {
     <ChapContainer>
       <ChapContent>
         <ChapItems>
-          <div className="row" style={{ backgroundColor: "black" }}>
-            <div className="column" style={{ backgroundColor: "grey" }}>
+          <div className="row">
+            <div className="column">
               <ChapPartOne>
                 {/* Chap One Start */}
                 <ChapP>Light</ChapP>
@@ -102,10 +102,7 @@ export default function Chapdescription() {
               </ChapPartOne>
             </div>
             {/* Chap One End */}
-            <div
-              className="column"
-              style={{ backgroundColor: "rebeccapurple" }}
-            >
+            <div className="column">
               <ChapPartTwo>
                 {/* Chap Two Start */}
                 <ChapRectangle>

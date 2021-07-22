@@ -9,12 +9,12 @@ export const ChapContent = styled.div`
   height: calc(100vh - 1px);
   @media screen and (max-width: 650px) {
     height: 100%;
+    width: 100%;
   }
 `;
 
 export const ChapItems = styled.div`
   margin: 0 auto;
-  background: pink;
   max-height: 100%;
   @media screen and (max-width: 650px) {
     width: 100%;
@@ -27,7 +27,6 @@ export const ChapPartOne = styled.div`
   justify-content: flex-start;
   align-items: center;
   align-content: center;
-  background: yellow;
   margin: 3rem;
   @media screen and (max-width: 650px) {
     margin: 1.5rem;
@@ -36,7 +35,6 @@ export const ChapPartOne = styled.div`
 
 export const ChapPartTwo = styled.div`
   margin: 3rem;
-  background: red;
   @media screen and (max-width: 650px) {
     margin-left: 2rem;
     margin-top: 8rem;
