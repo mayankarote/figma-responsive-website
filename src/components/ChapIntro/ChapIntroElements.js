@@ -7,6 +7,7 @@ export const ChapContent = styled.div`
   background: #0c2651;
   max-height: 100%;
   height: calc(100vh - 1px);
+  padding: 0rem calc((100vw - 1600px) / 2);
   @media screen and (max-width: 850px) {
     height: 100%;
     width: 100%;
@@ -32,7 +33,6 @@ export const ChapPartOne = styled.div`
   align-items: flex-start;
   align-content: flex-start;
   margin: 3rem;
-  background: pink;
   @media screen and (max-width: 650px) {
     margin-left: 2rem;
   }
@@ -105,10 +105,9 @@ export const ModelOne = styled.div`
   justify-content: flex-start;
   align-items: flex-start;
   align-content: flex-start;
-  background: black;
   margin: 2rem;
   @media screen and (max-width: 650px) {
-    margin: 1rem;
+    margin-left: 2rem;
   }
 `;
 

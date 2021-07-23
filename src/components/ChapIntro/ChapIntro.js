@@ -1,13 +1,9 @@
 import React, { useState } from "react";
-import "./ChapIntro.css";
 import play from "../../assests/play.png";
 import CollapeIcon from "../../assests/icons/CollapseIcon";
 import blackplayBtn from "../../assests/blackplayBtn.png";
 import { useHistory } from "react-router-dom";
 import HideShowcontent from "./HideShowcontent";
-import horizontalLine from "../../assests/horizontalLine.png";
-import zigzagLine from "../../assests/zigzagLine.png";
-import zigzagCircle from "../../assests/zigzagCircle.png";
 
 import Footer from "../Footer";
 import {
@@ -17,12 +13,9 @@ import {
   ChapItems,
   ChapPartOne,
   ChapP,
-  ChapGrayAL,
   ChapGrayArrow,
   ChapGrayLine,
-  ChapNameBox,
   ModelOne,
-  ChapP2,
   ChapRectangle,
   ChapPartTwo,
   ChapCircle,
@@ -97,11 +90,11 @@ export default function Chapdescription() {
                     us
                   </ChapWhiteBoldP>
                 </ChapPTextList>
+                <ChapBtnDiv>
+                  <ChapBtn onClick={onClick}>Play Quiz</ChapBtn>
+                </ChapBtnDiv>
               </ChapPartTwo>
               {/* Chap One End */}
-              {/* <ChapBtnDiv>
-                <ChapBtn onClick={onClick}>Play Quiz</ChapBtn>
-              </ChapBtnDiv> */}
             </div>
           </div>
         </ChapItems>
