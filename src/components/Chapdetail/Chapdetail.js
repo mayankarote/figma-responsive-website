@@ -1,13 +1,7 @@
 import React, { useState } from "react";
 import "./Chapdetail.css";
 import play from "../../assests/play.png";
-import verticleLine from "../../assests/Line.png";
-import rectangle from "../../assests/Rectangle.png";
-import triangle from "../../assests/Triangle.png";
-import smalltriangle from "../../assests/smallTriangle.png";
 import zigzagCircle from "../../assests/zigzagCircle.png";
-import smallCircle1 from "../../assests/smallCircle1.png";
-import colorfulRing from "../../assests/colorfulRing.png";
 import { useHistory } from "react-router-dom";
 import CollapeIcon from "../../assests/icons/CollapseIcon";
 import Footer from "../Footer";
@@ -49,8 +43,8 @@ export default function Chapdetail() {
     <CDContainer>
       <CDContent>
         <CDItems>
-          <div className="row" style={{ backgroundColor: "black" }}>
-            <div className="column" style={{ backgroundColor: "grey" }}>
+          <div className="row">
+            <div className="column">
               <CDPartOne>
                 <CDP>Light</CDP>
                 <CDIcon src={play} alt="" />
@@ -64,7 +58,7 @@ export default function Chapdetail() {
                 <CDGrayLine />
               </CDModelOne>
             </div>
-            <div className="column" style={{ backgroundColor: "sienna" }}>
+            <div className="column" style={{ backgroundColor: "" }}>
               <CDPartTwo>
                 <CDRectangle>
                   <CDGroupOne>
