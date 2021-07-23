@@ -7,7 +7,7 @@ export const ChapContent = styled.div`
   background: #0c2651;
   max-height: 100%;
   height: calc(100vh - 1px);
-  @media screen and (max-width: 650px) {
+  @media screen and (max-width: 850px) {
     height: 100%;
     width: 100%;
   }
@@ -19,17 +19,22 @@ export const ChapItems = styled.div`
   @media screen and (max-width: 650px) {
     width: 100%;
   }
+  @media screen and (max-width: 768px) {
+    max-width: 100%;
+    height: 100%;
+  }
 `;
 
 export const ChapPartOne = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-  align-items: center;
-  align-content: center;
+  align-items: flex-start;
+  align-content: flex-start;
   margin: 3rem;
+  background: pink;
   @media screen and (max-width: 650px) {
-    margin: 1.5rem;
+    margin-left: 2rem;
   }
 `;
 
@@ -37,7 +42,7 @@ export const ChapPartTwo = styled.div`
   margin: 3rem;
   @media screen and (max-width: 650px) {
     margin-left: 2rem;
-    margin-top: 8rem;
+    margin-top: 10rem;
   }
 `;
 
@@ -47,6 +52,7 @@ export const ChapP = styled.p`
   color: #ffffff;
   @media screen and (max-width: 650px) {
     font-size: 15px;
+    margin-top: 0.2rem;
   }
 `;
 
@@ -73,47 +79,92 @@ export const ChapGrayArrow = styled.div`
   @media screen and (max-width: 650px) {
     width: 25px;
     height: 40px;
-    margin-left: 1.3rem;
-    margin-top: 3rem;
+    margin-left: 0.7rem;
+    margin-top: 1rem;
   }
 `;
 
 export const ChapGrayLine = styled.div`
   position: absolute;
-  width: 600px;
-  margin-left: 3.1rem;
-  margin-top: 28rem;
+  width: 500px;
+  margin-left: 5.6rem;
+  margin-top: 13rem;
   border: 1px solid rgba(255, 255, 255, 0.5);
   transform: rotate(270deg);
   @media screen and (max-width: 650px) {
-    margin-top: 21rem;
-    margin-left: 2.9rem;
-    width: 400px;
+    margin-top: 8.5rem;
+    margin-left: 5rem;
+    width: 290px;
   }
 `;
 
 export const ModelOne = styled.div`
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: no-wrap;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  background: pink;
+  justify-content: flex-start;
+  align-items: flex-start;
+  align-content: flex-start;
+  background: black;
+  margin: 2rem;
+  @media screen and (max-width: 650px) {
+    margin: 1rem;
+  }
+`;
+
+export const ChapHorizontalLine = styled.div`
+  width: 180px;
+  height: 1px;
+  background: #c4c4c4;
+  opacity: 0.28;
+  border-radius: 20px;
+  transform: matrix(1, 0, 0, -1, 0, 0);
+`;
+
+export const ChapZigzagLine = styled.img`
+  width: 25px;
+  height: 190px;
+`;
+
+export const ChapZigzagGroup = styled.div`
+  margin-top: -8rem;
+  margin-left: 0.7rem;
+`;
+export const ChapZigzagCircle = styled.img`
+  width: 22px;
+  height: 22px;
+  margin-bottom: 1rem;
+  @media screen and (max-width: 650px) {
+    width: 20px;
+    height: 20px;
+  }
 `;
 
 export const ChapP2 = styled.p`
-  font-size: 28px;
+  font-size: 20px;
   font-weight: 600;
   color: #ffc000;
   @media screen and (max-width: 650px) {
-    font-size: 15px;
+    font-size: 18px;
+    margin: 0.5rem;
+  }
+`;
+export const ChapZigzagGroupTwo = styled.div`
+  margin-top: -9rem;
+  margin-left: 2.2rem;
+`;
+export const ChapP3 = styled.p`
+  font-size: 18px;
+  margin-top: 0.9rem;
+  color: #fff;
+  @media screen and (max-width: 650px) {
+    font-size: 14px;
   }
 `;
 
 export const ChapRectangle = styled.div`
-  width: 900px;
-  height: 320px;
+  width: 680px;
+  height: 300px;
   background: #ffffff;
   border-radius: 20px;
   display: flex;
