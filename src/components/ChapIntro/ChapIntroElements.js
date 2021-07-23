@@ -34,7 +34,7 @@ export const ChapPartOne = styled.div`
   align-content: flex-start;
   margin: 3rem;
   @media screen and (max-width: 650px) {
-    margin-left: 2rem;
+    margin-left: 1.5rem;
   }
 `;
 
@@ -79,7 +79,7 @@ export const ChapGrayArrow = styled.div`
   @media screen and (max-width: 650px) {
     width: 25px;
     height: 40px;
-    margin-left: 0.7rem;
+    margin-left: 1rem;
     margin-top: 1rem;
   }
 `;
@@ -93,7 +93,7 @@ export const ChapGrayLine = styled.div`
   transform: rotate(270deg);
   @media screen and (max-width: 650px) {
     margin-top: 8.5rem;
-    margin-left: 5rem;
+    margin-left: 5.3rem;
     width: 290px;
   }
 `;

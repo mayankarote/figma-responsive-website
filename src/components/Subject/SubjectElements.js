@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const SubjectContainer = styled.div`
   max-height: 100vh;
-  max-height: 100%;
+  background: #0c2651;
 `;
 export const SubjectContent = styled.div`
   max-height: 100%;

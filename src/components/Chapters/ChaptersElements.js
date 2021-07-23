@@ -1,12 +1,13 @@
 import styled from "styled-components";
 
 export const ChapContainer = styled.div`
-  max-height: 100vh;
+  height: 100vh;
+  background: #0c2651;
 `;
+
 export const ChapContent = styled.div`
   max-height: 100%;
-  height: calc(100vh - 10px);
-  background: #0c2651;
+  height: calc(100vh - 1px);
   padding: 0rem calc((100vw - 1800px) / 2);
 `;
 
@@ -34,10 +35,10 @@ export const WhiteFourCard = styled.div`
   border-radius: 10px;
   opacity: 0.95;
   @media screen and (max-width: 650px) {
-    width: 430px;
+    width: 440px;
     height: 300px;
-    margin: 3rem;
-    padding: 0.5rem;
+    margin: 2rem;
+    padding: 0.3rem;
   }
 `;
 
