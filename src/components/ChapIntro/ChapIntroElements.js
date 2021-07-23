@@ -64,13 +64,17 @@ export const ChapIcon = styled.img`
     height: 30px;
   }
 `;
+export const ChapGrayGroup = styled.div`
+  // cursor: pointer;
+  margin: 1rem;
+`;
 
 export const ChapGrayArrow = styled.div`
   cursor: pointer;
   z-index: 3;
   width: 32px;
   height: 48px;
-  margin-left: 3rem;
+  margin-left: 2rem;
   background: #c4c4c4;
   display: flex;
   justify-content: center;
@@ -88,7 +92,7 @@ export const ChapGrayLine = styled.div`
   position: absolute;
   width: 500px;
   margin-left: 5.6rem;
-  margin-top: 13rem;
+  margin-top: 15rem;
   border: 1px solid rgba(255, 255, 255, 0.5);
   transform: rotate(270deg);
   @media screen and (max-width: 650px) {

@@ -76,7 +76,7 @@ export const CDGrayArrow = styled.div`
   @media screen and (max-width: 650px) {
     width: 25px;
     height: 40px;
-    margin-left: -7rem;
+    margin-left: -8rem;
     margin-top: -0.5rem;
   }
   @media screen and (max-width: 768px) {
@@ -98,8 +98,8 @@ export const CDGrayLine = styled.div`
     width: 230px;
   }
   @media screen and (max-width: 768px) {
-    margin-top: 15rem;
-    margin-left: -10rem;
+    margin-top: 17rem;
+    margin-left: -9rem;
     width: 300px;
   }
 `;
