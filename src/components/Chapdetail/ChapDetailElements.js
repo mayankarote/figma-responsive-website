@@ -69,7 +69,7 @@ export const CDGrayArrow = styled.div`
   z-index: 3;
   width: 32px;
   height: 48px;
-  margin-left: 3rem;
+  margin-left: 1rem;
   background: #c4c4c4;
   display: flex;
   justify-content: center;
@@ -80,22 +80,22 @@ export const CDGrayArrow = styled.div`
   @media screen and (max-width: 650px) {
     width: 25px;
     height: 40px;
-    margin-left: 1.3rem;
-    margin-top: 3rem;
+    margin-left: -5rem;
+    margin-top: -0.5rem;
   }
 `;
 
 export const CDGrayLine = styled.div`
   position: absolute;
   width: 480px;
-  margin-left: 1.5rem;
+  margin-left: -0.5rem;
   margin-top: 25rem;
   border: 1px solid rgba(255, 255, 255, 0.5);
   transform: rotate(270deg);
   @media screen and (max-width: 650px) {
-    margin-top: 8.5rem;
-    margin-left: 5rem;
-    width: 290px;
+    margin-top: 9rem;
+    margin-left: -6rem;
+    width: 230px;
   }
 `;
 
@@ -125,7 +125,7 @@ export const CDRectangle = styled.div`
   border-radius: 20px;
   padding: 1rem;
   width: 900px;
-  height: 400px;
+  height: 500px;
 
   @media screen and (max-width: 650px) {
     width: 250px;
@@ -183,6 +183,15 @@ export const CDGroupTwo = styled.div`
   align-content: center;
   margin-top: 3rem;
 `;
+export const CDGroupThree = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin-top: 3rem;
+`;
 export const CDP1 = styled.p`
   font-weight: 600;
   font-size: 20px;
@@ -200,7 +209,7 @@ export const CDColorfulRing = styled.div`
   justify-content: center;
   align-items: center;
   align-content: center;
-  margin-top: 3rem;
+  margin-top: 5rem;
 
   width: 50px;
   height: 50px;
@@ -225,53 +234,46 @@ export const ChapPTextList = styled.div`
   @media screen and (max-width: 650px) {
   }
 `;
-
-export const ChapWhiteP = styled.p`
-  font-size: 20px;
-  color: #ffffff;
-  @media screen and (max-width: 650px) {
-    font-size: 15px;
-    line-height: 1rem;
-  }
-`;
-export const ChapWhiteBoldP = styled.p`
-  font-size: 18px;
-  font-weight: 600;
-  color: #ffffff;
-  text-align: left;
-  @media screen and (max-width: 650px) {
-    margin-top: 1rem;
-    font-size: 15px;
-  }
-`;
-
-export const ChapBtnDiv = styled.div`
+export const CDBtnDiv = styled.div`
   display: flex;
-  justify-content: flex-end;
+  flex-direction: row;
+  justify-content: center;
   align-items: center;
   align-content: center;
-  margin-left: 8rem;
+  margin-top: 2rem;
   @media screen and (max-width: 650px) {
-    margin: 3rem;
+    // margin: 3rem;
   }
 `;
+
 export const ChapBtn = styled.button`
   width: 130px;
   height: 55px;
-  background: #ffffff;
+  background: #93c951;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 100px;
 
   font-size: 18px;
   font-weight: 600;
   text-align: center;
-  color: #0c2657;
+  color: #fff;
+  margin: 1rem;
+  @media screen and (max-width: 650px) {
+  }
+`;
+export const ChapBtn2 = styled.button`
+  width: 130px;
+  height: 55px;
+  background: #ff6f1e;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 100px;
+  margin: 1rem;
+
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+  color: #fff;
 
   @media screen and (max-width: 650px) {
-    width: 95px;
-    height: 40px;
-    border-radius: 50px;
-    font-size: 15px;
-    font-weight: 600;
   }
 `;

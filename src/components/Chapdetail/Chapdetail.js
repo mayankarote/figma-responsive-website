@@ -31,6 +31,9 @@ import {
   CDP1,
   CDColorfulRing,
   ChapPTextList,
+  ChapBtn,
+  ChapBtn2,
+  CDBtnDiv,
 } from "./ChapDetailElements";
 
 export default function Chapdetail() {
@@ -81,17 +84,15 @@ export default function Chapdetail() {
                       <ChapPTextList>10 s</ChapPTextList>
                     </CDColorfulRing>
                   </CDGroupTwo>
+                  <CDBtnDiv>
+                    <ChapBtn>True</ChapBtn>
+                    <ChapBtn2>False</ChapBtn2>
+                  </CDBtnDiv>
                 </CDRectangle>
               </CDPartTwo>
             </div>
             {/* <div className="chapdetail__smallCircleBox">
               
-              <img src={colorfulRing} alt="" className="chap__colorfulRing" />
-              <p className="chap__tenSec">10 s</p>
-              <button className="chap__trueBtn chap__trueBtntext">True</button>
-              <button className="chap__falseBtn chap__falseBtntext">
-                True
-              </button>
             </div> */}
 
             {/* <button
