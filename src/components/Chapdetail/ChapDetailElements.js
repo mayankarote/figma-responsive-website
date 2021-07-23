@@ -93,12 +93,12 @@ export const CDGrayLine = styled.div`
   border: 1px solid rgba(255, 255, 255, 0.5);
   transform: rotate(270deg);
   @media screen and (max-width: 650px) {
-    margin-top: 9rem;
+    margin-top: 11rem;
     margin-left: -8rem;
     width: 230px;
   }
   @media screen and (max-width: 768px) {
-    margin-top: 13rem;
+    margin-top: 15rem;
     margin-left: -10rem;
     width: 300px;
   }
