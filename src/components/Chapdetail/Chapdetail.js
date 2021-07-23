@@ -23,6 +23,12 @@ import {
   CDRectangle,
   CDModelOne,
   CDPartTwo,
+  CDCircle,
+  CDCircleGroup,
+  CDYellowP,
+  CDYellowCircle,
+  CDP1,
+  ChapPTextList,
 } from "./ChapDetailElements";
 
 export default function Chapdetail() {
@@ -56,35 +62,26 @@ export default function Chapdetail() {
             <div className="column" style={{ backgroundColor: "sienna" }}>
               <CDPartTwo>
                 <CDRectangle>
-                  <img
-                    src={smallCircle1}
-                    alt=""
-                    className="chapdetail__smallCircle1"
-                  />
+                  <>
+                    <CDYellowCircle>
+                      <CDYellowP>1</CDYellowP>
+                    </CDYellowCircle>
+                    <CDCircle src={zigzagCircle} alt="" />
+                    <CDCircle src={zigzagCircle} alt="" />
+                    <CDCircle src={zigzagCircle} alt="" />
+                    <ChapPTextList>
+                      <CDP1>
+                        Light affects our eyes to produce the sensation of
+                        Vision{" "}
+                      </CDP1>
+                    </ChapPTextList>
+                  </>
                 </CDRectangle>
               </CDPartTwo>
             </div>
             {/* <div className="chapdetail__smallCircleBox">
-              <p className="chapdetail__smallCircle1text">1</p>
-              <img
-                src={zigzagCircle}
-                alt=""
-                className="chapdetail__smallCircle2"
-              />
-              <img
-                src={zigzagCircle}
-                alt=""
-                className="chapdetail__smallCircle3"
-              />
-              <img
-                src={zigzagCircle}
-                alt=""
-                className="chapdetail__smallCircle4"
-              />
-              <div className="chapdetail__middleHeading">
-                Light affects our eyes to produce the sensation of Vision{" "}
-              </div>
-              <img src={colorfulRing} alt="" className="chap__colorfulRing" />
+              
+               <img src={colorfulRing} alt="" className="chap__colorfulRing" />
               <p className="chap__tenSec">10 s</p>
               <button className="chap__trueBtn chap__trueBtntext">True</button>
               <button className="chap__falseBtn chap__falseBtntext">

@@ -122,10 +122,11 @@ export const CDRectangle = styled.div`
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  align-content: center;
-
+  align-content: flex-start;
+  padding: 1rem;
   width: 900px;
   height: 400px;
+
   background: #0d2249;
   border: 1px solid rgba(255, 255, 255, 0.1);
   box-sizing: border-box;
@@ -135,6 +136,42 @@ export const CDRectangle = styled.div`
   @media screen and (max-width: 650px) {
     width: 250px;
     height: 180px;
+  }
+`;
+export const CDCircleGroup = styled.div`
+  padding: 1rem;
+`;
+
+export const CDYellowCircle = styled.div`
+  width: 22px;
+  height: 22px;
+  margin: 0.5rem;
+  background-color: #ffc000;
+  border: 1px solid white;
+  border-radius: 100%;
+  @media screen and (max-width: 650px) {
+  }
+`;
+
+export const CDCircle = styled.div`
+  width: 22px;
+  height: 22px;
+  margin: 0.5rem;
+  border: 1px solid white;
+  border-radius: 100%;
+  @media screen and (max-width: 650px) {
+  }
+`;
+
+export const CDYellowP = styled.p`
+  font-weight: bold;
+  font-size: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  @media screen and (max-width: 650px) {
   }
 `;
 
@@ -149,19 +186,11 @@ export const ChapPTextList = styled.div`
   }
 `;
 
-export const ChapYellowP = styled.p`
-  font-size: 28px;
+export const CDP1 = styled.p`
   font-weight: 600;
-  color: #ffc000;
-  @media screen and (max-width: 650px) {
-    font-size: 25px;
-    margin-bottom: 1rem;
-  }
-`;
-
-export const ChapHightlightP = styled.label`
-  font-size: 18px;
-  color: #ffc000;
+  font-size: 20px;
+  text-align: center;
+  color: #ffffff;
   margin: 0.3rem;
   @media screen and (max-width: 650px) {
     font-size: 15px;
