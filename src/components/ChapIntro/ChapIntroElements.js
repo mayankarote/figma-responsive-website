@@ -64,17 +64,13 @@ export const ChapIcon = styled.img`
     height: 30px;
   }
 `;
-export const ChapGrayGroup = styled.div`
-  // cursor: pointer;
-  margin: 1rem;
-`;
 
 export const ChapGrayArrow = styled.div`
   cursor: pointer;
   z-index: 3;
   width: 32px;
   height: 48px;
-  margin-left: 2rem;
+  margin-left: 3rem;
   background: #c4c4c4;
   display: flex;
   justify-content: center;
@@ -83,7 +79,7 @@ export const ChapGrayArrow = styled.div`
   @media screen and (max-width: 650px) {
     width: 25px;
     height: 40px;
-    margin-left: 1rem;
+    margin-left: 1.5rem;
     margin-top: 1rem;
   }
 `;
@@ -92,12 +88,12 @@ export const ChapGrayLine = styled.div`
   position: absolute;
   width: 500px;
   margin-left: 5.6rem;
-  margin-top: 15rem;
+  margin-top: 13rem;
   border: 1px solid rgba(255, 255, 255, 0.5);
   transform: rotate(270deg);
   @media screen and (max-width: 650px) {
     margin-top: 8.5rem;
-    margin-left: 5.3rem;
+    margin-left: 5.9rem;
     width: 290px;
   }
 `;
