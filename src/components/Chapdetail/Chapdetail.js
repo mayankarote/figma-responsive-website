@@ -28,6 +28,7 @@ import {
   ChapBtn,
   ChapBtn2,
   CDBtnDiv,
+  ChapBtn3,
 } from "./ChapDetailElements";
 
 export default function Chapdetail() {
@@ -84,17 +85,8 @@ export default function Chapdetail() {
                   </CDBtnDiv>
                 </CDRectangle>
               </CDPartTwo>
+              <ChapBtn3 onClick={onClick}>Back To Lesson</ChapBtn3>
             </div>
-            {/* <div className="chapdetail__smallCircleBox">
-              
-            </div> */}
-
-            {/* <button
-              className="chapdetail__playQuiz chapdetail__playQuiztext"
-              onClick={onClick}
-            >
-              Back To Lesson
-            </button> */}
           </div>
         </CDItems>
       </CDContent>
