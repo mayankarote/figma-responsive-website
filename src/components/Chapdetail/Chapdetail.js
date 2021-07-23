@@ -12,15 +12,16 @@ import { useHistory } from "react-router-dom";
 import CollapeIcon from "../../assests/icons/CollapseIcon";
 import Footer from "../Footer";
 import {
-  ChapContainer,
-  ChapContent,
-  ChapGrayArrow,
-  ChapGrayLine,
-  ChapIcon,
-  ChapItems,
-  ChapP,
-  ChapPartOne,
-  ChapRectangle,
+  CDContainer,
+  CDContent,
+  CDGrayArrow,
+  CDGrayLine,
+  CDIcon,
+  CDItems,
+  CDP,
+  CDPartOne,
+  CDRectangle,
+  CDModelOne,
 } from "./ChapDetailElements";
 
 export default function Chapdetail() {
@@ -33,31 +34,32 @@ export default function Chapdetail() {
     });
   };
   return (
-    <ChapContainer>
-      <ChapContent>
-        <ChapItems>
+    <CDContainer>
+      <CDContent>
+        <CDItems>
           <div className="row" style={{ backgroundColor: "black" }}>
             <div className="column" style={{ backgroundColor: "grey" }}>
-              <ChapPartOne>
-                {/* Chap One Start */}
-                <ChapP>Light</ChapP>
-                <ChapIcon src={play} alt="" />
-                <ChapP>Introduction to light </ChapP>
+              <CDPartOne>
+                <CDP>Light</CDP>
+                <CDIcon src={play} alt="" />
+                <CDP>Introduction to light </CDP>
+              </CDPartOne>
 
-                <ChapGrayArrow onClick={() => setState((v) => !v)}>
+              <CDModelOne>
+                <CDGrayArrow onClick={() => setState((v) => !v)}>
                   <CollapeIcon />
-                </ChapGrayArrow>
-                <ChapGrayLine />
-              </ChapPartOne>
+                </CDGrayArrow>
+                <CDGrayLine />
+              </CDModelOne>
             </div>
             <div className="column" style={{ backgroundColor: "sienna" }}>
-              <ChapRectangle>
+              <CDRectangle>
                 <img
                   src={smallCircle1}
                   alt=""
                   className="chapdetail__smallCircle1"
                 />
-              </ChapRectangle>
+              </CDRectangle>
             </div>
             {/* <div className="chapdetail__smallCircleBox">
               <p className="chapdetail__smallCircle1text">1</p>
@@ -94,9 +96,9 @@ export default function Chapdetail() {
               Back To Lesson
             </button> */}
           </div>
-        </ChapItems>
-      </ChapContent>
+        </CDItems>
+      </CDContent>
       <Footer />
-    </ChapContainer>
+    </CDContainer>
   );
 }

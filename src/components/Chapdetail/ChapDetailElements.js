@@ -1,9 +1,9 @@
 import styled from "styled-components";
 
-export const ChapContainer = styled.div`
+export const CDContainer = styled.div`
   max-height: 100vh;
 `;
-export const ChapContent = styled.div`
+export const CDContent = styled.div`
   background: #0c2651;
   max-height: 100%;
   height: calc(100vh - 1px);
@@ -12,16 +12,15 @@ export const ChapContent = styled.div`
   }
 `;
 
-export const ChapItems = styled.div`
+export const CDItems = styled.div`
   margin: 0 auto;
-  background: pink;
   max-height: 100%;
   @media screen and (max-width: 650px) {
     width: 100%;
   }
 `;
 
-export const ChapPartOne = styled.div`
+export const CDPartOne = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
@@ -33,16 +32,15 @@ export const ChapPartOne = styled.div`
   }
 `;
 
-export const ChapPartTwo = styled.div`
+export const CDPartTwo = styled.div`
   margin: 3rem;
-  background: red;
   @media screen and (max-width: 650px) {
     margin-left: 2rem;
     margin-top: 8rem;
   }
 `;
 
-export const ChapP = styled.p`
+export const CDP = styled.p`
   font-weight: 600;
   font-size: 20px;
   color: #ffffff;
@@ -51,7 +49,7 @@ export const ChapP = styled.p`
   }
 `;
 
-export const ChapIcon = styled.img`
+export const CDIcon = styled.img`
   cursor: pointer;
   padding: 0.5rem;
   @media screen and (max-width: 650px) {
@@ -60,7 +58,7 @@ export const ChapIcon = styled.img`
   }
 `;
 
-export const ChapGrayArrow = styled.div`
+export const CDGrayArrow = styled.div`
   cursor: pointer;
   z-index: 3;
   width: 32px;
@@ -81,21 +79,21 @@ export const ChapGrayArrow = styled.div`
   }
 `;
 
-export const ChapGrayLine = styled.div`
+export const CDGrayLine = styled.div`
   position: absolute;
-  width: 600px;
-  margin-left: 1.6rem;
-  margin-top: 28rem;
+  width: 480px;
+  margin-left: 1.5rem;
+  margin-top: 25rem;
   border: 1px solid rgba(255, 255, 255, 0.5);
   transform: rotate(270deg);
   @media screen and (max-width: 650px) {
-    margin-top: 21rem;
-    margin-left: 2.9rem;
-    width: 400px;
+    margin-top: 8.5rem;
+    margin-left: 5rem;
+    width: 290px;
   }
 `;
 
-export const ModelOne = styled.div`
+export const CDModelOne = styled.div`
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -105,7 +103,7 @@ export const ModelOne = styled.div`
   background: pink;
 `;
 
-export const ChapP2 = styled.p`
+export const CDP2 = styled.p`
   font-size: 28px;
   font-weight: 600;
   color: #ffc000;
@@ -114,15 +112,15 @@ export const ChapP2 = styled.p`
   }
 `;
 
-export const ChapRectangle = styled.div`
+export const CDRectangle = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   align-content: center;
 
-  width: 1150px;
-  height: 500px;
+  width: 1050px;
+  height: 400px;
 
   background: #0d2249;
   border: 1px solid rgba(255, 255, 255, 0.1);
