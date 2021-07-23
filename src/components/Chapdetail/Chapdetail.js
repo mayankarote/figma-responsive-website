@@ -21,7 +21,7 @@ import {
   ChapP,
   ChapPartOne,
   ChapRectangle,
-} from "./ChapIntroElements";
+} from "./ChapDetailElements";
 
 export default function Chapdetail() {
   const [state, setState] = useState(false);
