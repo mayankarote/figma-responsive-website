@@ -22,6 +22,7 @@ import {
   CDPartOne,
   CDRectangle,
   CDModelOne,
+  CDPartTwo,
 } from "./ChapDetailElements";
 
 export default function Chapdetail() {
@@ -53,13 +54,15 @@ export default function Chapdetail() {
               </CDModelOne>
             </div>
             <div className="column" style={{ backgroundColor: "sienna" }}>
-              <CDRectangle>
-                <img
-                  src={smallCircle1}
-                  alt=""
-                  className="chapdetail__smallCircle1"
-                />
-              </CDRectangle>
+              <CDPartTwo>
+                <CDRectangle>
+                  <img
+                    src={smallCircle1}
+                    alt=""
+                    className="chapdetail__smallCircle1"
+                  />
+                </CDRectangle>
+              </CDPartTwo>
             </div>
             {/* <div className="chapdetail__smallCircleBox">
               <p className="chapdetail__smallCircle1text">1</p>

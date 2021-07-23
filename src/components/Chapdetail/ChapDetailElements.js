@@ -7,8 +7,10 @@ export const CDContent = styled.div`
   background: #0c2651;
   max-height: 100%;
   height: calc(100vh - 1px);
-  @media screen and (max-width: 650px) {
+  padding: 0rem calc((100vw - 1600px) / 2);
+  @media screen and (max-width: 850px) {
     height: 100%;
+    width: 100%;
   }
 `;
 
@@ -17,6 +19,10 @@ export const CDItems = styled.div`
   max-height: 100%;
   @media screen and (max-width: 650px) {
     width: 100%;
+  }
+  @media screen and (max-width: 768px) {
+    max-width: 100%;
+    height: 100%;
   }
 `;
 
@@ -100,7 +106,6 @@ export const CDModelOne = styled.div`
   justify-content: center;
   align-items: center;
   align-content: center;
-  background: pink;
 `;
 
 export const CDP2 = styled.p`
@@ -119,9 +124,8 @@ export const CDRectangle = styled.div`
   align-items: center;
   align-content: center;
 
-  width: 1050px;
+  width: 900px;
   height: 400px;
-
   background: #0d2249;
   border: 1px solid rgba(255, 255, 255, 0.1);
   box-sizing: border-box;
