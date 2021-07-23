@@ -118,28 +118,28 @@ export const CDP2 = styled.p`
 `;
 
 export const CDRectangle = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  align-content: flex-start;
-  padding: 1rem;
-  width: 900px;
-  height: 400px;
-
   background: #0d2249;
   border: 1px solid rgba(255, 255, 255, 0.1);
   box-sizing: border-box;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 20px;
+  padding: 1rem;
+  width: 900px;
+  height: 400px;
 
   @media screen and (max-width: 650px) {
     width: 250px;
     height: 180px;
   }
 `;
-export const CDCircleGroup = styled.div`
-  padding: 1rem;
+
+export const CDGroupOne = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: flex-start;
 `;
 
 export const CDYellowCircle = styled.div`
@@ -174,18 +174,15 @@ export const CDYellowP = styled.p`
   @media screen and (max-width: 650px) {
   }
 `;
-
-export const ChapPTextList = styled.div`
-  font-size: 18px;
-  color: #ffc000;
-  padding: 1rem;
-  line-height: 2rem;
-  @media screen and (max-width: 650px) {
-    font-size: 15px;
-    line-height: 1.8rem;
-  }
+export const CDGroupTwo = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin-top: 3rem;
 `;
-
 export const CDP1 = styled.p`
   font-weight: 600;
   font-size: 20px;
@@ -194,6 +191,38 @@ export const CDP1 = styled.p`
   margin: 0.3rem;
   @media screen and (max-width: 650px) {
     font-size: 15px;
+  }
+`;
+
+export const CDColorfulRing = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin-top: 3rem;
+
+  width: 50px;
+  height: 50px;
+
+  border: 4px solid;
+  border-right-color: #ffc000;
+  border-bottom-color: #ffc000;
+  border-top-color: #fff;
+  border-left-color: #fff;
+  border-radius: 100%;
+  transform: rotate(49.75deg);
+
+  @media screen and (max-width: 650px) {
+  }
+`;
+
+export const ChapPTextList = styled.div`
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  transform: rotate(310.75deg);
+  @media screen and (max-width: 650px) {
   }
 `;
 

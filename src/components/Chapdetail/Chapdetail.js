@@ -24,10 +24,12 @@ import {
   CDModelOne,
   CDPartTwo,
   CDCircle,
-  CDCircleGroup,
+  CDGroupOne,
+  CDGroupTwo,
   CDYellowP,
   CDYellowCircle,
   CDP1,
+  CDColorfulRing,
   ChapPTextList,
 } from "./ChapDetailElements";
 
@@ -62,26 +64,29 @@ export default function Chapdetail() {
             <div className="column" style={{ backgroundColor: "sienna" }}>
               <CDPartTwo>
                 <CDRectangle>
-                  <>
+                  <CDGroupOne>
                     <CDYellowCircle>
                       <CDYellowP>1</CDYellowP>
                     </CDYellowCircle>
                     <CDCircle src={zigzagCircle} alt="" />
                     <CDCircle src={zigzagCircle} alt="" />
                     <CDCircle src={zigzagCircle} alt="" />
-                    <ChapPTextList>
-                      <CDP1>
-                        Light affects our eyes to produce the sensation of
-                        Vision{" "}
-                      </CDP1>
-                    </ChapPTextList>
-                  </>
+                  </CDGroupOne>
+
+                  <CDGroupTwo>
+                    <CDP1>
+                      Light affects our eyes to produce the sensation of Vision
+                    </CDP1>
+                    <CDColorfulRing>
+                      <ChapPTextList>10 s</ChapPTextList>
+                    </CDColorfulRing>
+                  </CDGroupTwo>
                 </CDRectangle>
               </CDPartTwo>
             </div>
             {/* <div className="chapdetail__smallCircleBox">
               
-               <img src={colorfulRing} alt="" className="chap__colorfulRing" />
+              <img src={colorfulRing} alt="" className="chap__colorfulRing" />
               <p className="chap__tenSec">10 s</p>
               <button className="chap__trueBtn chap__trueBtntext">True</button>
               <button className="chap__falseBtn chap__falseBtntext">

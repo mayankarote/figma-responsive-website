@@ -117,7 +117,7 @@
 
   text-align: center;
 
-  color: #ffffff;
+  color: linear-gradient(253.58deg, #eceae3, #f5c843 95.8%);
 }
 .chap__colorfulRing {
   position: absolute;
@@ -125,8 +125,8 @@
   height: 101px;
   left: 740.25px;
   top: 510.42px;
-
   transform: rotate(49.75deg);
+  background: transparent;
 }
 .chap__tenSec {
   position: absolute;
