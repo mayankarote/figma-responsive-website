@@ -20,6 +20,7 @@ import manLight from "../../assests/manLight.png";
 import yellowLine from "../../assests/yellowLine.png";
 import { useHistory } from "react-router-dom";
 import Footer from "../Footer";
+import { GameContainer, GameContent, GameItems } from "./GameElements";
 
 export default function Login() {
   let history = useHistory();
@@ -30,9 +31,9 @@ export default function Login() {
   };
 
   return (
-    <div className="game">
-      <div className="game__container">
-        <div className="game__container1">
+    <GameContainer>
+      <GameContent>
+        <GameItems>
           <div className="cloud__three">
             <img src={cloudThree} alt="" />
           </div>
@@ -57,7 +58,7 @@ export default function Login() {
             <img src={smallCloud} alt="" className="small__cloud" />
           </div>
 
-          <div className="pinhole__setup">
+          {/* <div className="pinhole__setup">
             <div className="pinhole__camera"></div>
             <div className="pinhole__cameraText">Pinhole camera</div>
             <div className="pinhole__cameraCirlce"></div>
@@ -137,10 +138,10 @@ export default function Login() {
               <img src={blackPlay} alt="" className="pinhole__cameraPlay5" />
               <img src={yellowLine} alt="" className="pinhole__yellowLine" />
             </button>
-          </div>
-        </div>
-        <Footer />
-      </div>
-    </div>
+          </div> */}
+        </GameItems>
+      </GameContent>
+      <Footer />
+    </GameContainer>
   );
 }

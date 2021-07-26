@@ -50,11 +50,11 @@ export const NavIcon = styled.div`
 export const SVGIcon = styled.img`
   width: 100rem;
   height: 250px;
-  margin-left: 20rem;
+  margin-left: 8rem;
   @media screen and (max-width: 650px) {
     width: 90rem;
     height: 230px;
-    margin-left: 10rem;
+    margin-left: 8rem;
   }
 `;
 
