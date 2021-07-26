@@ -20,7 +20,24 @@ import manLight from "../../assests/manLight.png";
 import yellowLine from "../../assests/yellowLine.png";
 import { useHistory } from "react-router-dom";
 import Footer from "../Footer";
-import { GameContainer, GameContent, GameItems } from "./GameElements";
+import {
+  GameContainer,
+  GameContent,
+  GameItems,
+  GameMiniCloudIcon,
+  GameSmallCloudIcon2,
+  GameP,
+  GamePartOne,
+  GameScoreCircle,
+  GameScoreCircleOne,
+  GameScoreCircleThree,
+  GameScoreCircleTwo,
+  GameScoreRectangle,
+  GameSunIcon,
+  PartOne,
+  ScoreDiv,
+  ScoreDiv2,
+} from "./GameElements";
 
 export default function Login() {
   let history = useHistory();
@@ -34,7 +51,7 @@ export default function Login() {
     <GameContainer>
       <GameContent>
         <GameItems>
-          <div className="cloud__three">
+          {/* <div className="cloud__three">
             <img src={cloudThree} alt="" />
           </div>
           <div className="cloud__two">
@@ -42,29 +59,33 @@ export default function Login() {
           </div>
           <div className="cloud__one">
             <img src={cloudOne} alt="" />
-          </div>
-          <div className="score">Score</div>
-          <div className="score__Rectangle"></div>
-          <div className="score__circleOne"></div>
-          <div className="score__textOne">0</div>
-          <div className="score__circleTwo"></div>
-          <div className="score__textTwo">1</div>
-          <div className="score__circleThree"></div>
-          <div className="score__textThree">1</div>
+          </div> */}
+          <PartOne>
+            <ScoreDiv>
+              <GameP>Score</GameP>
+              <GameScoreRectangle>
+                <GameScoreCircle>
+                  <GameScoreCircleOne>0</GameScoreCircleOne>
+                  <GameScoreCircleTwo>1</GameScoreCircleTwo>
+                  <GameScoreCircleThree>1</GameScoreCircleThree>
+                </GameScoreCircle>
+              </GameScoreRectangle>
+            </ScoreDiv>
+          </PartOne>
+          <ScoreDiv2>
+            <GameSmallCloudIcon2 src={smallCloud} alt="" />
+            <GameSunIcon src={sun} alt="" />
+            <GameMiniCloudIcon src={miniCloud} alt="" />
+          </ScoreDiv2>
 
-          <div className="">
-            <img src={miniCloud} alt="" className="mini__cloud" />
-            <img src={sun} alt="" className="sun" />
-            <img src={smallCloud} alt="" className="small__cloud" />
-          </div>
-
-          {/* <div className="pinhole__setup">
+          <ScoreDiv2></ScoreDiv2>
+          <div className="pinhole__setup">
             <div className="pinhole__camera"></div>
             <div className="pinhole__cameraText">Pinhole camera</div>
             <div className="pinhole__cameraCirlce"></div>
             <img src={lock} alt="" className="pinhole__cameraLock" />
           </div>
-          <div className="square__stepsSetup">
+          {/* <div className="square__stepsSetup">
             <img src={square} alt="" className="square" />
             <img src={trees} alt="" className="trees" />
             <img
@@ -80,8 +101,8 @@ export default function Login() {
               <div className="pinhole__cameraCirlce2"></div>
               <img src={lock} alt="" className="pinhole__cameraLock2" />
             </div>
-          </div>
-          <div className="square__stepsSetup2">
+          </div> */}
+          {/* <div className="square__stepsSetup2">
             <img src={square} alt="" className="square2" />
             <img src={trees} alt="" className="trees2" />
             <img
@@ -97,8 +118,8 @@ export default function Login() {
               <div className="pinhole__cameraCirlce3"></div>
               <img src={lock} alt="" className="pinhole__cameraLock3" />
             </div>
-          </div>
-          <div className="square__stepsSetup3">
+          </div> */}
+          {/* <div className="square__stepsSetup3">
             <img src={square} alt="" className="square3" />
             <img src={trees} alt="" className="trees3" />
             <img
@@ -108,8 +129,8 @@ export default function Login() {
             />
             <img src={fourYellowSteps} alt="" className="fourWhite__steps3" />
             <img src={smallCloud} alt="" className="small__cloud3" />
-          </div>
-          <div className="square__stepsSetup4">
+          </div> */}
+          {/* <div className="square__stepsSetup4">
             <img src={colorSquare} alt="" className="square4" />
             <img src={bunchTrees} alt="" className="trees4" />
             <img src={Greenline} alt="" className="Greenline" />
@@ -127,8 +148,8 @@ export default function Login() {
               <div className="pinhole__cameraCirlce4"></div>
               <img src={lock} alt="" className="pinhole__cameraLock4" />
             </div>
-          </div>
-          <div className="square__stepsSetup5">
+          </div> */}
+          {/* <div className="square__stepsSetup5">
             <img src={colorSquare} alt="" className="square5" />
             <img src={manLight} alt="" className="manLight" />
             <button className="pinhole__setup5" onClick={onClick}>

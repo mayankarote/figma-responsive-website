@@ -15,6 +15,27 @@ export const GameContent = styled.div`
 `;
 
 export const GameItems = styled.div`
+  // display: flex;
+  // flex-wrap: nowrap;
+  // align-content: center;
+  // align-items: flex-end;
+  // justify-content: flex-end;
+  // flex-direction: column;
+
+  margin: 0 auto;
+  max-height: 100%;
+  @media screen and (max-width: 650px) {
+    width: 100%;
+  }
+`;
+export const PartOne = styled.div`
+  display: flex;
+  flex-wrap: nowrap;
+  align-content: center;
+  align-items: flex-end;
+  justify-content: flex-end;
+  flex-direction: column;
+
   margin: 0 auto;
   max-height: 100%;
   @media screen and (max-width: 650px) {
@@ -22,43 +43,111 @@ export const GameItems = styled.div`
   }
 `;
 
-export const GamePartOne = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  align-items: center;
-  align-content: center;
-  margin: 2rem;
-  margin-top: 5rem;
-
-  @media screen and (max-width: 650px) {
-    margin: 2rem;
-  }
-  @media screen and (max-width: 768px) {
-    margin-top: 2rem;
-  }
-  @media screen and (width: 1024px) {
-    margin-top: 2rem;
-  }
+export const ScoreDiv = styled.div`
+  margin-right: 5rem;
 `;
 
 export const GameP = styled.p`
-  font-weight: 600;
-  font-size: 20px;
-  color: #ffffff;
+  display: flex;
+  flex-wrap: nowrap;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  margin-top: 1rem;
+  color: #000000;
   @media screen and (max-width: 650px) {
-    font-size: 15px;
   }
 `;
 
-export const GameIcon = styled.img`
-  cursor: pointer;
-  padding: 0.5rem;
+export const GameScoreRectangle = styled.div`
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  width: 219px;
+  height: 73px;
+  background: #ffffff;
+  border-radius: 100px;
+`;
+
+export const GameScoreCircle = styled.div`
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+`;
+
+export const GameScoreCircleOne = styled.div`
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  width: 59px;
+  height: 59px;
+  margin-left: 0.5rem;
+  background: #a79c9a;
+  border-radius: 100px;
+`;
+
+export const GameScoreCircleTwo = styled.div`
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+
+  width: 59px;
+  height: 59px;
+  margin-left: 0.5rem;
+  background: #ff8a00;
+  border-radius: 100px;
+`;
+
+export const GameScoreCircleThree = styled.div`
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+
+  width: 59px;
+  height: 59px;
+  margin-left: 0.5rem;
+  background: #93c951;
+  border-radius: 100px;
+`;
+// Score complete
+
+export const ScoreDiv2 = styled.div`
+  display: flex;
+  flex-wrap: nowrap;
+  align-content: flex-start;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: row;
+`;
+
+export const GameSunIcon = styled.img`
+  margin-left: -6rem;
+  margin-top: -2rem;
   @media screen and (max-width: 650px) {
-    width: 30px;
-    height: 30px;
   }
 `;
+export const GameSmallCloudIcon2 = styled.img`
+  margin-left: 1rem;
+  z-index: 1;
+  @media screen and (max-width: 650px) {
+  }
+`;
+export const GameMiniCloudIcon = styled.img`
+  margin-left: -2rem;
+  margin-top: 2rem;
+  z-index: 1;
+
+  @media screen and (max-width: 650px) {
+  }
+`;
+
+// sun clouds complete
 
 export const GameGrayArrow = styled.div`
   cursor: pointer;
