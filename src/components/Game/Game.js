@@ -44,6 +44,16 @@ import {
   PinholeCameraCirlce,
   PinholeLock,
   GameSquare,
+  Gametrees,
+  GameStairs,
+  GameWhiteStairs,
+  GameStairsShadow,
+  GameSmallClouds,
+  GameBigClouds,
+  GameClouds,
+  GameCloudsOne,
+  GameCloudsTwo,
+  GameCloudsThree,
 } from "./GameElements";
 
 export default function Login() {
@@ -58,108 +68,76 @@ export default function Login() {
     <GameContainer>
       <GameContent>
         <GameItems>
-          {/* <div className="cloud__three">
-            <img src={cloudThree} alt="" />
-          </div>
-          <div className="cloud__two">
-            <img src={cloudTwo} alt="" />
-          </div>
-          <div className="cloud__one">
-            <img src={cloudOne} alt="" />
-          </div> */}
-          <PartOne>
-            <ScoreDiv>
-              <GameP>Score</GameP>
-              <GameScoreRectangle>
-                <GameScoreCircle>
-                  <GameScoreCircleOne>0</GameScoreCircleOne>
-                  <GameScoreCircleTwo>1</GameScoreCircleTwo>
-                  <GameScoreCircleThree>1</GameScoreCircleThree>
-                </GameScoreCircle>
-              </GameScoreRectangle>
-            </ScoreDiv>
-          </PartOne>
-          <PartTwo>
-            <GameSmallCloudIcon2 src={smallCloud} alt="" />
-            <GameSunIcon src={sun} alt="" />
-            <GameMiniCloudIcon src={miniCloud} alt="" />
-          </PartTwo>
-
-          <PartThree>
-            <PinholeSetup>
-              <PinholeCamera>Pinhole camera</PinholeCamera>
-              <PinholeCameraCirlce>
-                <PinholeLock src={lock} alt="" />
-              </PinholeCameraCirlce>
-            </PinholeSetup>
-            <GameSquare src={square}>
-              {/* <GameSquare></GameSquare> */}
-              {/* <img src={trees} alt="" className="trees" /> */}
-              {/* <img
-              src={fourWhiteStepsShadow}
-              alt=""
-              className="fourWhite__stepsShadow"
-            /> */}
-              {/* <img src={fourWhiteSteps} alt="" className="fourWhite__steps" /> */}
-              {/* <img src={smallCloud} alt="" className="small__cloud1" /> */}
-              {/* <div className="pinhole__setup2">
-              <div className="pinhole__camera2"></div>
-              <div className="pinhole__cameraText2">Eclipses</div>
-              <div className="pinhole__cameraCirlce2"></div>
-              <img src={lock} alt="" className="pinhole__cameraLock2" />
-            </div> */}
-            </GameSquare>
-          </PartThree>
-
-          {/* <div className="square__stepsSetup2">
-            <img src={square} alt="" className="square2" />
-            <img src={trees} alt="" className="trees2" />
-            <img
-              src={fourWhiteStepsShadow}
-              alt=""
-              className="fourWhite__stepsShadow2"
-            />
-            <img src={fourWhiteSteps} alt="" className="fourWhite__steps2" />
-            <img src={smallCloud} alt="" className="small__cloud2" />
-            <div className="pinhole__setup3">
-              <div className="pinhole__camera3"></div>
-              <div className="pinhole__cameraText3">Types of Beam</div>
-              <div className="pinhole__cameraCirlce3"></div>
-              <img src={lock} alt="" className="pinhole__cameraLock3" />
+          <div className="row" style={{ backgroundColor: "" }}>
+            <div className="column" style={{ backgroundColor: "" }}>
+              <PartTwo>
+                <GameSmallCloudIcon2 src={smallCloud} alt="" />
+                <GameSunIcon src={sun} alt="" />
+                <GameMiniCloudIcon src={miniCloud} alt="" />
+              </PartTwo>
             </div>
-          </div> */}
-          {/* <div className="square__stepsSetup3">
-            <img src={square} alt="" className="square3" />
-            <img src={trees} alt="" className="trees3" />
-            <img
-              src={fourWhiteStepsShadow}
-              alt=""
-              className="fourWhite__stepsShadow3"
-            />
-            <img src={fourYellowSteps} alt="" className="fourWhite__steps3" />
-            <img src={smallCloud} alt="" className="small__cloud3" />
-          </div> */}
-          {/* <div className="square__stepsSetup4">
-            <img src={colorSquare} alt="" className="square4" />
-            <img src={bunchTrees} alt="" className="trees4" />
-            <img src={Greenline} alt="" className="Greenline" />
-            <img
-              src={fourWhiteStepsShadow}
-              alt=""
-              className="fourWhite__stepsShadow4"
-            />
-            <img src={fourYellowSteps} alt="" className="fourWhite__steps4" />
-            <div className="pinhole__setup4">
-              <div className="pinhole__camera4"></div>
-              <div className="pinhole__cameraText4">
-                Transparent, Translucent & Opaque materials
-              </div>
-              <div className="pinhole__cameraCirlce4"></div>
-              <img src={lock} alt="" className="pinhole__cameraLock4" />
-            </div>
-          </div> */}
-          {/* <div className="square__stepsSetup5">
-            <img src={colorSquare} alt="" className="square5" />
+
+            <div className="column" style={{ backgroundColor: "" }}>
+              <PartThree>
+                <PinholeSetup>
+                  <PinholeCamera>Pinhole camera</PinholeCamera>
+                  <PinholeCameraCirlce>
+                    <PinholeLock src={lock} alt="" />
+                  </PinholeCameraCirlce>
+                </PinholeSetup>
+
+                <GameSquare src={square} />
+                <Gametrees src={trees} alt="" />
+                <GameWhiteStairs src={fourWhiteSteps} alt="" />
+                <GameStairsShadow src={fourWhiteStepsShadow} alt="" />
+                {/* <GameSmallClouds src={smallCloud} alt="" /> */}
+                {/* <PinholeSetup>
+                  <PinholeCamera>Eclipses</PinholeCamera>
+                  <PinholeCameraCirlce>
+                    <PinholeLock src={lock} alt="" />
+                  </PinholeCameraCirlce>
+                </PinholeSetup> */}
+
+                {/*----------------- Square Set up 2----------------------------------- */}
+                {/* <GameSquare />
+                <Gametrees src={trees} alt="" />
+                <GameStairsShadow src={fourWhiteStepsShadow} alt="" />
+                <GameWhiteStairs src={fourWhiteSteps} alt="" />
+                <GameSmallClouds src={smallCloud} alt="" />
+                <PinholeSetup>
+                  <PinholeCamera>Types of Beam</PinholeCamera>
+                  <PinholeCameraCirlce>
+                    <PinholeLock src={lock} alt="" />
+                  </PinholeCameraCirlce>
+                </PinholeSetup> */}
+                {/*----------------- Square Set up 2 end----------------------------------- */}
+
+                {/*----------------- Square Set up 3----------------------------------- */}
+                {/* <GameSquare />
+                <Gametrees src={trees} alt="" />
+                <GameStairsShadow src={fourWhiteStepsShadow} alt="" />
+                <GameWhiteStairs src={fourYellowSteps} alt="" />
+                <GameSmallClouds src={smallCloud} alt="" /> */}
+                {/*----------------- Square Set up 3 end----------------------------------- */}
+
+                {/*----------------- Square Set up 4----------------------------------- */}
+                {/* <GameSquare src={colorSquare} alt="" />
+                <Gametrees src={bunchTrees} alt="" />
+                <img src={Greenline} alt="" />
+                <GameStairsShadow src={fourWhiteStepsShadow} alt="" />
+                <GameWhiteStairs src={fourYellowSteps} alt="" />
+                <PinholeSetup>
+                  <PinholeCamera>
+                    Transparent, Translucent & Opaque materials
+                  </PinholeCamera>
+                  <PinholeCameraCirlce>
+                    <PinholeLock src={lock} alt="" />
+                  </PinholeCameraCirlce>
+                </PinholeSetup> */}
+                {/*----------------- Square Set up 4 end----------------------------------- */}
+
+                {/*
+            <GameSquare src={colorSquare} alt="" className="square5" />
             <img src={manLight} alt="" className="manLight" />
             <button className="pinhole__setup5" onClick={onClick}>
               <div className="pinhole__camera5"></div>
@@ -168,7 +146,33 @@ export default function Login() {
               <img src={blackPlay} alt="" className="pinhole__cameraPlay5" />
               <img src={yellowLine} alt="" className="pinhole__yellowLine" />
             </button>
-          </div> */}
+            */}
+              </PartThree>
+            </div>
+
+            <div className="column" style={{ backgroundColor: "yellow" }}>
+              {/* <PartOne>
+                <ScoreDiv>
+                  <GameP>Score</GameP>
+                  <GameScoreRectangle>
+                    <GameScoreCircle>
+                      <GameScoreCircleOne>0</GameScoreCircleOne>
+                      <GameScoreCircleTwo>1</GameScoreCircleTwo>
+                      <GameScoreCircleThree>1</GameScoreCircleThree>
+                    </GameScoreCircle>
+                  </GameScoreRectangle>
+                </ScoreDiv>
+              </PartOne> */}
+            </div>
+          </div>
+
+          <div className="row" style={{ backgroundColor: "" }}>
+            <GameBigClouds>
+              <GameCloudsThree src={cloudThree} alt="" />
+              <GameCloudsTwo src={cloudTwo} alt="" />
+              <GameCloudsOne src={cloudOne} alt="" />
+            </GameBigClouds>
+          </div>
         </GameItems>
       </GameContent>
       <Footer />
