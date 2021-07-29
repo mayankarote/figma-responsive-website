@@ -37,6 +37,13 @@ import {
   PartOne,
   ScoreDiv,
   ScoreDiv2,
+  PinholeSetup,
+  PartTwo,
+  PartThree,
+  PinholeCamera,
+  PinholeCameraCirlce,
+  PinholeLock,
+  GameSquare,
 } from "./GameElements";
 
 export default function Login() {
@@ -72,36 +79,38 @@ export default function Login() {
               </GameScoreRectangle>
             </ScoreDiv>
           </PartOne>
-          <ScoreDiv2>
+          <PartTwo>
             <GameSmallCloudIcon2 src={smallCloud} alt="" />
             <GameSunIcon src={sun} alt="" />
             <GameMiniCloudIcon src={miniCloud} alt="" />
-          </ScoreDiv2>
+          </PartTwo>
 
-          <ScoreDiv2></ScoreDiv2>
-          <div className="pinhole__setup">
-            <div className="pinhole__camera"></div>
-            <div className="pinhole__cameraText">Pinhole camera</div>
-            <div className="pinhole__cameraCirlce"></div>
-            <img src={lock} alt="" className="pinhole__cameraLock" />
-          </div>
-          {/* <div className="square__stepsSetup">
-            <img src={square} alt="" className="square" />
-            <img src={trees} alt="" className="trees" />
-            <img
+          <PartThree>
+            <PinholeSetup>
+              <PinholeCamera>Pinhole camera</PinholeCamera>
+              <PinholeCameraCirlce>
+                <PinholeLock src={lock} alt="" />
+              </PinholeCameraCirlce>
+            </PinholeSetup>
+            <GameSquare src={square}>
+              {/* <GameSquare></GameSquare> */}
+              {/* <img src={trees} alt="" className="trees" /> */}
+              {/* <img
               src={fourWhiteStepsShadow}
               alt=""
               className="fourWhite__stepsShadow"
-            />
-            <img src={fourWhiteSteps} alt="" className="fourWhite__steps" />
-            <img src={smallCloud} alt="" className="small__cloud1" />
-            <div className="pinhole__setup2">
+            /> */}
+              {/* <img src={fourWhiteSteps} alt="" className="fourWhite__steps" /> */}
+              {/* <img src={smallCloud} alt="" className="small__cloud1" /> */}
+              {/* <div className="pinhole__setup2">
               <div className="pinhole__camera2"></div>
               <div className="pinhole__cameraText2">Eclipses</div>
               <div className="pinhole__cameraCirlce2"></div>
               <img src={lock} alt="" className="pinhole__cameraLock2" />
-            </div>
-          </div> */}
+            </div> */}
+            </GameSquare>
+          </PartThree>
+
           {/* <div className="square__stepsSetup2">
             <img src={square} alt="" className="square2" />
             <img src={trees} alt="" className="trees2" />

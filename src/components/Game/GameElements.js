@@ -117,7 +117,7 @@ export const GameScoreCircleThree = styled.div`
 `;
 // Score complete
 
-export const ScoreDiv2 = styled.div`
+export const PartTwo = styled.div`
   display: flex;
   flex-wrap: nowrap;
   align-content: flex-start;
@@ -138,6 +138,7 @@ export const GameSmallCloudIcon2 = styled.img`
   @media screen and (max-width: 650px) {
   }
 `;
+
 export const GameMiniCloudIcon = styled.img`
   margin-left: -2rem;
   margin-top: 2rem;
@@ -148,50 +149,60 @@ export const GameMiniCloudIcon = styled.img`
 `;
 
 // sun clouds complete
+export const PartThree = styled.div`
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  @media screen and (max-width: 650px) {
+  }
+`;
 
-export const GameGrayArrow = styled.div`
-  cursor: pointer;
-  z-index: 3;
-  width: 32px;
-  height: 48px;
-  margin-left: -8.5rem;
-  background: #c4c4c4;
+export const PinholeSetup = styled.div`
+  width: 200px;
+  height: 52px;
+  opacity: 0.3;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  margin-left: -12rem;
+  @media screen and (max-width: 650px) {
+  }
+`;
+
+export const PinholeCamera = styled.div`
+  width: 240px;
+  height: 52px;
+  background: #001b4e;
+  border-radius: 50px;
+  opacity: 15px;
+
+  font-size: 15px;
+  line-height: 15px;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: flex-start;
+  padding: 1rem;
+  color: #ffffff;
+`;
+
+export const PinholeCameraCirlce = styled.div`
+  width: 45px;
+  height: 41px;
+  background: #ffffff;
+  border-radius: 50%;
+  margin-left: -2.5em;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 15px 0px 0px 15px;
-  transform: rotate(180deg);
-
-  @media screen and (max-width: 650px) {
-    width: 25px;
-    height: 40px;
-    margin-left: -7rem;
-    margin-top: -0.5rem;
-  }
-  @media screen and (max-width: 768px) {
-    margin-left: -8.8rem;
-    margin-top: -0.5rem;
-  }
+  align-content: center;
 `;
 
-export const CDGrayLine = styled.div`
-  position: absolute;
-  width: 600px;
-  margin-left: -10rem;
-  margin-top: 28rem;
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  transform: rotate(270deg);
-  @media screen and (max-width: 650px) {
-    margin-top: 11rem;
-    margin-left: -8rem;
-    width: 230px;
-  }
-  @media screen and (max-width: 768px) {
-    margin-top: 15rem;
-    margin-left: -10rem;
-    width: 300px;
-  }
-`;
+export const PinholeLock = styled.img``;
 
 export const GameModelOne = styled.div`
   display: flex;
@@ -305,29 +316,7 @@ export const GameP1 = styled.p`
   }
 `;
 
-export const GameColorfulRing = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  margin-top: 5rem;
-
-  width: 50px;
-  height: 50px;
-
-  border: 4px solid;
-  border-right-color: #ffc000;
-  border-bottom-color: #ffc000;
-  border-top-color: #fff;
-  border-left-color: #fff;
-  border-radius: 100%;
-  transform: rotate(49.75deg);
-
-  @media screen and (max-width: 650px) {
-    margin-top: 2rem;
-  }
-`;
+export const GameSquare = styled.img``;
 
 export const GameTextList = styled.div`
   color: white;
