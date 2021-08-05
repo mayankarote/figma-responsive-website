@@ -9,6 +9,9 @@ export const HomeContentOne = styled.div`
   height: calc(100px + 250px);
   max-height: 100%;
   padding: 0rem calc((100vw - 1700px) / 2);
+  @media screen and (max-width: 650px) {
+    max-width: 100%;
+  }
 `;
 
 export const HomeItems = styled.div`
@@ -54,7 +57,12 @@ export const SVGIcon = styled.img`
   @media screen and (max-width: 650px) {
     width: 90rem;
     height: 230px;
-    margin-left: 8rem;
+    margin-left: -0.5rem;
+  }
+  @media screen and (width: 1024px) {
+    width: 90rem;
+    height: 230px;
+    margin-left: 9rem;
   }
 `;
 

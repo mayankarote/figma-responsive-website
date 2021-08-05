@@ -13,7 +13,6 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { ChakraProvider } from "@chakra-ui/react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { GlobalStyle } from "./globalStyles";
-import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -27,37 +26,30 @@ function App() {
               <Header1 />
               <Game />
             </Route>
-
             <Route exact path="/chapdetail">
               <Header1 />
               <Chapdetail />
             </Route>
-
             <Route exact path="/chapintro">
               <Header1 />
               <ChapIntro />
             </Route>
-
             <Route exact path="/chapters">
               <Header1 />
               <Chapters />
             </Route>
-
             <Route path="/subject">
               <Header1 />
               <Subject />
             </Route>
-
             <Route path="/grade">
               <Header1 />
               <Grade />
             </Route>
-
             <Route path="/login">
               <Header1 />
               <Login />
             </Route>
-
             <Route path="/">
               <Home />
             </Route>

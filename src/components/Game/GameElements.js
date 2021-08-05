@@ -1,43 +1,32 @@
 import styled from "styled-components";
 
 export const GameContainer = styled.div`
-  max-height: 100vh;
+  height: 100vh;
 `;
 export const GameContent = styled.div`
   background: #68aeff;
   max-height: 100%;
-  height: calc(100vh - 0px);
-  padding: 0rem calc((100vw - 1700px) / 2);
+  height: 100%;
   @media screen and (max-width: 650px) {
     height: 100%;
-    max-width: 100%;
+    width: 100%;
   }
 `;
 
 export const GameItems = styled.div`
-  // display: flex;
-  // flex-wrap: nowrap;
-  // align-content: center;
-  // align-items: flex-end;
-  // justify-content: flex-end;
-  // flex-direction: column;
-
+  display: flex;
+  align-content: flex-start;
+  align-items: flex-start;
+  justify-content: flex-start;
+  height: 100%;
+  background: #68aeff;
   margin: 0 auto;
   max-height: 100%;
   @media screen and (max-width: 650px) {
-    width: 100%;
+    max-width: 100%;
   }
 `;
 // sun clouds
-export const PartTwo = styled.div`
-  display: flex;
-  flex-wrap: nowrap;
-  align-content: center;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
-  margin-top: 5rem;
-`;
 
 export const GameSunIcon = styled.img`
   margin-left: -5rem;
@@ -60,18 +49,6 @@ export const GameMiniCloudIcon = styled.img`
 
 // sun clouds complete
 
-// bogas part start
-export const PartThree = styled.div`
-  display: flex;
-  align-content: center;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
-  margin: 1rem;
-  @media screen and (max-width: 650px) {
-  }
-`;
-
 export const PinholeSetup = styled.div`
   width: 200px;
   height: 52px;
@@ -81,7 +58,8 @@ export const PinholeSetup = styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  margin-top: 5rem;
+  margin-top: 3rem;
+  margin-left: 30rem;
   @media screen and (max-width: 650px) {
   }
 `;
@@ -129,26 +107,177 @@ export const GameP1 = styled.p`
 `;
 
 export const GameSquare = styled.img`
-  margin-left: 1rem;
-  margin-top: 1rem;
   width: 250px;
+  margin-top: 1rem;
+  margin-left: -8rem;
 `;
 export const Gametrees = styled.img`
-  margin-left: -6rem;
-  margin-top: 1rem;
+  margin-left: -2rem;
+  margin-top: -6rem;
 `;
 
+export const GameWhiteStairs = styled.img`
+  position: absolute;
+  margin-left: -12rem;
+  margin-top: -6.6rem;
+  z-index: 1;
+`;
 export const GameStairsShadow = styled.img`
   mix-blend-mode: multiply;
-  margin-left: -18rem;
-  margin-top: 9rem;
+  margin-left: -11rem;
+  margin-top: -0.5rem;
 `;
-export const GameWhiteStairs = styled.img`
-  margin-left: -10rem;
-  margin-top: 10rem;
+// square 2
+export const GameSquare2 = styled.img`
+  width: 250px;
+  margin-left: -22rem;
+  margin-top: -2.5rem;
 `;
-export const GameSmallClouds = styled.img``;
+export const Gametrees2 = styled.img`
+  margin-left: -20rem;
+  margin-top: -9rem;
+`;
 
+export const GameWhiteStairs2 = styled.img`
+  position: absolute;
+  margin-left: -13.5rem;
+  margin-top: -6.5rem;
+  z-index: 1;
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+`;
+export const GameStairsShadow2 = styled.img`
+  mix-blend-mode: multiply;
+  margin-left: -15rem;
+  margin-top: 3rem;
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+`;
+
+export const PinholeSetup2 = styled.div`
+  width: 200px;
+  height: 52px;
+  opacity: 0.3;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  margin-top: 1rem;
+  margin-right: -5rem;
+  margin-left: 45rem;
+  @media screen and (max-width: 650px) {
+  }
+`;
+
+export const PinholeCamera2 = styled.div`
+  width: 240px;
+  height: 52px;
+  background: #001b4e;
+  border-radius: 50px;
+  opacity: 15px;
+
+  font-size: 15px;
+  line-height: 15px;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: flex-start;
+  padding: 1rem;
+  color: #ffffff;
+`;
+
+export const PinholeCameraCirlce2 = styled.div`
+  width: 45px;
+  height: 41px;
+  background: #ffffff;
+  border-radius: 50%;
+  margin-left: -2.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+`;
+
+export const PinholeLock2 = styled.img``;
+
+export const GameSmallClouds = styled.img`
+  margin-left: 50rem;
+`;
+// square 3
+
+export const GameSquare3 = styled.img`
+  width: 250px;
+  margin-left: 42rem;
+  margin-top: -2rem;
+`;
+export const Gametrees3 = styled.img`
+  margin-left: 20rem;
+  margin-top: -9rem;
+`;
+
+export const GameWhiteStairs3 = styled.img`
+  position: absolute;
+  margin-left: -13.5rem;
+  margin-top: -6.5rem;
+  z-index: 1;
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+`;
+export const GameStairsShadow3 = styled.img`
+  mix-blend-mode: multiply;
+  margin-left: -15rem;
+  margin-top: 3rem;
+  transform: matrix(-1, 0, 0, 1, 0, 0);
+`;
+
+export const PinholeSetup3 = styled.div`
+  width: 200px;
+  height: 52px;
+  opacity: 0.3;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  margin-top: 1rem;
+  margin-right: -5rem;
+  margin-left: 30rem;
+  @media screen and (max-width: 650px) {
+  }
+`;
+
+export const PinholeCamera3 = styled.div`
+  width: 240px;
+  height: 52px;
+  background: #001b4e;
+  border-radius: 50px;
+  opacity: 15px;
+
+  font-size: 15px;
+  line-height: 15px;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: flex-start;
+  padding: 1rem;
+  color: #ffffff;
+`;
+
+export const PinholeCameraCirlce3 = styled.div`
+  width: 45px;
+  height: 41px;
+  background: #ffffff;
+  border-radius: 50%;
+  margin-left: -2.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+`;
+
+export const PinholeLock3 = styled.img``;
+
+export const GameSmallClouds3 = styled.img`
+  margin-left: 50rem;
+`;
 // score start
 export const GameP = styled.p`
   display: flex;
