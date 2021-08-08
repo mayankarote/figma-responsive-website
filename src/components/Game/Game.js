@@ -25,7 +25,6 @@ import {
   GameContent,
   GameItems,
   PinholeSetup,
-  PartThree,
   PinholeCamera,
   PinholeCameraCirlce,
   PinholeLock,
@@ -38,32 +37,40 @@ import {
   GameStairsShadow2,
   GameWhiteStairs2,
   PinholeSetup2,
-  PinholeCamera2,
-  PinholeLock2,
-  PinholeCameraCirlce2,
-  GameSmallClouds,
   GameSquare3,
   Gametrees3,
   GameStairsShadow3,
   GameWhiteStairs3,
   PinholeSetup3,
-  PinholeCamera3,
-  PinholeCameraCirlce3,
-  PinholeLock3,
+  GameSmallClouds2,
+  GameSmallClouds3,
+  PinholeSetup4,
+  GameSquare4,
+  Gametrees4,
+  GameWhiteStairs4,
+  GameStairsShadow4,
+  GameGreenLine4,
+  GameSquare5,
+  PinholeCameraCirlce5,
+  PinholeSetup5,
+  PinholeCamera5,
+  PinholeLine,
+  PinholeText5,
+  PinholePlay,
+  GameLight,
+  GameScoreCircle,
+  GameScoreCircleOne,
+  GameScoreRectangle,
+  GameP,
+  GameScoreCircleTwo,
+  GameScoreCircleThree,
+  GameSmallCloudIcon2,
+  GameSunIcon,
+  GameMiniCloudIcon,
+  ScoreDiv,
+  Setup,
 } from "./GameElements";
-import {
-  VerticalTimeline,
-  VerticalTimelineElement,
-} from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
-import Timeline from "@material-ui/lab/Timeline";
-import TimelineItem from "@material-ui/lab/TimelineItem";
-import TimelineSeparator from "@material-ui/lab/TimelineSeparator";
-import TimelineConnector from "@material-ui/lab/TimelineConnector";
-import TimelineContent from "@material-ui/lab/TimelineContent";
-import TimelineDot from "@material-ui/lab/TimelineDot";
-import TimelineOppositeContent from "@material-ui/lab/TimelineOppositeContent";
-import Typography from "@material-ui/core/Typography";
 
 export default function Login() {
   let history = useHistory();
@@ -77,68 +84,153 @@ export default function Login() {
     <GameContainer>
       <GameContent>
         <GameItems>
-          <>
-            <Timeline align="alternate">
-              <TimelineItem>
-                <TimelineOppositeContent>
-                  <PinholeSetup>
-                    <PinholeCamera>Pinhole camera </PinholeCamera>
-                    <PinholeCameraCirlce>
-                      <PinholeLock src={lock} alt="" />
-                    </PinholeCameraCirlce>
-                  </PinholeSetup>
-                </TimelineOppositeContent>
+          <section class="timeline">
+            <GameSunIcon src={sun} alt="" />
+            <GameSmallCloudIcon2 src={smallCloud} alt="" />
+            <GameMiniCloudIcon src={miniCloud} alt="" />
+          </section>
+          <section class="timeline">
+            <Setup>
+              <ul>
+                <li>
+                  <div>
+                    <GameSquare src={square} />
+                    <Gametrees src={trees} alt="" />
+                    <GameWhiteStairs src={fourWhiteSteps} alt="" />
+                    <GameStairsShadow src={fourWhiteStepsShadow} alt="" />
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <PinholeSetup>
+                      <PinholeCamera>Pinhole camera </PinholeCamera>
+                      <PinholeCameraCirlce>
+                        <PinholeLock src={lock} alt="" />
+                      </PinholeCameraCirlce>
+                    </PinholeSetup>
+                  </div>
+                </li>
+              </ul>
+              {/*  */}
+              <ul>
+                <li>
+                  <div>
+                    <PinholeSetup2>
+                      <PinholeCamera>Eclipses </PinholeCamera>
+                      <PinholeCameraCirlce>
+                        <PinholeLock src={lock} alt="" />
+                      </PinholeCameraCirlce>
+                    </PinholeSetup2>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <GameSmallClouds2 src={smallCloud} alt="" />
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <GameSquare2 src={square} />
+                    <Gametrees2 src={trees} alt="" />
+                    <GameWhiteStairs2 src={fourWhiteSteps} alt="" />
+                    <GameStairsShadow2 src={fourWhiteStepsShadow} alt="" />
+                  </div>
+                </li>
+              </ul>
+              {/*  */}
+              <ul>
+                <li>
+                  <div>
+                    <GameSmallClouds3 src={smallCloud} alt="" />
+                  </div>
+                </li>
 
-                <TimelineContent>
-                  <GameSquare src={square} />
-                  <Gametrees src={trees} alt="" />
-                  <GameStairsShadow src={fourWhiteStepsShadow} alt="" />
-                  <GameWhiteStairs src={fourWhiteSteps} alt="" />
-                </TimelineContent>
-              </TimelineItem>
-              {/* square 2 */}
+                <li>
+                  <div>
+                    <GameSquare3 src={square} />
+                    <Gametrees3 src={trees} alt="" />
+                    <GameWhiteStairs3 src={fourYellowSteps} alt="" />
+                    <GameStairsShadow3 src={fourWhiteStepsShadow} alt="" />
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <PinholeSetup3>
+                      <PinholeCamera>Types of Beam</PinholeCamera>
+                      <PinholeCameraCirlce>
+                        <PinholeLock src={lock} alt="" />
+                      </PinholeCameraCirlce>
+                    </PinholeSetup3>
+                  </div>
+                </li>
+              </ul>
+              {/*  */}
+              <ul>
+                <li>
+                  <div>
+                    <PinholeSetup4>
+                      <PinholeCamera>
+                        Transparent, Translucent & Opaque materials
+                      </PinholeCamera>
+                      <PinholeCameraCirlce>
+                        <PinholeLock src={lock} alt="" />
+                      </PinholeCameraCirlce>
+                    </PinholeSetup4>
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <GameSquare4 src={colorSquare} />
+                    <Gametrees4 src={bunchTrees} alt="" />
+                    <GameWhiteStairs4 src={fourYellowSteps} alt="" />
+                    <GameStairsShadow4 src={fourWhiteStepsShadow} alt="" />
+                    <GameGreenLine4 src={Greenline} alt="" />
+                  </div>
+                </li>
+              </ul>
+              {/*  */}
+              <ul>
+                <li>
+                  <div>
+                    <GameSquare5 src={colorSquare} />
+                    <GameLight src={manLight} alt="" />
+                  </div>
+                </li>
+                <li>
+                  <div>
+                    <PinholeSetup5 onClick={onClick}>
+                      <PinholeCamera5>
+                        <PinholeText5>Introduction to Light </PinholeText5>
+                        <PinholeLine src={yellowLine} />
+                      </PinholeCamera5>
+                      <PinholeCameraCirlce5>
+                        <PinholePlay src={blackPlay} alt="" />
+                      </PinholeCameraCirlce5>
+                    </PinholeSetup5>
+                  </div>
+                </li>
+              </ul>
+            </Setup>
+          </section>
 
-              {/* <TimelineItem>
-                <TimelineOppositeContent>
-                  <GameSquare2 src={square} />
-                  <Gametrees2 src={trees} alt="" />
-                  <GameStairsShadow2 src={fourWhiteStepsShadow} alt="" />
-                  <GameWhiteStairs2 src={fourWhiteSteps} alt="" />
-                </TimelineOppositeContent>
-
-                <TimelineContent>
-                  <PinholeSetup2>
-                    <PinholeCamera2>Pinhole camera </PinholeCamera2>
-                    <PinholeCameraCirlce2>
-                      <PinholeLock2 src={lock} alt="" />
-                    </PinholeCameraCirlce2>
-                  </PinholeSetup2>
-                  <GameSmallClouds src={smallCloud} alt="" />
-                </TimelineContent>
-              </TimelineItem> */}
-              {/* square 3 */}
-
-              {/* <TimelineItem>
-                <TimelineOppositeContent>
-                  <PinholeSetup3>
-                    <PinholeCamera3>Pinhole camera </PinholeCamera3>
-                    <PinholeCameraCirlce3>
-                      <PinholeLock3 src={lock} alt="" />
-                    </PinholeCameraCirlce3>
-                  </PinholeSetup3>
-                </TimelineOppositeContent>
-
-                <TimelineContent> */}
-              {/* <GameSquare3 src={square} />
-                  <Gametrees3 src={trees} alt="" />
-                  <GameStairsShadow3 src={fourWhiteStepsShadow} alt="" />
-                  <GameWhiteStairs3 src={fourWhiteSteps} alt="" /> */}
-
-              {/* <GameSmallClouds src={smallCloud} alt="" /> */}
-              {/* </TimelineContent>
-              </TimelineItem> */}
-            </Timeline>
-          </>
+          <section class="timeline">
+            <ul>
+              <li>
+                <div>
+                  <ScoreDiv>
+                    <GameP>Score</GameP>
+                    <GameScoreRectangle>
+                      <GameScoreCircle>
+                        <GameScoreCircleOne>0</GameScoreCircleOne>
+                        <GameScoreCircleTwo>1</GameScoreCircleTwo>
+                        <GameScoreCircleThree>1</GameScoreCircleThree>
+                      </GameScoreCircle>
+                    </GameScoreRectangle>
+                  </ScoreDiv>
+                </div>
+              </li>
+            </ul>
+          </section>
         </GameItems>
         <Footer />
       </GameContent>

@@ -6,7 +6,7 @@ export const CDContainer = styled.div`
 export const CDContent = styled.div`
   background: #0c2651;
   max-height: 100%;
-  height: calc(100vh - 0px);
+  height: 100%;
   padding: 0rem calc((100vw - 1900px) / 2);
   @media screen and (max-width: 650px) {
     height: 100%;
@@ -273,7 +273,7 @@ export const ChapBtn = styled.button`
   @media screen and (max-width: 650px) {
     width: 180px;
     height: 35px;
-    font-size: 15px;
+    font-size: 14px;
   }
 `;
 export const ChapBtn2 = styled.button`
@@ -292,7 +292,7 @@ export const ChapBtn2 = styled.button`
   @media screen and (max-width: 650px) {
     width: 180px;
     height: 35px;
-    font-size: 15px;
+    font-size: 14px;
   }
 `;
 
@@ -312,6 +312,6 @@ export const ChapBtn3 = styled.button`
     width: 120px;
     height: 40px;
     padding: 0.1rem;
-    font-size: 15px;
+    font-size: 12px;
   }
 `;

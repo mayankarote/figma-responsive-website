@@ -1,29 +1,24 @@
 import styled from "styled-components";
 
 export const ChapContainer = styled.div`
-  height: 100vh;
+  max-height: 100vh;
+  background: #0c2651;
 `;
 
 export const ChapContent = styled.div`
+  background: #0c2651;
   max-height: 100%;
-  // background: #0c2651;
-  padding: 0rem calc((100vw - 1500px) / 2);
-  height: 100%;
-  @media screen and (max-width: 650px) {
-    height: 100%;
-    width: 100%;
-  }
 `;
-
 export const ChapItems = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  align-content: center;
+  align-content: flex-start;
   margin: 0 auto;
   background: #0c2651;
-  max-height: 100%;
+  height: 100%;
+  // height: 100vh;
   @media screen and (max-width: 650px) {
     width: 100%;
   }
