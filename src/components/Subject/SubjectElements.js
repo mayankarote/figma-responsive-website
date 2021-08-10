@@ -58,71 +58,91 @@ export const ModelTwo = styled.div`
 `;
 
 export const YellowCirlce = styled.div`
-  width: 149px;
-  height: 149px;
+  width: 139px;
+  height: 139px;
   background: linear-gradient(180deg, #ff8a00 13.64%, #ffc000 100%);
   border-radius: 100%;
   margin-left: 7rem;
   @media screen and (max-width: 650px) {
     width: 100px;
     height: 100px;
-    margin-left: 3rem;
+    margin-left: 2rem;
   }
 `;
 export const SubjectIcon = styled.img`
   cursor: pointer;
   margin-left: 9rem;
-  margin-top: -6rem;
+  margin-top: -5rem;
+  width: 129px;
+  height: 104px;
   @media screen and (max-width: 650px) {
     width: 80px;
     height: 80px;
-    margin-left: 4.5rem;
-    margin-top: -4.5rem;
+    margin-left: 3.5rem;
+    margin-top: -4rem;
   }
 `;
 
 export const SubjP = styled.p`
   font-weight: 600;
-  font-size: 25px;
+  font-size: 28px;
   color: #5c5c5c;
   text-align: center;
   padding: 1rem;
+  font-family: Proxima Nova;
+  font-style: normal;
   @media screen and (max-width: 650px) {
     font-size: 20px;
   }
 `;
 
 export const SubjP2 = styled.p`
-  font-size: 18px;
+  width: 334px;
+  height: 48px;
+  margin-left: 3rem;
+  font-size: 15px;
+  line-height: 15px;
   color: #5c5c5c;
   text-align: center;
+  font-family: Proxima Nova;
+  font-style: normal;
   @media screen and (max-width: 650px) {
-    font-size: 15px;
+    font-size: 10px;
+    width: 200px;
+    height: 48px;
+    margin-left: 0.3rem;
   }
 `;
 
 export const SubjModelP = styled.p`
   font-weight: 600;
-  font-size: 25px;
+  font-size: 28px;
   color: white;
   padding: 1rem;
+  font-family: Proxima Nova;
+  font-style: normal;
   @media screen and (max-width: 650px) {
     font-size: 20px;
   }
 `;
 
 export const SubjModelP2 = styled.p`
-  font-size: 18px;
+  font-size: 15px;
   color: white;
   padding: 1rem;
+  font-weight: bold;
+  font-family: Proxima Nova;
+  font-style: normal;
   @media screen and (max-width: 650px) {
     font-size: 15px;
   }
 `;
 export const SubjModelP3 = styled.p`
-  font-size: 25px;
+  font-size: 28px;
   color: white;
   padding: 1rem;
+  font-family: Proxima Nova;
+  font-style: normal;
   @media screen and (max-width: 650px) {
     font-size: 20px;
   }
@@ -143,7 +163,7 @@ export const ModelGroup = styled.div`
   opacity: 0.95;
   box-shadow: 0px 12px 35px rgba(160, 121, 0, 0.2);
   border-radius: 10px;
-  margin: 2rem;
+  margin: 1rem;
   padding: 1rem;
   @media screen and (max-width: 650px) {
     width: 300px;
@@ -159,7 +179,7 @@ export const ModelGroupTwo = styled.div`
   opacity: 0.95;
   box-shadow: 0px 12px 35px rgba(160, 121, 0, 0.2);
   border-radius: 10px;
-  margin: 2rem;
+  margin: 1rem;
   padding: 1rem;
   @media screen and (max-width: 650px) {
     width: 300px;
@@ -181,8 +201,10 @@ export const ChapBtn = styled.button`
   color: #111;
   margin-left: 14rem;
   margin-top: -1rem;
-  font-size: 15px;
+  font-size: 14px;
   color: black;
+  font-family: Proxima Nova;
+  font-style: normal;
   @media screen and (max-width: 650px) {
     width: 120px;
     height: 40px;

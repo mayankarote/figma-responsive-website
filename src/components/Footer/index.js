@@ -1,11 +1,13 @@
 import React from "react";
 
-import { FooterContainer, FooterWrap } from "./FooterElements";
+import { FooterContainer, FooterP, FooterWrap } from "./FooterElements";
 
 const Footer = () => {
   return (
     <FooterContainer>
-      <FooterWrap>All Right Reserved | STEPAPP 2021</FooterWrap>
+      <FooterWrap>
+        <FooterP>All Right Reserved | STEPAPP 2021</FooterP>
+      </FooterWrap>
     </FooterContainer>
   );
 };

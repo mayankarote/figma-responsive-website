@@ -13,52 +13,78 @@ export const LoginForm = styled.div`
 `;
 
 export const FormInput = styled.div`
-  color: #111;
-  padding: 1rem 2rem;
-  width: 500px;
-  height: 70px;
+  width: 430px;
+  height: 60px;
   border: 1px solid rgba(0, 0, 0, 0.24);
   background: #ffffff;
-  border-radius: 80px;
+  border-radius: 100px;
   color: black;
-  font-size: 15px;
-  margin: 2rem;
+  margin: 1rem;
+  padding: 1rem 1rem;
   outline: none;
+  font-family: Proxima Nova;
+  font-style: normal;
+  color: #5c5c5c;
+  font-size: 14px;
+  line-height: 17px;
   @media screen and (max-width: 650px) {
-    width: 100%;
-    width: 300px;
-    height: 65px;
+    width: 280px;
+    height: 55px;
+    padding: 1rem 1rem;
+  }
+  @media screen and (max-width: 280px) {
+    width: 250px;
+    height: 50px;
+    padding: 0.8rem 1rem;
   }
 `;
 
 export const FormP = styled.p`
-  font-size: 15px;
-  color: white;
-  text-align: right;
+  color: #d8d8d8;
+  // text-align: right;
+  margin-left: 13rem;
+  font-family: Proxima Nova;
+  font-style: normal;
+  font-size: 12px;
+  line-height: 12px;
   @media screen and (max-width: 650px) {
-    margin: 1rem;
-    font-size: 13px;
+    margin-left: 6rem;
+    font-size: 10px;
+  }
+  @media screen and (max-width: 650px) {
+    margin-left: 4rem;
+    font-size: 10px;
   }
 `;
 
 export const FormError = styled.p`
-  font-size: 15px;
+  font-size: 1px;
   color: red;
   text-align: right;
+  font-family: Proxima Nova;
+  font-style: normal;
 `;
 
 export const LoginBtn = styled.button`
-  background-color: #ffc000;
-  color: #111;
+  background: linear-gradient(253.58deg, #ffc000 1.55%, #ff8a00 95.8%);
+  box-shadow: 0px 12px 35px rgba(160, 121, 0, 0.2);
+  border-radius: 100px;
+  color: #ffffff;
   padding: 1rem 2rem;
-  width: 500px;
-  height: 70px;
-  border-radius: 80px;
-  font-size: 18px;
-  margin: 2rem;
+  width: 430px;
+  height: 60px;
+  font-size: 14px;
+  margin: 1rem;
+  margin-top: 3rem;
+  font-family: Proxima Nova;
+  font-style: normal;
   @media screen and (max-width: 650px) {
-    width: 100%;
-    width: 300px;
-    height: 65px;
+    width: 280px;
+    height: 55px;
+  }
+  @media screen and (max-width: 280px) {
+    width: 250px;
+    height: 50px;
+    padding: 0.7rem 2rem;
   }
 `;

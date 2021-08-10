@@ -43,7 +43,7 @@ export default function Subject() {
       <SubjectContent>
         <SubjectItems>
           <Carousel>
-            <Carousel.Item>
+            <Carousel.Item controls>
               <ModelOne>
                 <YellowCirlce />
                 <SubjectIcon src={image} alt="" />
@@ -93,7 +93,7 @@ export default function Subject() {
             </ModelGroup>
 
             <ModelGroupTwo>
-              <SubjModelP>Learn Math</SubjModelP>
+              <SubjModelP>Learn Maths</SubjModelP>
               <SubjModelP2>
                 <p>Playing with Numbers </p>Number System,{" "}
                 <p>+7 more chapters</p>

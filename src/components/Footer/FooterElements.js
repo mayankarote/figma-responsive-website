@@ -1,20 +1,26 @@
 import styled from "styled-components";
 
 export const FooterContainer = styled.footer`
-  background-color: #0c2651;
-  color: white;
+  background-color: #0d2249;
+  color: #ffffff;
+  height: 36px;
+  max-width: 100%;
 `;
 
 export const FooterWrap = styled.div`
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 5px 2px;
-  max-width: 100%;
-  margin: 0rem auto;
-  font-size: 18px;
+  align-content: center;
+`;
+export const FooterP = styled.p`
+  margin-top: 0.5rem;
+  text-align: center;
+  font-size: 12px;
+  font-family: Proxima Nova;
+  font-style: normal;
+  font-weight: bold;
   @media screen and (max-width: 400px) {
-    font-size: 13px;
+    font-size: 10px;
   }
 `;

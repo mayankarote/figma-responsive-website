@@ -19,6 +19,9 @@ export const HomeItemsfour = styled.div`
     max-width: 100%;
     height: 100%;
   }
+  @media screen and (max-width: 540px) {
+    margin-top: -4rem;
+  }
 `;
 
 export const WhiteFourCard = styled.div`
@@ -45,6 +48,8 @@ export const CardImg = styled.img`
 `;
 export const CardInfo = styled.div`
   margin: 1rem 1rem;
+  font-family: Proxima Nova;
+  font-style: normal;
 `;
 
 export const CardUserPicImg = styled.img`
@@ -54,9 +59,13 @@ export const CardUserPicImg = styled.img`
 export const CardHeading = styled.p`
   font-size: 15px;
   font-weight: 600;
+  font-family: Proxima Nova;
+  font-style: normal;
 `;
 export const CardsubTitle = styled.p`
   font-size: 15px;
+  font-family: Proxima Nova;
+  font-style: normal;
 `;
 
 export const CardTitle = styled.p`
@@ -65,6 +74,8 @@ export const CardTitle = styled.p`
   line-height: 24px;
   color: #5c5c5c;
   text-align: justify;
+  font-family: Proxima Nova;
+  font-style: normal;
 `;
 
 // -----------------------------------------------------------------
@@ -93,18 +104,25 @@ export const YellowCardImg = styled.img`
 
 export const YellowCardInfo = styled.div`
   margin: 1rem 4rem;
+  font-family: Proxima Nova;
+  font-style: normal;
 `;
 
 export const YellowCardHeading = styled.p`
   font-size: 35px;
   font-weight: 600;
   text-align: center;
+  font-family: Proxima Nova;
+  font-style: normal;
+  color: #ffff;
 `;
 
 export const YellowCardTitle = styled.p`
   width: 200px;
   font-size: 10px;
   line-height: 24px;
-  color: #5c5c5c;
+  color: #ffff;
   text-align: center;
+  font-family: Proxima Nova;
+  font-style: normal;
 `;

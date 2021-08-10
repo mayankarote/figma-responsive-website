@@ -50,12 +50,12 @@ function Form() {
       alert("Login Succefully!");
     } else {
       toast.error(
-        `Please enter valid Password!--
-          Length - 8 Character,
-          Sysmbol - at least 1,
-          Number - at least 1,
-          Uppercase - at least 1,
-          Lowercase - at least 1`,
+        `Please Enter Valid Password! - 
+          Length : 8 Character,
+          Symbol : at least 1,
+          Number : at least 1,
+          Uppercase : at least 1,
+          Lowercase : at least 1`,
         {
           position: toast.POSITION.TOP_CENTER,
         },
@@ -117,7 +117,7 @@ function Form() {
           </Link>
         </FormP>
 
-        <LoginBtn type="submit">Proceed</LoginBtn>
+        <LoginBtn type="submit">Sign In</LoginBtn>
       </form>
     </LoginForm>
   );

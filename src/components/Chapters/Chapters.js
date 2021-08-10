@@ -19,6 +19,7 @@ import {
   ChapBtn1,
   ChapAlign,
   ChapContent,
+  ChapAlignTwo,
 } from "./ChaptersElements";
 
 export default function Chapters() {
@@ -36,12 +37,12 @@ export default function Chapters() {
             {storeProducts.map((item) => (
               <>
                 <WhiteFourCard>
-                  <ChapAlign>
+                  <ChapAlignTwo>
                     <ChapBtn1>
                       <ChapStar src={star} alt="" />
                       <>Free Demo</>
                     </ChapBtn1>
-                  </ChapAlign>
+                  </ChapAlignTwo>
 
                   <ChapP>{item.title}</ChapP>
                   <ChapP2>{item.info}</ChapP2>

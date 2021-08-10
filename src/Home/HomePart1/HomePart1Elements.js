@@ -30,6 +30,12 @@ export const ProductCard = styled.div`
   width: 350px;
   margin: 1.5rem;
   padding: 0.55rem;
+  @media screen and (max-width: 280px) {
+    padding: 1rem;
+  }
+  @media screen and (max-width: 540px) {
+    margin-top: -1rem;
+  }
 `;
 
 export const HomeYellowCircle = styled.div`
@@ -37,20 +43,27 @@ export const HomeYellowCircle = styled.div`
   height: 85px;
   border-radius: 100px;
   background: linear-gradient(253.58deg, #ffc000 1.55%, #ff8a00 95.8%);
-  margin: 0rem 6rem;
+  margin: 0rem 5rem;
+  @media screen and (max-width: 280px) {
+    margin-top: -2rem;
+  }
 `;
 
 export const ProductImg = styled.img`
-  margin: 0rem 1.15rem;
+  margin: 0rem 1.1rem;
 `;
 export const ProductInfo = styled.div`
   margin: 1rem 1rem;
+  font-family: Proxima Nova;
+  font-style: normal;
 `;
 
 export const ProductsHeading = styled.h1`
   font-size: 20px;
   font-weight: 600;
   text-align: center;
+  font-family: Proxima Nova;
+  font-style: normal;
 `;
 
 export const ProductTitle = styled.p`
@@ -59,6 +72,8 @@ export const ProductTitle = styled.p`
   line-height: 24px;
   color: #5c5c5c;
   text-align: center;
+  font-family: Proxima Nova;
+  font-style: normal;
 `;
 
 // colorLine
@@ -67,11 +82,16 @@ export const HomeLineDiv = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-
   margin-bottom: 2rem;
 `;
 export const HomeLine = styled.img`
   margin: 0rem;
+  width: 160px;
+  height: 5px;
+  @media screen and (max-width: 540px) {
+    margin-top: -5rem;
+    width: 170px;
+  }
 `;
 export const Info = styled.div`
   margin: 0rem 1rem;
@@ -79,14 +99,31 @@ export const Info = styled.div`
 
 export const WhatStdsSayHeading = styled.h1`
   font-weight: 600;
-  font-size: 2.3rem;
   text-align: center;
   color: #ff8a00;
-  margin: 1.5rem;
+  margin: 1rem;
+  font-family: Proxima Nova;
+  font-style: normal;
+  font-size: 40px;
+  line-height: 158.34%;
+
   @media screen and (max-width: 650px) {
-    width: 100%;
-    font-size: 2.1rem;
-    margin: 1rem;
+    font-size: 25px;
+    line-height: 158.34%;
+    margin: 0.5rem;
+    font-family: Proxima Nova;
+    font-style: normal;
+    text-align: center;
+  }
+  @media screen and (max-width: 540px) {
+    margin-top: -2rem;
+    width: 234px;
+    font-size: 25px;
+    line-height: 158.34%;
+    margin-left: 4rem;
+    font-family: Proxima Nova;
+    font-style: normal;
+    text-align: center;
   }
 `;
 export const WhatStdsSayTitle = styled.p`
@@ -95,9 +132,13 @@ export const WhatStdsSayTitle = styled.p`
   text-align: center;
   color: #5c5c5c;
   margin: 1rem;
+  font-family: Proxima Nova;
+  font-style: normal;
   @media screen and (max-width: 650px) {
     font-size: 1rem;
     line-height: 1.7rem;
     margin: 1rem;
+    font-family: Proxima Nova;
+    font-style: normal;
   }
 `;
