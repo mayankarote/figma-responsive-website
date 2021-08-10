@@ -69,6 +69,11 @@ import {
   GameMiniCloudIcon,
   ScoreDiv,
   Setup,
+  GameSMSetup,
+  GameCloudsOne,
+  GameCloudsTwo,
+  GameCloudsThree,
+  GameBigClouds,
 } from "./GameElements";
 import "react-vertical-timeline-component/style.min.css";
 
@@ -85,9 +90,11 @@ export default function Login() {
       <GameContent>
         <GameItems>
           <section class="timeline">
-            <GameSunIcon src={sun} alt="" />
-            <GameSmallCloudIcon2 src={smallCloud} alt="" />
-            <GameMiniCloudIcon src={miniCloud} alt="" />
+            <GameSMSetup>
+              <GameSunIcon src={sun} alt="" />
+              <GameSmallCloudIcon2 src={smallCloud} alt="" />
+              <GameMiniCloudIcon src={miniCloud} alt="" />
+            </GameSMSetup>
           </section>
           <section class="timeline">
             <Setup>
@@ -210,6 +217,22 @@ export default function Login() {
                   </div>
                 </li>
               </ul>
+
+              {/*  */}
+              <ul>
+                <li>
+                  <div>
+                    <GameBigClouds>
+                      {/* <GameCloudsThree src={cloudThree} /> */}
+                      {/* <GameCloudsTwo src={cloudTwo} /> */}
+                      {/* <GameCloudsOne src={cloudOne} /> */}
+                    </GameBigClouds>
+                  </div>
+                </li>
+                <li>
+                  <div></div>
+                </li>
+              </ul>
             </Setup>
           </section>
 
@@ -232,8 +255,8 @@ export default function Login() {
             </ul>
           </section>
         </GameItems>
-        <Footer />
       </GameContent>
+      <Footer />
     </GameContainer>
   );
 }
