@@ -90,6 +90,7 @@ function Form() {
             maxLength={10}
             required
             style={{ outline: "none" }}
+            autoFocus
           />
         </FormInput>
         <FormInput>
