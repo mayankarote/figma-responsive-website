@@ -34,7 +34,7 @@ export default function Chapdescription() {
   let history = useHistory();
   const onClick = () => {
     history.push({
-      pathname: "/chapdetail",
+      pathname: "/game",
     });
   };
 

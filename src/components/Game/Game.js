@@ -81,7 +81,7 @@ export default function Login() {
   let history = useHistory();
   const onClick = () => {
     history.push({
-      pathname: "/chapintro",
+      pathname: "/chapdetail",
     });
   };
 
