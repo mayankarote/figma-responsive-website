@@ -64,16 +64,20 @@ export const ProductsHeading = styled.h1`
   text-align: center;
   font-family: Proxima Nova;
   font-style: normal;
+  color: #5c5c5c;
 `;
 
 export const ProductTitle = styled.p`
+  width: 255px;
+  height: 44px;
   font-weight: 400;
-  font-size: 18px;
-  line-height: 24px;
+  font-size: 14px;
+  line-height: 16px;
   color: #5c5c5c;
   text-align: center;
   font-family: Proxima Nova;
   font-style: normal;
+  margin-top: 0.5rem;
 `;
 
 // colorLine
@@ -127,8 +131,10 @@ export const WhatStdsSayHeading = styled.h1`
   }
 `;
 export const WhatStdsSayTitle = styled.p`
-  font-size: 1.3rem;
-  line-height: 2rem;
+  width: 585px;
+  height: 53px;
+  font-size: 14px;
+  line-height: 25px;
   text-align: center;
   color: #5c5c5c;
   margin: 1rem;

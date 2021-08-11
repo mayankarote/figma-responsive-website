@@ -20,13 +20,14 @@ import {
   ChapAlign,
   ChapContent,
   ChapAlignTwo,
+  Card,
 } from "./ChaptersElements";
 
 export default function Chapters() {
   const history = useHistory();
   const onClick = () => {
     history.push({
-      pathname: "/chapintro",
+      pathname: "/game",
     });
   };
   return (
@@ -34,32 +35,34 @@ export default function Chapters() {
       <ChapContainer>
         <ChapContent>
           <ChapItems>
-            {storeProducts.map((item) => (
-              <>
-                <WhiteFourCard>
-                  <ChapAlignTwo>
-                    <ChapBtn1>
-                      <ChapStar src={star} alt="" />
-                      <>Free Demo</>
-                    </ChapBtn1>
-                  </ChapAlignTwo>
+            <Card>
+              {storeProducts.map((item) => (
+                <>
+                  <WhiteFourCard>
+                    <ChapAlignTwo>
+                      <ChapBtn1>
+                        <ChapStar src={star} alt="" />
+                        <>Free Demo</>
+                      </ChapBtn1>
+                    </ChapAlignTwo>
 
-                  <ChapP>{item.title}</ChapP>
-                  <ChapP2>{item.info}</ChapP2>
-                  <ChapP3>{item.info2}</ChapP3>
-                  <ChapAlign>
-                    <ChapBtn onClick={onClick}>
-                      {item.btnValue === "Play" ? (
-                        <ChapIcon src={play} alt="" />
-                      ) : (
-                        <ChapIcon src={unBlock} alt="" />
-                      )}
-                      <Chap4>{item.btnValue}</Chap4>
-                    </ChapBtn>
-                  </ChapAlign>
-                </WhiteFourCard>
-              </>
-            ))}
+                    <ChapP>{item.title}</ChapP>
+                    <ChapP2>{item.info}</ChapP2>
+                    <ChapP3>{item.info2}</ChapP3>
+                    <ChapAlign>
+                      <ChapBtn onClick={onClick}>
+                        {item.btnValue === "Play" ? (
+                          <ChapIcon src={play} alt="" />
+                        ) : (
+                          <ChapIcon src={unBlock} alt="" />
+                        )}
+                        <Chap4>{item.btnValue}</Chap4>
+                      </ChapBtn>
+                    </ChapAlign>
+                  </WhiteFourCard>
+                </>
+              ))}
+            </Card>
           </ChapItems>
         </ChapContent>
         <Footer />

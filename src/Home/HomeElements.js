@@ -6,7 +6,7 @@ export const HomeContainer = styled.div`
 
 export const HomeContentOne = styled.div`
   background: linear-gradient(253.58deg, #ffc000 1.55%, #ff8a00 95.8%);
-  height: calc(100px + 200px);
+  height: calc(100px + 190px);
   max-height: 100%;
   padding: 0rem calc((100vw - 1700px) / 2);
   @media screen and (max-width: 650px) {
@@ -95,14 +95,14 @@ export const HomeP2 = styled.p`
 export const NavIcon = styled.div`
   display: block;
   position: absolute;
-  top: 5rem;
+  top: 4rem;
   right: 0;
 `;
 
 export const SVGIcon = styled.img`
   width: 100rem;
   height: 241px;
-  margin-left: 20rem;
+  margin-left: 15rem;
   @media screen and (max-width: 650px) {
     width: 90rem;
     height: 230px;

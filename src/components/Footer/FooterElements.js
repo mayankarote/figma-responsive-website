@@ -14,9 +14,9 @@ export const FooterWrap = styled.div`
   align-content: center;
 `;
 export const FooterP = styled.p`
-  margin-top: 0.5rem;
+  margin-top: 0.4rem;
   text-align: center;
-  font-size: 12px;
+  font-size: 14px;
   font-family: Proxima Nova;
   font-style: normal;
   font-weight: bold;

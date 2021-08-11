@@ -43,7 +43,7 @@ export default function Subject() {
       <SubjectContent>
         <SubjectItems>
           <Carousel>
-            <Carousel.Item controls>
+            <Carousel.Item>
               <ModelOne>
                 <YellowCirlce />
                 <SubjectIcon src={image} alt="" />

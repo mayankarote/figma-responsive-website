@@ -18,6 +18,7 @@ import {
   CardUserPicImg,
   CardsubTitle,
   WhiteFourCardHighlight,
+  CardDetails,
 } from "./HomeCardElements";
 
 import {
@@ -45,10 +46,12 @@ function HomeCard() {
                   Learning’ is on staff time and organisation of information.
                   The product’s price in comparison to hours saved represents
                   great value
+                  <CardUserPicImg src={userPic} alt="" />
                 </CardTitle>
-                <CardUserPicImg src={userPic} alt="" />
-                <CardHeading>Arthur Broklyn</CardHeading>
-                <CardsubTitle>Grade: 5th</CardsubTitle>
+                <CardDetails>
+                  <CardHeading>Arthur Broklyn</CardHeading>
+                  <CardsubTitle>Grade: 5th</CardsubTitle>
+                </CardDetails>
               </CardInfo>
             </WhiteFourCard>
 
@@ -61,10 +64,12 @@ function HomeCard() {
                   Learning’ is on staff time and organisation of information.
                   The product’s price in comparison to hours saved represents
                   great value
+                  <CardUserPicImg src={userPic} alt="" />
                 </CardTitle>
-                <CardUserPicImg src={userPic} alt="" />
-                <CardHeading>Arthur Broklyn</CardHeading>
-                <CardsubTitle>Grade: 5th</CardsubTitle>
+                <CardDetails>
+                  <CardHeading>Arthur Broklyn</CardHeading>
+                  <CardsubTitle>Grade: 5th</CardsubTitle>
+                </CardDetails>
               </CardInfo>
             </WhiteFourCardHighlight>
 
@@ -77,10 +82,12 @@ function HomeCard() {
                   Learning’ is on staff time and organisation of information.
                   The product’s price in comparison to hours saved represents
                   great value
+                  <CardUserPicImg src={userPic} alt="" />
                 </CardTitle>
-                <CardUserPicImg src={userPic} alt="" />
-                <CardHeading>Arthur Broklyn</CardHeading>
-                <CardsubTitle>Grade: 5th</CardsubTitle>
+                <CardDetails>
+                  <CardHeading>Arthur Broklyn</CardHeading>
+                  <CardsubTitle>Grade: 5th</CardsubTitle>
+                </CardDetails>
               </CardInfo>
             </WhiteFourCard>
 
@@ -93,10 +100,12 @@ function HomeCard() {
                   Learning’ is on staff time and organisation of information.
                   The product’s price in comparison to hours saved represents
                   great value
+                  <CardUserPicImg src={userPic} alt="" />
                 </CardTitle>
-                <CardUserPicImg src={userPic} alt="" />
-                <CardHeading>Arthur Broklyn</CardHeading>
-                <CardsubTitle>Grade: 5th</CardsubTitle>
+                <CardDetails>
+                  <CardHeading>Arthur Broklyn</CardHeading>
+                  <CardsubTitle>Grade: 5th</CardsubTitle>
+                </CardDetails>
               </CardInfo>
             </WhiteFourCard>
           </HomeItemsfour>
@@ -128,7 +137,7 @@ function HomeCard() {
 
               <YellowCardInfo>
                 <YellowCardImg src={a} alt="" />
-                <YellowCardHeading>$10</YellowCardHeading>
+                <YellowCardHeading>#10</YellowCardHeading>
                 <YellowCardTitle>
                   Ranked among the top 10 growing online learning startups in
                   West Africa

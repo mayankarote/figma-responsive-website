@@ -113,7 +113,14 @@ function Form() {
 
         <FormP>
           Don’t have an account?
-          <Link style={{ color: "#ffc000", padding: 5 }}>
+          <Link
+            style={{
+              color: "#ffc000",
+              padding: 5,
+              textDecoration: "underline #ffc000",
+              textDecorationLine: "#ffc000",
+            }}
+          >
             <>Sign Up</>
           </Link>
         </FormP>

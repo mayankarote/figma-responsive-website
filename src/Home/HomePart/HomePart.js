@@ -58,10 +58,18 @@ export default function Home() {
       <HomeItemsTwo>
         <StepAppLogo src={StepApp} alt="" />
         <HomeH1>Select School</HomeH1>
-        <HomeSelect onChange={fetchDropdownValue} placeholder="Select Name">
-          {states.map((state) => (
-            <option value={state.value}>{state.first_name}</option>
-          ))}
+        <HomeSelect>
+          <Select
+            onChange={fetchDropdownValue}
+            placeholder="School Name"
+            style={{ border: 0, outline: 0 }}
+            outline="none"
+            focusBorderColor="none"
+          >
+            {states.map((state) => (
+              <option value={state.value}>{state.first_name}</option>
+            ))}
+          </Select>
         </HomeSelect>
         <HomeBtn onClick={proceed}>Proceed</HomeBtn>
       </HomeItemsTwo>

@@ -29,6 +29,7 @@ import {
   ChapBtn2,
   CDBtnDiv,
   ChapBtn3,
+  Items,
 } from "./ChapDetailElements";
 
 export default function Chapdetail() {
@@ -44,50 +45,53 @@ export default function Chapdetail() {
     <CDContainer>
       <CDContent>
         <CDItems>
-          <div className="row">
-            <div className="column">
-              <CDPartOne>
-                <CDP>Light</CDP>
-                <CDIcon src={play} alt="" />
-                <CDP>Introduction to light </CDP>
-              </CDPartOne>
+          <Items>
+            <div className="row" style={{ backgroundColor: "" }}>
+              <div className="column" style={{ backgroundColor: "" }}>
+                <CDPartOne>
+                  <CDP>Light</CDP>
+                  <CDIcon src={play} alt="" />
+                  <CDP>Introduction to light </CDP>
+                </CDPartOne>
 
-              <CDModelOne>
-                <CDGrayArrow onClick={() => setState((v) => !v)}>
-                  <CollapeIcon />
-                </CDGrayArrow>
-                <CDGrayLine />
-              </CDModelOne>
-            </div>
-            <div className="column" style={{ backgroundColor: "" }}>
-              <CDPartTwo>
-                <CDRectangle>
-                  <CDGroupOne>
-                    <CDYellowCircle>
-                      <CDYellowP>1</CDYellowP>
-                    </CDYellowCircle>
-                    <CDCircle src={zigzagCircle} alt="" />
-                    <CDCircle src={zigzagCircle} alt="" />
-                    <CDCircle src={zigzagCircle} alt="" />
-                  </CDGroupOne>
+                <CDModelOne>
+                  <CDGrayArrow onClick={() => setState((v) => !v)}>
+                    <CollapeIcon />
+                  </CDGrayArrow>
+                  <CDGrayLine />
+                </CDModelOne>
+              </div>
+              <div className="column" style={{ backgroundColor: "" }}>
+                <CDPartTwo>
+                  <CDRectangle>
+                    <CDGroupOne>
+                      <CDYellowCircle>
+                        <CDYellowP>1</CDYellowP>
+                      </CDYellowCircle>
+                      <CDCircle src={zigzagCircle} alt="" />
+                      <CDCircle src={zigzagCircle} alt="" />
+                      <CDCircle src={zigzagCircle} alt="" />
+                    </CDGroupOne>
 
-                  <CDGroupTwo>
-                    <CDP1>
-                      Light affects our eyes to produce the sensation of Vision
-                    </CDP1>
-                    <CDColorfulRing>
-                      <ChapPTextList>10 s</ChapPTextList>
-                    </CDColorfulRing>
-                  </CDGroupTwo>
-                  <CDBtnDiv>
-                    <ChapBtn>True</ChapBtn>
-                    <ChapBtn2>False</ChapBtn2>
-                  </CDBtnDiv>
-                </CDRectangle>
-              </CDPartTwo>
-              <ChapBtn3 onClick={onClick}>Back To Lesson</ChapBtn3>
+                    <CDGroupTwo>
+                      <CDP1>
+                        Light affects our eyes to produce the sensation of
+                        Vision
+                      </CDP1>
+                      <CDColorfulRing>
+                        <ChapPTextList>10 s</ChapPTextList>
+                      </CDColorfulRing>
+                    </CDGroupTwo>
+                    <CDBtnDiv>
+                      <ChapBtn>True</ChapBtn>
+                      <ChapBtn2>False</ChapBtn2>
+                    </CDBtnDiv>
+                  </CDRectangle>
+                </CDPartTwo>
+                <ChapBtn3 onClick={onClick}>Back To Lesson</ChapBtn3>
+              </div>
             </div>
-          </div>
+          </Items>
         </CDItems>
       </CDContent>
       <Footer />

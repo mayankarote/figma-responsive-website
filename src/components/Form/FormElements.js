@@ -19,7 +19,7 @@ export const FormInput = styled.div`
   background: #ffffff;
   border-radius: 100px;
   color: black;
-  margin: 1rem;
+  margin: 0.5rem;
   padding: 1rem 1rem;
   outline: none;
   font-family: Proxima Nova;
@@ -75,7 +75,7 @@ export const LoginBtn = styled.button`
   height: 60px;
   font-size: 14px;
   margin: 1rem;
-  margin-top: 3rem;
+  margin-top: 2rem;
   font-family: Proxima Nova;
   font-style: normal;
   @media screen and (max-width: 650px) {

@@ -1,11 +1,12 @@
 import styled from "styled-components";
 
 export const GameContainer = styled.div`
-  height: 120vh;
+  max-height: 140vh;
 `;
 export const GameContent = styled.div`
   background: #68aeff;
-  height: 140vh;
+  max-height: 100%;
+  height: 100%;
   padding: 0rem calc((100vw - 1700px) / 2);
 `;
 
@@ -16,9 +17,8 @@ export const GameItems = styled.div`
   // justify-content: center;
   background: #68aeff;
   margin: 0 auto;
-  height: 100vh;
-  max-height: 100%;
-  padding: 1rem;
+  // height: 100vh;
+  // max-height: 100%;
   @media screen and (max-width: 650px) {
     max-width: 100%;
   }
@@ -26,10 +26,17 @@ export const GameItems = styled.div`
     max-width: 100%;
   }
 `;
+export const Items = styled.div`
+  display: flex;
+  align-content: flex-start;
+  align-items: flex-start;
+  // justify-content: center;
+  padding: 1rem;
+`;
 // sun clouds
 export const GameSMSetup = styled.div`
   margin-left: 1rem;
-  width: 100px;
+  // width: 100px;
   @media screen and (max-width: 650px) {
     margin-left: 0.2rem;
   }
@@ -77,7 +84,7 @@ export const GameMiniCloudIcon = styled.img`
 // sun clouds complete
 //-------------------------------------------square 1
 export const Setup = styled.div`
-  margin-left: 20rem;
+  margin-left: 8rem;
   @media screen and (max-width: 650px) {
     margin-left: -0rem;
     margin-top: 3.5rem;
@@ -87,7 +94,7 @@ export const Setup = styled.div`
     margin-top: 1.5rem;
   }
   @media screen and (max-width: 280px) {
-    margin-left: -2rem;
+    margin-left: -3rem;
     margin-top: 4rem;
   }
 `;
@@ -123,7 +130,8 @@ export const PinholeCamera = styled.div`
   background: #001b4e;
   border-radius: 50px;
   opacity: 15px;
-
+  font-family: Proxima Nova;
+  font-style: normal;
   font-size: 15px;
   line-height: 15px;
   display: flex;
@@ -617,7 +625,7 @@ export const GameLight = styled.img`
 
 // score start
 export const ScoreDiv = styled.div`
-  // margin-left: -5rem;
+  margin-left: 8rem;
   display: flex;
   align-content: center;
   align-items: center;
@@ -649,6 +657,8 @@ export const GameP = styled.p`
   font-size: 18px;
   margin-top: 1rem;
   color: #000000;
+  font-family: Proxima Nova;
+  font-style: normal;
   @media screen and (max-width: 650px) {
     font-size: 13px;
   }
@@ -693,6 +703,8 @@ export const GameScoreCircleOne = styled.div`
   height: 59px;
   background: #a79c9a;
   border-radius: 100px;
+  font-family: Proxima Nova;
+  font-style: normal;
   @media screen and (max-width: 650px) {
     width: 20px;
     height: 30px;
@@ -710,6 +722,8 @@ export const GameScoreCircleTwo = styled.div`
   margin-left: 0.5rem;
   background: #ff8a00;
   border-radius: 100px;
+  font-family: Proxima Nova;
+  font-style: normal;
   @media screen and (max-width: 650px) {
     width: 20px;
     height: 30px;
@@ -729,6 +743,8 @@ export const GameScoreCircleThree = styled.div`
   margin-left: 0.5rem;
   background: #93c951;
   border-radius: 100px;
+  font-family: Proxima Nova;
+  font-style: normal;
   @media screen and (max-width: 650px) {
     width: 20px;
     height: 30px;
@@ -748,43 +764,47 @@ export const GameBigClouds = styled.div`
   align-content: center;
   flex-direction: column;
   flex-wrap: no-wrap;
-  margin-top: -rem;
-  width: 100%;
+  margin-top: 20rem;
   @media screen and (max-width: 650px) {
-    width: 100%;
-    // margin-top: 4rem;
+    margin-top: 8.9rem;
   }
 `;
 export const GameCloudsThree = styled.img`
   position: absolute;
-  margin-left: -7.5rem;
-  max-width: 1900px;
-  margin-top: 10.4rem;
+  transform: translate(-5%, -50%);
+  // margin-left: 17.7rem;
+  width: 100%;
+  // max-height: 100%;
+  margin-top: -5.4rem;
   @media screen and (max-width: 650px) {
-    max-width: 370px;
-    margin-left: -5rem;
-    margin-top: 8.4rem;
-    background: pink;
+    position: absolute;
+    width: 100%;
+    margin-left: -1rem;
+    // margin-top: -24rem;
   }
 `;
 
 export const GameCloudsTwo = styled.img`
+  position: absolute;
+  max-height: 100%;
   margin-top: -22.4rem;
-  margin-left: -32.6rem;
-  max-width: 1900px;
+  margin-left: -7.6rem;
+  width: 100%;
   @media screen and (max-width: 650px) {
-    max-width: 370px;
-    margin-left: -5rem;
+    width: 100%;
+    margin-left: -2rem;
     margin-top: -4.3rem;
   }
 `;
 export const GameCloudsOne = styled.img`
+  position: absolute;
+  max-height: 100%;
   margin-top: -16.7rem;
-  margin-left: -32.6rem;
-  max-width: 1900px;
+  margin-left: -7.6rem;
+  width: 100%;
   @media screen and (max-width: 650px) {
-    max-width: 370px;
-    margin-left: -5rem;
+    width: 100%;
+    margin-left: -2.7rem;
     margin-top: -3.3rem;
   }
 `;

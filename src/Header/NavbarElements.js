@@ -7,9 +7,12 @@ export const Nav = styled.nav`
   height: 68px;
   display: flex;
   font-weight: bold;
-  font-size: 1rem;
-  @media screen and (max-width: 400px) {
+  font-size: 18px;
+  @media screen and (max-width: 650px) {
     font-size: 15px;
+  }
+  @media screen and (max-width: 540px) {
+    font-size: 14px;
   }
 `;
 
@@ -34,7 +37,7 @@ export const NavIcon = styled.div`
   cursor: pointer;
   color: #111;
   p {
-    transform: translate(-75%, 50%);
+    transform: translate(-70%, 45%);
     font-weight: bold;
   }
 `;
@@ -47,14 +50,14 @@ export const NavIcon1 = styled.div`
   cursor: pointer;
   color: #ff8a00;
   p {
-    transform: translate(-35%, 50%);
+    transform: translate(-30%, 45%);
   }
 `;
 export const NavIcon2 = styled.div`
   cursor: pointer;
   color: #ff8a00;
   p {
-    transform: translate(-35%, 50%);
+    transform: translate(-30%, 40%);
   }
 `;
 
@@ -65,9 +68,9 @@ export const Bars = styled.img`
   border: 9px solid white;
   transform: translate(20%, 25%);
   @media screen and (max-width: 400px) {
-    width: 80px;
-    height: 80px;
-    border-radius: 22px;
-    border: 9px solid white;
+    width: 70px;
+    height: 70px;
+    border-radius: 21px;
+    border: 8px solid white;
   }
 `;
