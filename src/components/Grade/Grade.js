@@ -9,9 +9,16 @@ import {
   GradeItems,
   ChapP,
   ChapP3,
-  NavIcon,
+  Grades,
   GradeSmallCirlce5,
   GradeSmallCirlce6,
+  GradeSmallCirlce7,
+  Chap,
+  GradeSmallCirlce8,
+  GradeSmallCirlce10,
+  GradeSmallCirlce9,
+  GradeSmallCirlce11,
+  ChapBtn,
 } from "./GradeElements";
 import Footer from "../Footer";
 
@@ -23,9 +30,13 @@ export default function Grade() {
     if (!selectedGrade) {
       alert("Please select Grade");
     } else {
-      history.push({
-        pathname: "/subject",
-      });
+      if (selectedGrade === 5 || selectedGrade === 6) {
+        history.push({
+          pathname: "/subject",
+        });
+      } else {
+        alert("No data Available");
+      }
     }
   };
   return (
@@ -33,93 +44,113 @@ export default function Grade() {
       <GradeContent>
         <GradeItems>
           <GradeBigCirlce>
-            <ChapP>
-              Select <ChapP2>Grade {selectedGrade}</ChapP2>
-            </ChapP>
-            <NavIcon>
-              <GradeSmallCirlce5 onClick={() => setSelectedGrade(5)}>
-                <ChapP3>5th</ChapP3>
-              </GradeSmallCirlce5>
-              <GradeSmallCirlce6 onClick={() => setSelectedGrade(6)}>
-                <ChapP3>6th</ChapP3>
-              </GradeSmallCirlce6>
-            </NavIcon>
+            <Chap>
+              <ChapP>
+                Select <ChapP2>Grade {selectedGrade}</ChapP2>
+              </ChapP>
+            </Chap>
+            <Grades>
+              {selectedGrade === 5 ? (
+                <>
+                  <GradeSmallCirlce5
+                    onClick={() => setSelectedGrade(5)}
+                    className="gradee__smallCircleSelected gradee__selectText"
+                  >
+                    <ChapP3 className="gradee__selectText">5th</ChapP3>
+                  </GradeSmallCirlce5>
+                </>
+              ) : (
+                <GradeSmallCirlce5 onClick={() => setSelectedGrade(5)}>
+                  <ChapP3>5th</ChapP3>
+                </GradeSmallCirlce5>
+              )}
+              {selectedGrade === 6 ? (
+                <>
+                  <GradeSmallCirlce6
+                    onClick={() => setSelectedGrade(6)}
+                    className="gradee__smallCircleSelected gradee__selectText"
+                  >
+                    <ChapP3 className="gradee__selectText">6th</ChapP3>
+                  </GradeSmallCirlce6>
+                </>
+              ) : (
+                <GradeSmallCirlce6 onClick={() => setSelectedGrade(6)}>
+                  <ChapP3>6th</ChapP3>
+                </GradeSmallCirlce6>
+              )}
+              {selectedGrade === 7 ? (
+                <>
+                  <GradeSmallCirlce7
+                    onClick={() => setSelectedGrade(7)}
+                    className="gradee__smallCircleSelected gradee__selectText"
+                  >
+                    <ChapP3 className="gradee__selectText">7th</ChapP3>
+                  </GradeSmallCirlce7>
+                </>
+              ) : (
+                <GradeSmallCirlce7 onClick={() => setSelectedGrade(7)}>
+                  <ChapP3>7th</ChapP3>
+                </GradeSmallCirlce7>
+              )}
+              {selectedGrade === 8 ? (
+                <>
+                  <GradeSmallCirlce8
+                    onClick={() => setSelectedGrade(8)}
+                    className="gradee__smallCircleSelected gradee__selectText"
+                  >
+                    <ChapP3 className="gradee__selectText">8th</ChapP3>
+                  </GradeSmallCirlce8>
+                </>
+              ) : (
+                <GradeSmallCirlce8 onClick={() => setSelectedGrade(8)}>
+                  <ChapP3>8th</ChapP3>
+                </GradeSmallCirlce8>
+              )}
+              {selectedGrade === 9 ? (
+                <>
+                  <GradeSmallCirlce9
+                    onClick={() => setSelectedGrade(9)}
+                    className="gradee__smallCircleSelected gradee__selectText"
+                  >
+                    <ChapP3 className="gradee__selectText">9th</ChapP3>
+                  </GradeSmallCirlce9>
+                </>
+              ) : (
+                <GradeSmallCirlce9 onClick={() => setSelectedGrade(9)}>
+                  <ChapP3>9th</ChapP3>
+                </GradeSmallCirlce9>
+              )}
+              {selectedGrade === 10 ? (
+                <>
+                  <GradeSmallCirlce10
+                    onClick={() => setSelectedGrade(10)}
+                    className="gradee__smallCircleSelected gradee__selectText"
+                  >
+                    <ChapP3 className="gradee__selectText">10th</ChapP3>
+                  </GradeSmallCirlce10>
+                </>
+              ) : (
+                <GradeSmallCirlce10 onClick={() => setSelectedGrade(10)}>
+                  <ChapP3>10th</ChapP3>
+                </GradeSmallCirlce10>
+              )}
+              {selectedGrade === 11 ? (
+                <>
+                  <GradeSmallCirlce11
+                    onClick={() => setSelectedGrade(11)}
+                    className="gradee__smallCircleSelected gradee__selectText"
+                  >
+                    <ChapP3 className="gradee__selectText">11th</ChapP3>
+                  </GradeSmallCirlce11>
+                </>
+              ) : (
+                <GradeSmallCirlce11 onClick={() => setSelectedGrade(11)}>
+                  <ChapP3>11th</ChapP3>
+                </GradeSmallCirlce11>
+              )}
+            </Grades>
           </GradeBigCirlce>
-
-          {/* <div
-              className={
-                selectedGrade === 5
-                  ? "gradee__smallCircleSelected gradee__smallCircle5"
-                  : "gradee__smallCircle5"
-              }
-              onClick={() => setSelectedGrade(5)}
-            >
-              <p className="gradee_five">5th</p>
-            </div> */}
-          {/* {/* <div
-              className={
-                selectedGrade === 6
-                  ? "gradee__smallCircleSelected gradee__smallCircle6"
-                  : "gradee__smallCircle6"
-              }
-              onClick={() => setSelectedGrade(6)}
-            >
-              <p className="gradee_six">6th</p>
-            </div> */}
-          {/* <div
-              className={
-                selectedGrade === 7
-                  ? "gradee__smallCircleSelected gradee__smallCircle7"
-                  : "gradee__smallCircle7"
-              }
-              onClick={() => setSelectedGrade(7)}
-            >
-              <p className="gradee_seven">7th</p>
-            </div> */}
-          {/* <div
-              className={
-                selectedGrade === 8
-                  ? "gradee__smallCircleSelected gradee__smallCircle8"
-                  : "gradee__smallCircle8"
-              }
-              onClick={() => setSelectedGrade(8)}
-            >
-              <p className="gradee_eight">8th</p>
-            </div> */}
-          {/* <div
-              className={
-                selectedGrade === 9
-                  ? "gradee__smallCircleSelected gradee__smallCircle9"
-                  : "gradee__smallCircle9"
-              }
-              onClick={() => setSelectedGrade(9)}
-            >
-              <p className="gradee_nine">9th</p>
-            </div> */}
-          {/* <div
-              className={
-                selectedGrade === 10
-                  ? "gradee__smallCircleSelected gradee__smallCircle10"
-                  : "gradee__smallCircle10"
-              }
-              onClick={() => setSelectedGrade(10)}
-            >
-              <p className="gradee_ten">10th</p>
-            </div> */}
-          {/* <div
-              className={
-                selectedGrade === 11
-                  ? "gradee__smallCircleSelected gradee__smallCircle11"
-                  : "gradee__smallCircle11"
-              }
-              onClick={() => setSelectedGrade(11)}
-            >
-              <p className="gradee_eleven">11th</p>
-            </div> */}
-
-          {/* <button className="gradee__formbtn" onClick={proceed}>
-            Proceed
-          </button> */}
+          <ChapBtn onClick={proceed}>Proceed</ChapBtn>
         </GradeItems>
       </GradeContent>
       <Footer />

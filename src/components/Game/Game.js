@@ -75,6 +75,7 @@ import {
   GameCloudsTwo,
   GameCloudsThree,
   GameBigClouds,
+  GameSmallClouds4,
 } from "./GameElements";
 import "react-vertical-timeline-component/style.min.css";
 
@@ -172,6 +173,11 @@ export default function Login() {
                       </PinholeSetup3>
                     </div>
                   </li>
+                  <li>
+                    <div>
+                      <GameSmallClouds4 src={smallCloud} alt="" />
+                    </div>
+                  </li>
                 </ul>
                 {/*  */}
                 <ul>
@@ -221,9 +227,9 @@ export default function Login() {
                   <li>
                     <div>
                       <GameBigClouds>
-                        {/* <GameCloudsThree src={cloudThree} /> */}
-                        {/* <GameCloudsTwo src={cloudTwo} /> */}
-                        {/* <GameCloudsOne src={cloudOne} /> */}
+                        <GameCloudsThree src={cloudThree} />
+                        <GameCloudsTwo src={cloudTwo} />
+                        <GameCloudsOne src={cloudOne} />
                       </GameBigClouds>
                     </div>
                   </li>
