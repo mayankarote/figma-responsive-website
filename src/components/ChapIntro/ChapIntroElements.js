@@ -1,27 +1,22 @@
 import styled from "styled-components";
 
 export const ChapContainer = styled.div`
-  height: 100vh;
+  max-height: 100vh;
   background: #0c2651;
 `;
 export const ChapContent = styled.div`
   background: #0c2651;
   max-height: 100%;
   height: 100%;
-  padding: 0rem calc((100vw - 1800px) / 2);
-  @media screen and (max-width: 650px) {
-    max-height: 100%;
-  }
-
-  @media screen and (max-width: 1024px) {
+  // padding: 0rem calc((100vw - 1800px) / 2);
+  @media screen and (width: 1024px) {
     height: 100%;
   }
 `;
 
 export const ChapItems = styled.div`
   background: #0c2651;
-  // max-height: 100%;
-  // height: 100vh;
+  max-height: 100%;
   // margin: 0 auto;
   @media screen and (max-width: 650px) {
     width: 100%;

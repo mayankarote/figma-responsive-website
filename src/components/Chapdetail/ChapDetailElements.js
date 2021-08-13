@@ -8,14 +8,19 @@ export const CDContent = styled.div`
   background: #0c2651;
   max-height: 100%;
   height: 100%;
-  @media screen and (max-width: 1024px) {
+  @media screen and (max-width: 650px) {
+    max-height: 100%;
+  }
+
+  @media screen and (width: 1024px) {
+    height: 100%;
     height: 100vh;
   }
 `;
 
 export const CDItems = styled.div`
   background: #0c2651;
-  // max-height: 100%;
+  max-height: 100%;
   // height: 100vh;
   @media screen and (max-width: 650px) {
     width: 100%;
@@ -142,7 +147,7 @@ export const CDP2 = styled.p`
 `;
 export const CDPartTwo = styled.div`
   margin-top: 8rem;
-  margin-left: 5rem;
+  margin-left: 3rem;
 
   @media screen and (max-width: 650px) {
     margin-left: 5rem;
