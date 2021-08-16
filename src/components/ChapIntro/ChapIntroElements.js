@@ -14,9 +14,9 @@ export const ChapContent = styled.div`
   }
 `;
 
-export const ChapItems = styled.div`
+export const ChapItems = styled.div`h
   background: #0c2651;
-  max-height: 100%;
+  // max-height: 100%;
   // margin: 0 auto;
   @media screen and (max-width: 650px) {
     width: 100%;
