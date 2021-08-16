@@ -74,7 +74,7 @@ export const LoginBtn = styled.button`
   width: 430px;
   height: 60px;
   font-size: 14px;
-  margin: 0.5rem;
+  margin: 0.3rem;
   margin-top: 2rem;
   font-family: Proxima Nova;
   font-style: normal;
